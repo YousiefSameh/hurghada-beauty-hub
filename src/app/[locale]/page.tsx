@@ -14,8 +14,8 @@ export default async function LocalizedHomePage({
   
 
   return (
-    <>  
-      kljflksjd
-    </>
+    <div className='h-[10000px]'>  
+      <p>jtkjslkjfskl</p>
+    </div>
   );
 }

@@ -8,6 +8,7 @@ import { generatePageMetadata } from '@/lib/seo/metadata';
 import '@/app/globals.css';
 import { hasLocale } from 'next-intl';
 import { getLocalBusinessSchema } from '@/lib/seo/schema';
+import Navbar from '@/components/organisms/navbar';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -60,9 +61,10 @@ export default async function LocaleLayout({
       className={`${inter.variable} ${felipa.variable} ${tajawal.variable} scroll-smooth`}
     >
       <body
-        className={`${primaryBodyFontClass} antialiased bg-brand-dark-950 text-brand-light-50 min-h-screen flex flex-col`}
+        className={`${primaryBodyFontClass} antialiased min-h-screen flex flex-col`}
       >
         <AppProviders locale={locale} messages={messages}>
+          <Navbar />
           {children}
           <script
             type="application/ld+json"
