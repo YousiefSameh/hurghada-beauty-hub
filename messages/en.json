@@ -1,0 +1,23 @@
+{
+  "common": {
+    "title": "Beauty Hub Hurghada",
+    "description": "Luxury aesthetic clinic in Hurghada, Egypt",
+    "actions": {
+      "login": "Login",
+      "logout": "Logout",
+      "book": "Book Consultation",
+      "save": "Save Changes",
+      "cancel": "Cancel",
+      "submit": "Submit"
+    },
+    "navigation": {
+      "home": "Home",
+      "treatments": "Treatments",
+      "blog": "Blog",
+      "reviews": "Reviews",
+      "gallery": "Gallery",
+      "contact": "Contact Us",
+      "medicalTourism": "Medical Tourism"
+    }
+  }
+}

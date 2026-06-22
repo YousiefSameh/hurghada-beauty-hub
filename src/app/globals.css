@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #150B06;
+  --foreground: #FFF8F5;
+  
+  --brand-accent-light: #E28673;
+  --brand-accent: #C45A45;
+  --brand-accent-dark: #933725;
+  --brand-accent-muted: #F0B3A6;
+
+  --brand-green-light: #A1AF8B;
+  --brand-green: #7F8D69;
+  --brand-green-dark: #586445;
+
+  --brand-dark-950: #150B06;
+  --brand-dark-900: #25150C;
+  --brand-dark-800: #3A1E11;
+  --brand-dark-700: #5C3827;
+
+  --brand-light-50: #FFF8F5;
+  --brand-light-100: #FDEEE7;
+  --brand-light-200: #FCD3C1;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-brand-accent-light: var(--brand-accent-light);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-accent-dark: var(--brand-accent-dark);
+  --color-brand-accent-muted: var(--brand-accent-muted);
+
+  --color-brand-green-light: var(--brand-green-light);
+  --color-brand-green: var(--brand-green);
+  --color-brand-green-dark: var(--brand-green-dark);
+
+  --color-brand-dark-950: var(--brand-dark-950);
+  --color-brand-dark-900: var(--brand-dark-900);
+  --color-brand-dark-800: var(--brand-dark-800);
+  --color-brand-dark-700: var(--brand-dark-700);
+  --color-brand-light-50: var(--brand-light-50);
+  --color-brand-light-100: var(--brand-light-100);
+  --color-brand-light-200: var(--brand-light-200);
+
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-felipa), serif;
+  --font-tajawal: var(--font-tajawal), sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}

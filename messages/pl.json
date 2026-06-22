@@ -1,0 +1,23 @@
+{
+  "common": {
+    "title": "Beauty Hub Hurghada",
+    "description": "Luksusowa klinika medycyny estetycznej w Hurghadzie, Egipt",
+    "actions": {
+      "login": "Zaloguj się",
+      "logout": "Wyloguj się",
+      "book": "Zarezerwuj Konsultację",
+      "save": "Zapisz Zmiany",
+      "cancel": "Anuluj",
+      "submit": "Wyślij"
+    },
+    "navigation": {
+      "home": "Strona Główna",
+      "treatments": "Zabiegi",
+      "blog": "Blog",
+      "reviews": "Opinie",
+      "gallery": "Galeria",
+      "contact": "Kontakt",
+      "medicalTourism": "Turystyka Medyczna"
+    }
+  }
+}
