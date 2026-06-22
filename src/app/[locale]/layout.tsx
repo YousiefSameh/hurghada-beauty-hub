@@ -7,6 +7,7 @@ import { AppProviders } from '@/providers/AppProviders';
 import { generatePageMetadata } from '@/lib/seo/metadata';
 import '@/app/globals.css';
 import { hasLocale } from 'next-intl';
+import { getLocalBusinessSchema } from '@/lib/seo/schema';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -21,7 +22,7 @@ const felipa = Felipa({
 
 const tajawal = Tajawal({
   subsets: ['arabic'],
-  weight: ['400', '500', '700'], // Non-variable fonts need explicit weights
+  weight: ['400', '500', '700'],
   variable: '--font-tajawal',
 });
 
@@ -50,6 +51,8 @@ export default async function LocaleLayout({
   const isArabic = locale === 'ar';
   const primaryBodyFontClass = isArabic ? tajawal.className : inter.className;
 
+  const schema = getLocalBusinessSchema();
+
   return (
     <html
       lang={locale}
@@ -61,6 +64,10 @@ export default async function LocaleLayout({
       >
         <AppProviders locale={locale} messages={messages}>
           {children}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
         </AppProviders>
       </body>
     </html>
