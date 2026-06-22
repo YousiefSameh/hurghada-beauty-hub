@@ -1,0 +1,23 @@
+{
+  "common": {
+    "title": "Beauty Hub Hurghada",
+    "description": "Luxus-Schönheitsklinik in Hurghada, Ägypten",
+    "actions": {
+      "login": "Einloggen",
+      "logout": "Ausloggen",
+      "book": "Konsultation Buchen",
+      "save": "Änderungen Speichern",
+      "cancel": "Abbrechen",
+      "submit": "Absenden"
+    },
+    "navigation": {
+      "home": "Startseite",
+      "treatments": "Behandlungen",
+      "blog": "Blog",
+      "reviews": "Bewertungen",
+      "gallery": "Galerie",
+      "contact": "Kontakt",
+      "medicalTourism": "Medizintourismus"
+    }
+  }
+}
