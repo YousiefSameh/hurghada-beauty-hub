@@ -39,6 +39,46 @@
         "book": "Beratung buchen",
         "view": "Behandlungen ansehen"
       }
+    },
+    "our_services": {
+      "section_subtitle": "Unsere Dienstleistungen",
+      "title": "Maßgeschneidert Für",
+      "title_highlight": "Sie",
+      "description": "Gesicht und Haare — unsere Kerndisziplinen, jede einem einzigen, kompromisslosen Standard der maßgeschneiderten Pflege verpflichtet.",
+      "premium_badge": "Premium-Auswahl",
+      "book_btn": "Beratung Buchen",
+      "active_status": "Aktive Disziplin",
+      "explore_status": "Klicken zum Entdecken",
+      "services": {
+        "face": {
+          "title": "Gesichtsdisziplin",
+          "shortDesc": "Fortschrittliche Gesichtsmodellierung & erstklassige Hautverjüngung.",
+          "description": "Erleben Sie klinische Exzellenz, die darauf zugeschnitten ist, Ihre natürlichen Gesichtszüge zu betonen. Unsere fortschrittlichen nicht-chirurgischen Behandlungen liefern sichtbare, luxuriöse Ergebnisse für alle Hauttypen.",
+          "items": [
+            "Botox- und Filler-Injektionen",
+            "Gesichtsreinigungssitzungen",
+            "Mini-HydraFacial-Behandlung",
+            "Hautstraffung und Faltenreduzierung",
+            "Hautverjüngungssitzungen",
+            "Chemische Peeling-Sitzungen",
+            "Behandlung von Pigmentierung und oberflächlichen Flecken",
+            "Spezialisierte Sitzungen für Akne und Aknenarben",
+            "Hauternährungs- und Glow-Sitzungen",
+            "Behandlung von Akne und vergrößerten Poren",
+            "RF-Radiofrequenzgerät zur Hautstraffung und Faltenreduzierung"
+          ]
+        },
+        "hair": {
+          "title": "Haare & Plasma",
+          "shortDesc": "Regenerative Therapien & medizinische Plasma-Injektionen.",
+          "description": "Stellen Sie zelluläre Vitalität und Selbstvertrauen wieder her. Unsere hochkonzentrierten PRP- und maßgeschneiderten Mesotherapie-Protokolle sind wissenschaftlich entwickelt, um sowohl die Vitalität der Kopfhaut als auch das tiefe Hautstrahlen zu behandeln.",
+          "items": [
+            "Haarernährungs- und Stärkungssitzungen",
+            "Laser-Haarentfernungssitzungen",
+            "Mesotherapie- und PRP (Plasma)-Injektionen für strahlende Haut"
+          ]
+        }
+      }
     }
   }
 }

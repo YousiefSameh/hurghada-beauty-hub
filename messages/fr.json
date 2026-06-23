@@ -39,6 +39,46 @@
         "book": "Réserver une consultation",
         "view": "Voir les traitements"
       }
+    },
+    "our_services": {
+      "section_subtitle": "Nos Services",
+      "title": "Conçu Pour",
+      "title_highlight": "Vous",
+      "description": "Visage et cheveux — nos disciplines de base, chacune répondant à une norme unique et intransigeante de soins sur mesure.",
+      "premium_badge": "Sélection Premium",
+      "book_btn": "Réserver une Consultation",
+      "active_status": "Discipline Active",
+      "explore_status": "Cliquez pour Explorer",
+      "services": {
+        "face": {
+          "title": "Discipline Visage",
+          "shortDesc": "Sculpture faciale avancée & rajeunissement de la peau premium.",
+          "description": "Découvrez l'excellence clinique conçue pour rehausser vos traits naturels. Nos traitements non chirurgicaux avancés offrent des résultats visibles et luxueux pour tous les types de peau.",
+          "items": [
+            "Injections de Botox et de comblement",
+            "Séances de nettoyage du visage",
+            "Traitement Mini HydraFacial",
+            "Raffermissement de la peau et réduction des rides",
+            "Séances de rajeunissement de la peau",
+            "Séances de peeling chimique",
+            "Traitement de la pigmentation et des taches superficielles",
+            "Séances spécialisées pour l'acné et les cicatrices d'acné",
+            "Séances de nutrition et d'éclat de la peau",
+            "Traitement de l'acné et des pores dilatés",
+            "Dispositif de radiofréquence RF pour le raffermissement de la peau et la réduction des rides"
+          ]
+        },
+        "hair": {
+          "title": "Cheveux & Plasma",
+          "shortDesc": "Thérapies régénératives & injections de plasma médical.",
+          "description": "Restaurez la vitalité cellulaire et la confiance. Nos protocoles PRP à haute concentration et de mésothérapie personnalisés sont scientifiquement conçus pour traiter à la fois la vitalité du cuir chevelu et l'éclat profond de la peau.",
+          "items": [
+            "Séances de nutrition et de renforcement des cheveux",
+            "Séances d'épilation au laser",
+            "Injections de mésothérapie et de PRP (Plasma) pour une peau éclatante"
+          ]
+        }
+      }
     }
   }
 }

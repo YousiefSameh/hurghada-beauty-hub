@@ -39,6 +39,46 @@
         "book": "Book Consultation",
         "view": "View Treatments"
       }
+    },
+    "our_services": {
+      "section_subtitle": "Our Services",
+      "title": "Tailored For",
+      "title_highlight": "You",
+      "description": "Face and hair — our core disciplines, each held to a single, uncompromising standard of tailored care.",
+      "premium_badge": "Premium Selection",
+      "book_btn": "Book Consultation",
+      "active_status": "Active Discipline",
+      "explore_status": "Click to Explore",
+      "services": {
+        "face": {
+          "title": "Face Discipline",
+          "shortDesc": "Advanced facial sculpting & premium skin rejuvenation.",
+          "description": "Experience clinical excellence tailored to enhance your natural facial features. Our advanced non-surgical treatments deliver visible, luxurious results for all skin types.",
+          "items": [
+            "Botox & filler injections",
+            "Facial cleansing sessions",
+            "Mini HydraFacial treatment",
+            "Skin tightening & wrinkle reduction",
+            "Skin rejuvenation sessions",
+            "Chemical peeling sessions",
+            "Treatment of pigmentation & surface spots",
+            "Specialized acne & acne scar sessions",
+            "Skin nourishment & glow sessions",
+            "Acne & enlarged pores treatment",
+            "RF radiofrequency skin tightening & wrinkle reduction"
+          ]
+        },
+        "hair": {
+          "title": "Hair & Plasma",
+          "shortDesc": "Regenerative therapies & medical plasma injections.",
+          "description": "Restore cellular vitality and confidence. Our high-concentration PRP and customized mesotherapy protocols are scientifically designed to treat both scalp vitality and deep dermal glow.",
+          "items": [
+            "Hair nutrition & strengthening sessions",
+            "Laser hair removal sessions",
+            "Mesotherapy & PRP (Plasma) injections for glowing skin"
+          ]
+        }
+      }
     }
   }
 }

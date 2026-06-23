@@ -39,6 +39,46 @@
         "book": "Zarezerwuj konsultację",
         "view": "Zobacz zabiegi"
       }
+    },
+    "our_services": {
+      "section_subtitle": "Nasze Usługi",
+      "title": "Stworzone Dla",
+      "title_highlight": "Ciebie",
+      "description": "Twarz i włosy — nasze główne dyscypliny, każda spełniająca jeden, bezkompromisowy standard spersonalizowanej opieki.",
+      "premium_badge": "Wybór Premium",
+      "book_btn": "Umów Konsultację",
+      "active_status": "Aktywna Dyscyplina",
+      "explore_status": "Kliknij, aby Odkryć",
+      "services": {
+        "face": {
+          "title": "Pielęgnacja Twarzy",
+          "shortDesc": "Zaawansowane modelowanie twarzy i luksusowe odmładzanie skóry.",
+          "description": "Doświadcz doskonałości klinicznej dostosowanej do podkreślenia Twoich naturalnych rysów twarzy. Nasze zaawansowane, niechirurgiczne zabiegi zapewniają widoczne, luksusowe rezultaty dla każdego rodzaju skóry.",
+          "items": [
+            "Zastrzyki z botoksu i wypełniaczy",
+            "Sesje oczyszczania twarzy",
+            "Zabieg Mini HydraFacial",
+            "Ujędrnianie skóry i redukcja zmarszczek",
+            "Sesje odmładzania skóry",
+            "Sesje peelingu chemicznego",
+            "Leczenie pigmentacji i plam powierzchniowych",
+            "Specjalistyczne sesje na trądzik i blizny potrądzikowe",
+            "Sesje odżywiania i rozświetlania skóry",
+            "Leczenie trądziku i rozszerzonych porów",
+            "Urządzenie RF (radiofrekwencja) do ujędrniania skóry i redukcji zmarszczek"
+          ]
+        },
+        "hair": {
+          "title": "Włosy i Osocze",
+          "shortDesc": "Terapie regeneracyjne i medyczne zastrzyki z osocza.",
+          "description": "Przywróć witalność komórkową i pewność siebie. Nasze protokoły PRP o wysokim stężeniu oraz spersonalizowana mezoterapia są naukowo opracowane, aby leczyć zarówno witalność skóry głowy, jak i głęboki blask skóry.",
+          "items": [
+            "Sesje odżywiania i wzmacniania włosów",
+            "Sesje depilacji laserowej",
+            "Zastrzyki z mezoterapii i PRP (osocza) dla rozświetlonej skóry"
+          ]
+        }
+      }
     }
   }
 }
