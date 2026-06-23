@@ -113,6 +113,26 @@
         "book": "حجز استشارة",
         "profile": "استكشاف الملف الكامل"
       }
+    },
+    "services_section": {
+      "subtitle": "خبرتنا",
+      "title": "مجموعة",
+      "title_highlight": "التوقيع",
+      "description": "استكشف مجموعتنا الحصرية المكونة من 10 علاجات تجميلية مصممة خصيصًا، تم تصميمها بدقة لتكشف عن أناقتك الخالدة.",
+      "services": [
+        { "id": "01", "title": "شد الوجه التوقيعي", "desc": "نحت غير جراحي لمظهر شبابي مرفوع.", "image": "/assets/images/service-1.png", "link_text": "اكتشف" },
+        { "id": "02", "title": "نحت الجلد", "desc": "حشو دقيق لاستعادة الحجم وتحديد ملامح الوجه.", "image": "/assets/images/service-2.png", "link_text": "اكتشف" },
+        { "id": "03", "title": "علاج البوتولينوم", "desc": "استرخاء متقدم للتجاعيد لتعبير طبيعي ناعم.", "image": "/assets/images/service-3.png", "link_text": "اكتشف" },
+        { "id": "04", "title": " resurfacing بالليزر", "desc": "علاجات ليزر سريرية لملمس بشرة ناعمة متوهجة.", "image": "/assets/images/service-4.png", "link_text": "اكتشف" },
+        { "id": "05", "title": "الـ PRP الخلوي", "desc": "علاج تجديدي باستخدام عوامل النمو الخاصة بجسمك.", "image": "/assets/images/service-5.png", "link_text": "اكتشف" },
+        { "id": "06", "title": "شد الخيوط", "desc": "شد فوري خفيف باستخدام خيوط جراحية قابلة للامتصاص.", "image": "/assets/images/service-6.png", "link_text": "اكتشف" },
+        { "id": "07", "title": "تنقيط الـ IV للعافية", "desc": "تنقيط فيتامينات مخصص للصحة الداخلية والإشراق الخارجي.", "image": "/assets/images/service-7.png", "link_text": "اكتشف" },
+        { "id": "08", "title": "التقشير الكيميائي", "desc": "تقشير طبي لاستهداف التصبغات وعلامات التقدم في السن.", "image": "/assets/images/service-8.png", "link_text": "اكتشف" },
+        { "id": "09", "title": "نحت الجسم", "desc": "بروتوكولات غير جراحية لتقليل الدهون وشد الجلد.", "image": "/assets/images/service-9.png", "link_text": "اكتشف" },
+        { "id": "10", "title": "استعادة الشعر", "desc": "حلول سريرية مستهدفة لكثافة الشعر وحيوية فروة الرأس.", "image": "/assets/images/service-10.png", "link_text": "اكتشف" }
+      ],
+      "btn_all": "عرض جميع العلاجات",
+      "slider_nav": { "prev": "السابق", "next": "التالي" }
     }
   }
 }

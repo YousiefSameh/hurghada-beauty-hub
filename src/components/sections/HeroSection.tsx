@@ -29,10 +29,8 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-linear-to-r from-primary/40 via-primary/20 to-transparent" />
 
       {/* 2. Main Content Container */}
-      <div className="relative z-10 flex h-full w-full flex-col pt-14 justify-center px-8 md:px-16 lg:px-32 max-w-screen mx-auto">
-        {/* Main Headings */}
+      <div className="relative z-10 flex h-full w-full flex-col pt-14 justify-center px-4 md:px-0 container mx-auto">
         <div>
-          {/* تم تعديل السطر القادم لإلغاء font-serif لو كانت اللغة عربية */}
           <h1
             className={`italic text-[42px] font-black sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[1.1] w-full text-white drop-shadow-sm ${
               !isArabic ? 'font-serif' : ''

@@ -15,12 +15,12 @@ export default function DoctorSection() {
   const credentials = t.raw('credentials') as string[];
 
   return (
-    <section className="bg-[#FAF7F2] py-20 md:py-32 px-4 sm:px-6 md:px-12 lg:px-24 overflow-hidden relative z-0">
+    <section className="py-20 md:py-32 px-4 sm:px-6 md:px-12 lg:px-24 overflow-hidden relative z-0">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-white/40 blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-[#CD6C3E]/5 blur-[120px] -z-10" />
 
-      <div className="max-w-[1400px] mx-auto">
+      <div className="container px-4 sm:px-0 mx-auto">
         <div className="w-full flex flex-col mb-12 md:mb-20">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 md:w-16 h-px bg-[#CD6C3E]" />
@@ -78,7 +78,12 @@ export default function DoctorSection() {
           <div className="lg:col-span-7 flex flex-col h-full relative z-10 pt-4 lg:pt-0">
             {/* Doctor Info & Quote */}
             <div className="bg-white/60 backdrop-blur-sm border border-white p-6 md:p-8 rounded-3xl shadow-sm mb-8 relative">
-              <Quote className={cn("absolute top-6 w-8 h-8 text-[#CD6C3E]/10", isArabic ? "left-6" : "right-6")} />
+              <Quote
+                className={cn(
+                  'absolute top-6 w-8 h-8 text-[#CD6C3E]/10',
+                  isArabic ? 'left-6' : 'right-6'
+                )}
+              />
 
               <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-stone-400 block mb-3 uppercase">
                 {t('specialist_tag')}

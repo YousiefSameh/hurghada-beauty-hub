@@ -110,6 +110,26 @@
         "book": "Prendre Rendez-vous",
         "profile": "Explorer le Profil Complet"
       }
+    },
+    "services_section": {
+      "subtitle": "Notre Expertise",
+      "title": "Le Portfolio",
+      "title_highlight": "Signature",
+      "description": "Découvrez notre collection exclusive de 10 traitements esthétiques sur mesure, conçus avec précision pour révéler votre élégance intemporelle.",
+      "services": [
+        { "id": "01", "title": "Signature Facelift", "desc": "Contourage non chirurgical pour une apparence liftée et juvénile.", "image": "/assets/images/service-1.png", "link_text": "Découvrir" },
+        { "id": "02", "title": "Sculpture Dermique", "desc": "Fillers de précision pour restaurer le volume et définir l'architecture faciale.", "image": "/assets/images/service-2.png", "link_text": "Découvrir" },
+        { "id": "03", "title": "Thérapie Botulinique", "desc": "Relaxation avancée des rides pour une expression naturelle et lisse.", "image": "/assets/images/service-3.png", "link_text": "Découvrir" },
+        { "id": "04", "title": "Resurfaçage Laser", "desc": "Traitements laser cliniques pour une texture de peau impeccable et éclatante.", "image": "/assets/images/service-4.png", "link_text": "Découvrir" },
+        { "id": "05", "title": "PRP Cellulaire", "desc": "Thérapie régénérative utilisant les facteurs de croissance de votre corps.", "image": "/assets/images/service-5.png", "link_text": "Découvrir" },
+        { "id": "06", "title": "Lifting par Fils", "desc": "Lifting subtil et instantané avec des fils chirurgicaux résorbables.", "image": "/assets/images/service-6.png", "link_text": "Découvrir" },
+        { "id": "07", "title": "Perfusion IV Bien-être", "desc": "Goutte-à-goutte de vitamines sur mesure pour la santé intérieure et l'éclat extérieur.", "image": "/assets/images/service-7.png", "link_text": "Découvrir" },
+        { "id": "08", "title": "Peeling Chimique", "desc": "Exfoliation médicale ciblant la pigmentation et le vieillissement.", "image": "/assets/images/service-8.png", "link_text": "Découvrir" },
+        { "id": "09", "title": "Contourage du Corps", "desc": "Protocoles non invasifs de réduction des graisses et raffermissement de la peau.", "image": "/assets/images/service-9.png", "link_text": "Découvrir" },
+        { "id": "10", "title": "Restauration Capillaire", "desc": "Solutions cliniques ciblées pour la densité des cheveux et la vitalité du cuir chevelu.", "image": "/assets/images/service-10.png", "link_text": "Découvrir" }
+      ],
+      "btn_all": "Voir Tous les Traitements",
+      "slider_nav": { "prev": "Précédent", "next": "Suivant" }
     }
   }
 }

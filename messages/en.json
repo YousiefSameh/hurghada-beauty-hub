@@ -110,6 +110,26 @@
         "book": "Schedule Consultation",
         "profile": "Explore Full Profile"
       }
+    },
+    "services_section": {
+      "subtitle": "Our Expertise",
+      "title": "The Signature",
+      "title_highlight": "Portfolio",
+      "description": "Explore our exclusive collection of 10 bespoke aesthetic treatments, meticulously designed to unveil your timeless elegance.",
+      "services": [
+        { "id": "01", "title": "Signature Facelift", "desc": "Non-surgical contouring for a lifted, youthful appearance.", "image": "/assets/images/service-1.png", "link_text": "Discover" },
+        { "id": "02", "title": "Dermal Sculpting", "desc": "Precision fillers to restore volume and define facial architecture.", "image": "/assets/images/service-2.png", "link_text": "Discover" },
+        { "id": "03", "title": "Botulinum Therapy", "desc": "Advanced wrinkle relaxation for a smooth, natural expression.", "image": "/assets/images/service-3.png", "link_text": "Discover" },
+        { "id": "04", "title": "Laser Resurfacing", "desc": "Clinical laser treatments for flawless, glowing skin texture.", "image": "/assets/images/service-4.png", "link_text": "Discover" },
+        { "id": "05", "title": "Cellular PRP", "desc": "Regenerative therapy utilizing your body's own growth factors.", "image": "/assets/images/service-5.png", "link_text": "Discover" },
+        { "id": "06", "title": "Thread Lifting", "desc": "Subtle, instantaneous lifting using absorbable surgical threads.", "image": "/assets/images/service-6.png", "link_text": "Discover" },
+        { "id": "07", "title": "IV Wellness Infusion", "desc": "Bespoke vitamin drips for inner health and outer radiance.", "image": "/assets/images/service-7.png", "link_text": "Discover" },
+        { "id": "08", "title": "Chemical Peeling", "desc": "Medical-grade exfoliation targeting pigmentation and aging.", "image": "/assets/images/service-8.png", "link_text": "Discover" },
+        { "id": "09", "title": "Body Contouring", "desc": "Non-invasive fat reduction and skin tightening protocols.", "image": "/assets/images/service-9.png", "link_text": "Discover" },
+        { "id": "10", "title": "Hair Restoration", "desc": "Targeted clinical solutions for hair density and scalp vitality.", "image": "/assets/images/service-10.png", "link_text": "Discover" }
+      ],
+      "btn_all": "View All Treatments",
+      "slider_nav": { "prev": "Previous", "next": "Next" }
     }
   }
 }

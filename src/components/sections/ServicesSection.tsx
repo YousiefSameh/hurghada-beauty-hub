@@ -1,235 +1,230 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import { ArrowRight, ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
+import { ArrowRight, ArrowLeft, Sparkles, MoveRight } from 'lucide-react';
+import { Button } from '@/components/atoms/button';
 
-export default function LuxuryShowcaseSection() {
-  const [activeTab, setActiveTab] = useState('face');
-  const [currentImgIndex, setCurrentImgIndex] = useState(0);
-  
-  // تهيئة خطافات الترجمة واللغة
+interface ServiceItem {
+  id: string;
+  title: string;
+  desc: string;
+  image: string;
+  link_text: string;
+}
+
+export default function ServicesSection() {
   const locale = useLocale();
   const isArabic = locale === 'ar';
-  const t = useTranslations('homepage.our_services');
+  const t = useTranslations('homepage.services_section');
+  const baseServices = t.raw('services') as ServiceItem[];
 
-  const servicesData = [
-    {
-      id: 'face',
-      title: t('services.face.title'),
-      shortDesc: t('services.face.shortDesc'),
-      description: t('services.face.description'),
-      image: '/assets/images/face-female.jpg',
-      items: t.raw('services.face.items') as string[],
-      sliderImages: [
-        '/assets/images/face-female.jpg',
-        '/assets/images/face-male.jpg',
-      ],
-    },
-    {
-      id: 'hair',
-      title: t('services.hair.title'),
-      shortDesc: t('services.hair.shortDesc'),
-      description: t('services.hair.description'),
-      image: '/assets/images/hair-female.jpg',
-      items: t.raw('services.hair.items') as string[],
-      sliderImages: [
-        '/assets/images/hair-female.jpg',
-        '/assets/images/hair-male.jpg',
-      ],
-    },
+  // 1. Triple the array to create the Infinite Loop illusion
+  const infiniteServices = [
+    ...baseServices.map(s => ({ ...s, uniqueId: `${s.id}-copy1` })),
+    ...baseServices.map(s => ({ ...s, uniqueId: `${s.id}-copy2` })),
+    ...baseServices.map(s => ({ ...s, uniqueId: `${s.id}-copy3` })),
   ];
 
-  const activeService = servicesData.find((s) => s.id === activeTab) || servicesData[0];
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [isReady, setIsReady] = useState(false);
 
-  useEffect(() => {
-    setCurrentImgIndex(0);
-  }, [activeTab]);
+  // Exact math to know the width of one full copy of services
+  const getSingleCopyWidth = useCallback(() => {
+    const isMd = window.innerWidth >= 768;
+    const cardTotalWidth = isMd ? 460 : 344; // Card width + Empty space gap
+    return baseServices.length * cardTotalWidth;
+  }, [baseServices.length]);
 
+  // 2. Center the scroll position instantly on load
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentImgIndex((prev) => (prev + 1) % activeService.sliderImages.length);
-    }, 4500);
-    return () => clearInterval(timer);
-  }, [activeService.sliderImages.length]);
+    const initScroll = () => {
+      if (sliderRef.current) {
+        const container = sliderRef.current;
+        const singleCopyWidth = getSingleCopyWidth();
+        
+        container.style.scrollBehavior = 'auto'; // Disable smooth scroll for instant jump
+
+        if (isArabic) {
+          // RTL safe logic
+          const isNegativeScroll = getComputedStyle(container).direction === 'rtl';
+          container.scrollLeft = isNegativeScroll ? -singleCopyWidth : singleCopyWidth;
+        } else {
+          container.scrollLeft = singleCopyWidth;
+        }
+
+        // Force reflow and re-enable smooth scrolling
+        void container.offsetWidth;
+        container.style.scrollBehavior = 'smooth';
+        setIsReady(true); // Fade in the slider elegantly
+      }
+    };
+
+    const timer = setTimeout(initScroll, 100);
+    return () => clearTimeout(timer);
+  }, [isArabic, getSingleCopyWidth]);
+
+  // 3. The "Silent Jump" Logic to keep it infinite
+  const handleScroll = () => {
+    if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
+
+    // Wait for scroll momentum to finish to avoid breaking mobile swipe physics
+    scrollTimeoutRef.current = setTimeout(() => {
+      if (!sliderRef.current) return;
+      const container = sliderRef.current;
+      const singleCopyWidth = getSingleCopyWidth();
+      const currentScroll = container.scrollLeft;
+      const absScroll = Math.abs(currentScroll);
+
+      // If user reaches the first copy, silently jump them forward
+      if (absScroll < singleCopyWidth * 0.5) {
+        container.style.scrollBehavior = 'auto';
+        container.scrollLeft = currentScroll > 0 
+          ? currentScroll + singleCopyWidth 
+          : currentScroll - singleCopyWidth;
+        void container.offsetWidth;
+        container.style.scrollBehavior = 'smooth';
+      }
+      // If user reaches the third copy, silently jump them back
+      else if (absScroll > singleCopyWidth * 1.5) {
+        container.style.scrollBehavior = 'auto';
+        container.scrollLeft = currentScroll > 0 
+          ? currentScroll - singleCopyWidth 
+          : currentScroll + singleCopyWidth;
+        void container.offsetWidth;
+        container.style.scrollBehavior = 'smooth';
+      }
+    }, 150);
+  };
+
+  const scrollNextPrev = (direction: 'left' | 'right') => {
+    if (sliderRef.current) {
+      const scrollAmount = window.innerWidth >= 768 ? 460 : 344;
+      const move = direction === 'left' 
+        ? (isArabic ? scrollAmount : -scrollAmount) 
+        : (isArabic ? -scrollAmount : scrollAmount);
+        
+      sliderRef.current.scrollBy({ left: move, behavior: 'smooth' });
+    }
+  };
+
+  const paddingSnapClass = isArabic
+    ? "scroll-pr-4 sm:scroll-pr-6 md:scroll-pr-12 lg:scroll-pr-24"
+    : "scroll-pl-4 sm:scroll-pl-6 md:scroll-pl-12 lg:scroll-pl-24";
 
   return (
-    <section className="bg-[#FAF7F2] py-12 md:py-28 px-4 sm:px-6 md:px-12 lg:px-24">
-      <div className="max-w-[1400px] mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 md:mb-32 gap-8">
-          <div className="max-w-2xl">
+    <section className="py-24 md:py-32 overflow-hidden relative z-0 bg-[#FAF7F2]">
+      
+      {/* Background Decor */}
+      <div className="absolute top-1/4 left-0 w-1/3 h-1/2 bg-[#CD6C3E]/5 blur-[120px] rounded-full pointer-events-none -z-10" />
+
+      {/* Header Block */}
+      <div className="container px-4 sm:px-6 md:px-12 lg:px-24 mx-auto mb-16 md:mb-20">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+          <div className="max-w-3xl">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-px bg-[#CD6C3E]" />
-              <span className="uppercase tracking-[0.2em] text-xs md:text-sm font-semibold text-[#CD6C3E]">
-                {t('section_subtitle')}
+              <div className="w-16 h-px bg-[#CD6C3E]" />
+              <span className="uppercase tracking-[0.25em] text-sm font-semibold text-[#CD6C3E] flex items-center gap-2">
+                <Sparkles className="w-4 h-4" />
+                {t('subtitle')}
               </span>
             </div>
-
-            <h2
-              className={`text-4xl sm:text-5xl lg:text-6xl font-black text-stone-900 leading-tight ${
-                !isArabic ? 'font-serif italic' : ''
-              }`}
-            >
-              {t('title')} <span className="text-[#CD6C3E] font-light uppercase">{t('title_highlight')}</span>
+            
+            <h2 className={`text-4xl sm:text-5xl lg:text-7xl font-black text-stone-900 leading-[1.1] ${!isArabic ? 'font-serif italic' : ''}`}>
+              {t('title')}{" "}
+              <span className="text-[#CD6C3E] font-light uppercase text-3xl lg:text-5xl not-italic tracking-wide block sm:inline mt-2 sm:mt-0">
+                {t('title_highlight')}
+              </span>
             </h2>
+            
+            <p className="text-stone-500 font-light text-base md:text-lg leading-relaxed mt-6 max-w-xl">
+              {t('description')}
+            </p>
           </div>
 
-          <p className="max-w-md text-stone-600 font-light text-base md:text-lg leading-relaxed pb-2">
-            {t('description')}
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-          <div className="lg:col-span-5 xl:col-span-4 order-1 lg:order-2 flex flex-row lg:flex-col gap-4 w-full">
-            {servicesData.map((service) => {
-              const isSelected = service.id === activeTab;
-              return (
-                <button
-                  key={service.id}
-                  onClick={() => setActiveTab(service.id)}
-                  className={`group relative flex-1 rounded-2xl lg:rounded-3xl overflow-hidden text-left p-4 lg:p-8 flex flex-col justify-end transition-all duration-500 border cursor-pointer h-24 sm:h-32 lg:h-auto ${
-                    isSelected
-                      ? 'border-[#CD6C3E] ring-2 ring-[#CD6C3E]/20 shadow-lg scale-[1.01]'
-                      : 'border-stone-200/40 hover:border-stone-400'
-                  }`}
-                >
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                  />
-
-                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-black/10 transition-colors duration-500 group-hover:from-black/90" />
-
-                  <div className="relative z-10 w-full transition-all duration-500 transform lg:translate-y-4 lg:group-hover:translate-y-0">
-                    <h4
-                      className={`text-sm sm:text-xl lg:text-2xl xl:text-3xl font-bold text-white transition-colors duration-300 ${
-                        isSelected ? 'text-[#CD6C3E]' : 'group-hover:text-[#CD6C3E]'
-                      } ${!isArabic ? 'font-serif italic' : ''}`}
-                    >
-                      {service.title}
-                    </h4>
-
-                    <div className="hidden lg:block opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-24 transition-all duration-500 ease-in-out overflow-hidden mt-2">
-                      <p className="text-stone-300 text-xs md:text-sm font-light leading-relaxed">
-                        {service.shortDesc}
-                      </p>
-                    </div>
-
-                    <div className="hidden lg:flex mt-4 pt-4 border-t border-white/20 items-center justify-between w-full">
-                      <span className="text-white text-xs tracking-widest uppercase font-semibold">
-                        {isSelected ? t('active_status') : t('explore_status')}
-                      </span>
-                      <div
-                        className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${
-                          isSelected
-                            ? 'bg-[#CD6C3E] text-white'
-                            : 'bg-white/10 text-white group-hover:bg-[#CD6C3E]'
-                        }`}
-                      >
-                        <ArrowRight className={`w-4 h-4 ${isArabic ? 'rotate-180' : ''}`} />
-                      </div>
-                    </div>
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-
-          <div className="lg:col-span-7 xl:col-span-8 order-2 lg:order-1 bg-white rounded-3xl border border-stone-200/60 p-6 md:p-10 shadow-xs flex flex-col justify-between min-h-[520px] sm:min-h-[580px] lg:min-h-[680px]">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 h-full items-center">
-              <div className="md:col-span-6 flex flex-col justify-between h-full py-2">
-                <div>
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#CD6C3E]/10 text-[#CD6C3E] text-xs font-medium mb-4">
-                    <Sparkles className="w-3 h-3" />
-                    {t('premium_badge')}
-                  </div>
-                  <h3
-                    className={`text-2xl md:text-3xl font-black text-stone-900 mb-4 ${
-                      !isArabic ? 'font-serif' : ''
-                    }`}
-                  >
-                    {activeService.title}
-                  </h3>
-                  <p className="text-stone-500 font-light text-sm md:text-base leading-relaxed mb-6">
-                    {activeService.description}
-                  </p>
-
-                  <div className="space-y-2.5 max-h-[260px] md:max-h-[320px] overflow-y-auto pr-2 scrollbar-thin">
-                    {activeService.items.map((item, index) => (
-                      <div
-                        key={index}
-                        className="flex items-start gap-2.5 text-stone-700 text-xs md:text-sm"
-                      >
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#CD6C3E] mt-2 shrink-0" />
-                        <span className="font-medium leading-tight">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <button className="inline-flex items-center justify-center gap-2 bg-[#CD6C3E] text-white px-6 py-3.5 rounded-xl text-sm font-semibold tracking-wide hover:bg-[#b85b30] transition-colors shadow-xs mt-8 w-full sm:w-fit">
-                  {t('book_btn')}
-                  <ArrowRight className={`w-4 h-4 ${isArabic ? 'rotate-180' : ''}`} />
-                </button>
-              </div>
-
-              <div className="md:col-span-6 relative aspect-4/5 w-full rounded-2xl overflow-hidden bg-stone-100 group">
-                {activeService.sliderImages.map((img, idx) => (
-                  <div
-                    key={img}
-                    className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
-                      idx === currentImgIndex
-                        ? 'opacity-100 scale-100 z-10'
-                        : 'opacity-0 scale-105 z-0'
-                    }`}
-                  >
-                    <Image
-                      src={img}
-                      alt="Service presentation"
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 40vw"
-                      priority
-                    />
-                  </div>
-                ))}
-
-                <div className="absolute inset-x-4 bottom-4 z-20 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="flex gap-1.5 bg-black/40 backdrop-blur-md p-1.5 rounded-full">
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setCurrentImgIndex(
-                          (prev) =>
-                            (prev - 1 + activeService.sliderImages.length) %
-                            activeService.sliderImages.length
-                        );
-                      }}
-                      className="p-1 rounded-full text-white hover:bg-white/20 transition-colors"
-                    >
-                      <ChevronLeft className="w-4 h-4" />
-                    </button>
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setCurrentImgIndex(
-                          (prev) => (prev + 1) % activeService.sliderImages.length
-                        );
-                      }}
-                      className="p-1 rounded-full text-white hover:bg-white/20 transition-colors"
-                    >
-                      <ChevronRight className="w-4 h-4" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+          {/* Endless Navigation Buttons */}
+          <div className="items-center gap-4 lg:pb-4 hidden sm:flex">
+            <button 
+              onClick={() => scrollNextPrev('left')}
+              className="w-14 h-14 rounded-full border border-stone-300 flex items-center justify-center transition-all duration-300 hover:bg-[#CD6C3E] hover:border-[#CD6C3E] hover:text-white text-stone-900 cursor-pointer"
+            >
+              {isArabic ? <ArrowRight className="w-5 h-5" /> : <ArrowLeft className="w-5 h-5" />}
+            </button>
+            <button 
+              onClick={() => scrollNextPrev('right')}
+              className="w-14 h-14 rounded-full border border-stone-300 flex items-center justify-center transition-all duration-300 hover:bg-[#CD6C3E] hover:border-[#CD6C3E] hover:text-white text-stone-900 cursor-pointer"
+            >
+              {isArabic ? <ArrowLeft className="w-5 h-5" /> : <ArrowRight className="w-5 h-5" />}
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Infinite Scroll Track */}
+      <div 
+        ref={sliderRef}
+        onScroll={handleScroll}
+        className={`flex overflow-x-auto snap-x snap-mandatory pb-16 pt-4 [&::-webkit-scrollbar]:hidden w-full transition-opacity duration-700 ${isReady ? 'opacity-100' : 'opacity-0'} ${paddingSnapClass}`}
+        style={{ scrollbarWidth: 'none' }}
+      >
+        {infiniteServices.map((service) => (
+          // Wrapper handles the exact width and spacing mathematically
+          <div 
+            key={service.uniqueId} 
+            className="shrink-0 snap-start flex justify-start w-[344px] md:w-[460px]"
+          >
+            {/* The Actual Card */}
+            <div className="group cursor-pointer flex flex-col w-[320px] md:w-[420px]">
+              
+              {/* Magazine Style Image Card */}
+              <div className="relative w-[400px] h-[300px] overflow-hidden rounded-2xl mb-8 bg-stone-200 shadow-sm transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-[#CD6C3E]/20">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+                  sizes="(max-width: 768px) 320px, 420px"
+                />
+                
+                <div className="absolute inset-0 bg-stone-900/10 group-hover:bg-stone-900/0 transition-colors duration-500" />
+                
+                <div className="absolute top-6 left-6 w-12 h-12 backdrop-blur-md bg-white/40 border border-white/50 rounded-full flex items-center justify-center text-stone-900 font-medium z-10 shadow-lg">
+                  <span className={!isArabic ? 'font-serif' : ''}>{service.id}</span>
+                </div>
+              </div>
+
+              {/* Content Area */}
+              <div className="flex flex-col grow pr-4">
+                <div className="w-12 h-px bg-stone-300 mb-6 transition-all duration-500 group-hover:w-24 group-hover:bg-[#CD6C3E]" />
+                
+                <h3 className={`text-2xl md:text-3xl font-bold text-stone-900 mb-4 transition-colors duration-300 group-hover:text-[#CD6C3E] ${!isArabic ? 'font-serif' : ''}`}>
+                  {service.title}
+                </h3>
+                
+                <p className="text-stone-500 font-light leading-relaxed mb-8 grow text-sm md:text-base line-clamp-2">
+                  {service.desc}
+                </p>
+                
+                <div className="flex items-center gap-3 text-sm font-semibold tracking-widest uppercase text-stone-900 mt-auto">
+                  <span className="relative overflow-hidden inline-block">
+                    <span className="block transition-transform duration-500 ease-out group-hover:-translate-y-full">
+                      Discover The {service.title} World Here
+                    </span>
+                    <span className="absolute inset-0 block transition-transform duration-500 ease-out translate-y-full group-hover:translate-y-0 text-[#CD6C3E]">
+                      Discover The {service.title} World Here
+                    </span>
+                  </span>
+                  <MoveRight className={`w-5 h-5 transition-transform duration-500 ease-out group-hover:translate-x-3 group-hover:text-[#CD6C3E] ${isArabic ? 'rotate-180 group-hover:-translate-x-3' : ''}`} />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        ))}
+      </div>
+
     </section>
   );
 }
