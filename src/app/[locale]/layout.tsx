@@ -1,4 +1,4 @@
-import { Inter, Felipa, Tajawal } from 'next/font/google';
+import { Inter, Playfair_Display, Tajawal } from 'next/font/google';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
@@ -9,16 +9,23 @@ import '@/app/globals.css';
 import { hasLocale } from 'next-intl';
 import { getLocalBusinessSchema } from '@/lib/seo/schema';
 import Navbar from '@/components/organisms/navbar';
+import FloatingBtns from '@/components/molecules/FloatingBtn';
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 });
 
-const felipa = Felipa({
+// const climateCrisis = Climate_Crisis({
+//   subsets: ['latin'],
+//   weight: ['400'],
+//   variable: '--font-climate-crisis',
+// });
+
+const playfair = Playfair_Display({
   subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-felipa',
+  weight: ['400', '500', '600', '700', '800', '900'],
+  variable: '--font-playfair',
 });
 
 const tajawal = Tajawal({
@@ -58,7 +65,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={dir}
-      className={`${inter.variable} ${felipa.variable} ${tajawal.variable} scroll-smooth`}
+      className={`${inter.variable} ${playfair.variable} ${tajawal.variable} scroll-smooth`}
     >
       <body
         className={`${primaryBodyFontClass} antialiased min-h-screen flex flex-col`}
@@ -66,6 +73,7 @@ export default async function LocaleLayout({
         <AppProviders locale={locale} messages={messages}>
           <Navbar />
           {children}
+          <FloatingBtns />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

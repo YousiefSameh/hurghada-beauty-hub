@@ -1,6 +1,5 @@
-import { setRequestLocale, getTranslations } from 'next-intl/server';
-import { LanguageSwitcher } from '@/components/molecules/LanguageSwitcher';
-import { getLocalBusinessSchema } from '@/lib/seo/schema';
+import HeroSection from '@/components/sections/HeroSection';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export default async function LocalizedHomePage({
   params,
@@ -11,11 +10,10 @@ export default async function LocalizedHomePage({
   setRequestLocale(locale);
 
   const t = await getTranslations('common');
-  
 
   return (
-    <div className='h-[10000px]'>  
-      <p>jtkjslkjfskl</p>
-    </div>
+    <main>
+      <HeroSection />
+    </main>
   );
 }

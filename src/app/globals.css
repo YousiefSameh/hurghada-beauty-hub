@@ -119,7 +119,7 @@
   --color-brand-light-200: var(--brand-light-200);
 
   --font-sans: var(--font-inter), sans-serif;
-  --font-serif: var(--font-felipa), serif;
+  --font-serif: var(--font-playfair), serif;
   --font-tajawal: var(--font-tajawal), sans-serif;
 }
 

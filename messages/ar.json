@@ -13,11 +13,10 @@
     "navigation": {
       "home": "الرئيسية",
       "treatments": "العلاجات",
-      "blog": "المدونة",
-      "reviews": "التقييمات",
-      "gallery": "المعرض",
-      "contact": "اتصل بنا",
-      "medicalTourism": "السياحة العلاجية"
+      "doctor": "الدكتور",
+      "services": "الخدمات",
+      "blog": "المدونه",
+      "contact": "اتصل بنا"
     }
   }
 }

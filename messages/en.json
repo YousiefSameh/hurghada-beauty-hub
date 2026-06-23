@@ -13,11 +13,10 @@
     "navigation": {
       "home": "Home",
       "treatments": "Treatments",
+      "doctor": "Doctor",
+      "services": "Services",
       "blog": "Blog",
-      "reviews": "Reviews",
-      "gallery": "Gallery",
-      "contact": "Contact Us",
-      "medicalTourism": "Medical Tourism"
+      "contact": "Contact"
     }
   }
 }

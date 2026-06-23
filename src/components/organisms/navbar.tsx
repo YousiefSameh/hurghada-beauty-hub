@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react'; 
 import { LanguageSwitcher } from '../molecules/LanguageSwitcher';
 import { Button } from '../atoms/button';
+import { cn } from '@/lib/utils';
 
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
@@ -50,9 +51,13 @@ export default function Navbar() {
             alt="Hurghada Beauty Hub Logo"
             width={60}
             height={60}
-            className="rounded-full object-cover lg:w-[75px] lg:h-[75px]"
+            className="rounded-lg object-cover lg:w-[60px] lg:h-[60px]"
             priority
           />
+          <span className={cn('text-white text-lg md:text-xl font-black tracking-wider ml-1', isScrolled ? "text-primary" : "text-white")}>
+            <strong className='uppercase font-serif'>Hurghada Beauty Hub</strong>
+            <small className='text-xs font-normal block line-clamp-none mt-1'>Beauty | skin care | hair care</small>
+          </span>
         </Link>
 
         <ul className="hidden md:flex items-center space-x-6 lg:space-x-8">
@@ -61,7 +66,7 @@ export default function Navbar() {
               <Link 
                 href={link.href} 
                 className={`text-sm lg:text-base font-medium uppercase pb-2 tracking-wide transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100 ${
-                  isScrolled ? 'text-foreground/80 hover:text-primary' : 'text-black hover:text-primary'
+                  isScrolled ? 'text-foreground/80 hover:text-primary' : 'text-white hover:text-primary'
                 }`}
               >
                 {link.label}
@@ -93,9 +98,10 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`fixed inset-0 top-[70px] z-40 h-dvh bg-background/95 backdrop-blur-lg transition-transform duration-300 ease-in-out md:hidden ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={cn(`fixed inset-0 top-[70px] z-40 h-dvh bg-background/95 backdrop-blur-lg transition-transform duration-300 ease-in-out md:hidden`,
+          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full',
+          isScrolled ? "bg-background/95" : 'bg-transparent backdrop-blur-md'
+        )}
       >
         <div className="flex flex-col items-center justify-start pt-10 h-full space-y-8 px-6">
           <ul className="flex flex-col items-center space-y-6 w-full">
@@ -104,7 +110,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block w-full text-xl font-semibold uppercase tracking-wider text-foreground hover:text-primary transition-colors py-2"
+                  className={cn("block w-full text-xl text-left font-semibold uppercase tracking-wider text-foreground hover:text-primary transition-colors py-2", isScrolled ? "text-black" : "text-white")}
                 >
                   {link.label}
                 </Link>
@@ -119,7 +125,7 @@ export default function Navbar() {
             <Button 
               variant="default" 
               size="lg" 
-              className="w-full max-w-[250px] py-6 text-lg font-bold shadow-md"
+              className="w-full py-6 text-lg font-bold shadow-md"
             >
               Book Now
             </Button>
