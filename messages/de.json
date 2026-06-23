@@ -31,13 +31,21 @@
     },
     "herosection": {
       "title": "Zeitlose Schönheit.",
-      "titlestrong": "Weltklasse-",
+      "titlestrong": "Erstklassige",
       "completetitle": "Pflege",
-      "subtitle": "Erleben Sie einen neuen Standard der ästhetischen Pflege im",
-      "subtitlecomplete": " , wo fortschrittliche Behandlungen, medizinische Expertise und persönliche Betreuung zusammenkommen, um Ihre natürliche Schönheit mit Vertrauen und Eleganz zu unterstreichen.",
+      "subtitle": "Erleben Sie einen neuen Standard der ästhetischen Pflege in",
+      "subtitlecomplete": ", wo fortschrittliche Behandlungen, medizinische Expertise und persönliche Betreuung zusammenkommen, um Ihre natürliche Schönheit mit Vertrauen und Eleganz zu unterstreichen.",
       "cta": {
-        "book": "Beratung buchen",
-        "view": "Behandlungen ansehen"
+        "book": "Beratung Buchen",
+        "view": "Behandlungen Ansehen"
+      },
+      "stats": {
+        "rating_val": "5.0★",
+        "rating_lbl": "Google-Bewertung",
+        "reviews_val": "60+",
+        "reviews_lbl": "Verifizierte Bewertungen",
+        "exp_val": "8+",
+        "exp_lbl": "Jahre Erfahrung"
       }
     },
     "our_services": {
@@ -89,10 +97,7 @@
       "role": "Fachärztin für Dermatologie & Ästhetik-Meisterin",
       "quote": "\"Wahre Schönheit ist die Evolution Ihres natürlichen Selbst, gestaltet mit medizinischer Präzision und dem Touch eines Künstlers.\"",
       "bio": "Mit über einem Jahrzehnt klinischer Exzellenz verbindet Dr. Alaa fortschrittliche dermatologische Wissenschaft mit anspruchsvollen ästhetischen Protokollen. Ihr Ansatz wurzelt in der Lieferung außergewöhnlich präziser, eleganter und langanhaltender Ergebnisse, die auf Ihre einzigartige Anatomie abgestimmt sind.",
-      "credentials": [
-        "Fachärztin für Dermatologie",
-        "Internationale Ästhetik-Beraterin"
-      ],
+      "credentials": ["Fachärztin für Dermatologie", "Internationale Ästhetik-Beraterin"],
       "stats": {
         "exp_val": "5+",
         "exp_lbl": "Jahre Exzellenz",

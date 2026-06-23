@@ -30,14 +30,22 @@
       }
     },
     "herosection": {
-      "title": "Beauté intemporelle.",
-      "titlestrong": "Des soins",
-      "completetitle": "de classe mondiale",
-      "subtitle": "Découvrez un nouveau standard de soins esthétiques au",
-      "subtitlecomplete": " , où traitements de pointe, expertise médicale et attention personnalisée se conjuguent pour sublimer votre beauté naturelle avec confiance et élégance.",
+      "title": "Beauté Intemporelle.",
+      "titlestrong": "Soins de Classe",
+      "completetitle": "Mondiale",
+      "subtitle": "Découvrez un nouveau standard de soins esthétiques à",
+      "subtitlecomplete": ", où traitements de pointe, expertise médicale et attention personnalisée se conjuguent pour sublimer votre beauté naturelle avec confiance et élégance.",
       "cta": {
-        "book": "Réserver une consultation",
-        "view": "Voir les traitements"
+        "book": "Réserver une Consultation",
+        "view": "Voir les Traitements"
+      },
+      "stats": {
+        "rating_val": "5.0★",
+        "rating_lbl": "Note Google",
+        "reviews_val": "60+",
+        "reviews_lbl": "Avis Vérifiés",
+        "exp_val": "8+",
+        "exp_lbl": "Ans d'Expérience"
       }
     },
     "our_services": {

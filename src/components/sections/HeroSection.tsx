@@ -33,9 +33,11 @@ export default function HeroSection() {
         {/* Main Headings */}
         <div>
           {/* تم تعديل السطر القادم لإلغاء font-serif لو كانت اللغة عربية */}
-          <h1 className={`italic text-[42px] font-black sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[1.1] w-full text-white drop-shadow-sm ${
-            !isArabic ? 'font-serif' : ''
-          }`}>
+          <h1
+            className={`italic text-[42px] font-black sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[1.1] w-full text-white drop-shadow-sm ${
+              !isArabic ? 'font-serif' : ''
+            }`}
+          >
             {t('homepage.herosection.title')}
             <br />
             <span className="text-primary">{t('homepage.herosection.titlestrong')}</span>{' '}
@@ -67,6 +69,45 @@ export default function HeroSection() {
           >
             {t('homepage.herosection.cta.view')}
           </Button>
+        </div>
+        {/* Luxury Stats */}
+        <div className="flex flex-wrap items-center gap-6 md:gap-8 pt-8 w-full sm:w-auto">
+          <div>
+            <p
+              className={`text-3xl md:text-4xl font-bold text-white ${!isArabic ? 'font-serif' : ''}`}
+            >
+              {t('homepage.herosection.stats.rating_val')}
+            </p>
+            <span className="text-[10px] md:text-xs uppercase tracking-widest text-white/60 block mt-1 font-medium">
+              {t('homepage.herosection.stats.rating_lbl')}
+            </span>
+          </div>
+
+          <div className="h-10 w-px bg-white/10 hidden sm:block" />
+
+          <div>
+            <p
+              className={`text-3xl md:text-4xl font-bold text-white ${!isArabic ? 'font-serif' : ''}`}
+            >
+              {t('homepage.herosection.stats.reviews_val')}
+            </p>
+            <span className="text-[10px] md:text-xs uppercase tracking-widest text-white/60 block mt-1 font-medium">
+              {t('homepage.herosection.stats.reviews_lbl')}
+            </span>
+          </div>
+
+          <div className="h-10 w-px bg-white/10 hidden sm:block" />
+
+          <div>
+            <p
+              className={`text-3xl md:text-4xl font-bold text-white ${!isArabic ? 'font-serif' : ''}`}
+            >
+              {t('homepage.herosection.stats.exp_val')}
+            </p>
+            <span className="text-[10px] md:text-xs uppercase tracking-widest text-white/60 block mt-1 font-medium">
+              {t('homepage.herosection.stats.exp_lbl')}
+            </span>
+          </div>
         </div>
       </div>
     </section>

@@ -30,14 +30,22 @@
       }
     },
     "herosection": {
-      "title": "Ponadczasowe piękno.",
-      "titlestrong": "Światowej klasy",
+      "title": "Ponadczasowe Piękno.",
+      "titlestrong": "Światowej Klasy",
       "completetitle": "Opieka",
-      "subtitle": "Poznaj nowy standard opieki estetycznej w" ,
-      "subtitlecomplete": " , gdzie zaawansowane zabiegi, wiedza medyczna i indywidualne podejście łączą się, aby podkreślić Twoje naturalne piękno z pewnością siebie i elegancją.",
+      "subtitle": "Poznaj nowy standard opieki estetycznej w",
+      "subtitlecomplete": ", gdzie zaawansowane zabiegi, wiedza medyczna i spersonalizowana uwaga łączą się, aby z pewnością i elegancją podkreślić Twoje naturalne piękno.",
       "cta": {
-        "book": "Zarezerwuj konsultację",
-        "view": "Zobacz zabiegi"
+        "book": "Zarezerwuj Konsultację",
+        "view": "Zobacz Zabiegi"
+      },
+      "stats": {
+        "rating_val": "5.0★",
+        "rating_lbl": "Ocena Google",
+        "reviews_val": "60+",
+        "reviews_lbl": "Zweryfikowane Opinie",
+        "exp_val": "8+",
+        "exp_lbl": "Lat Doświadczenia"
       }
     },
     "our_services": {
@@ -89,10 +97,7 @@
       "role": "Konsultant Dermatolog & Mistrz Estetyki",
       "quote": "\"Prawdziwe piękno to ewolucja Twojego naturalnego ja, stworzona z medyczną precyzją i dotykiem artysty.\"",
       "bio": "Z ponad dziesięcioletnim doświadczeniem klinicznym, dr Alaa łączy zaawansowaną naukę dermatologiczną z wyrafinowanymi protokołami estetycznymi. Jej podejście opiera się na dostarczaniu wyjątkowo precyzyjnych, eleganckich i trwałych rezultatów dostosowanych do Twojej unikalnej anatomii.",
-      "credentials": [
-        "Certyfikowany Dermatolog",
-        "Międzynarodowy Konsultant Estetyczny"
-      ],
+      "credentials": ["Certyfikowany Dermatolog", "Międzynarodowy Konsultant Estetyczny"],
       "stats": {
         "exp_val": "5+",
         "exp_lbl": "Lat Doskonałości",

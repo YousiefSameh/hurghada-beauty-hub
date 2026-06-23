@@ -34,10 +34,18 @@
       "titlestrong": "World-Class",
       "completetitle": "Care",
       "subtitle": "Experience a new standard of aesthetic care in",
-      "subtitlecomplete": " , where advanced treatments, medical expertise, and personalized attention come together to enhance your natural beauty with confidence and elegance.",
+      "subtitlecomplete": ", where advanced treatments, medical expertise, and personalized attention come together to enhance your natural beauty with confidence and elegance.",
       "cta": {
         "book": "Book Consultation",
         "view": "View Treatments"
+      },
+      "stats": {
+        "rating_val": "5.0★",
+        "rating_lbl": "Google Rating",
+        "reviews_val": "60+",
+        "reviews_lbl": "Verified Reviews",
+        "exp_val": "8+",
+        "exp_lbl": "Years Experience"
       }
     },
     "our_services": {
@@ -89,10 +97,7 @@
       "role": "Consultant Dermatologist & Aesthetic Master",
       "quote": "\"True beauty is an evolution of your natural self, crafted with medical precision and an artist's touch.\"",
       "bio": "With over a decade of clinical excellence, Dr. Randa combines advanced dermatological science with sophisticated aesthetic protocols. Her approach is rooted in delivering exceptionally precise, elegant, and lasting results tailored to your unique anatomical canvas.",
-      "credentials": [
-        "Board Certified Dermatologist",
-        "International Aesthetic Consultant"
-      ],
+      "credentials": ["Board Certified Dermatologist", "International Aesthetic Consultant"],
       "stats": {
         "exp_val": "5+",
         "exp_lbl": "Years of Excellence",
