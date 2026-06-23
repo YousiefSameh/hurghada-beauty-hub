@@ -7,24 +7,27 @@ import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '../molecules/LanguageSwitcher';
 import { Button } from '../atoms/button';
 import { cn } from '@/lib/utils';
+import { useLocale, useTranslations } from 'next-intl'; // أو استخدم مكتبتك المفضلة للـ i18n
 
 const NAV_LINKS = [
-  { href: '/', label: 'Home' },
-  { href: '/treatments', label: 'Treatments' },
-  { href: '/doctor', label: 'Doctor' },
-  { href: '/services', label: 'Services' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/', labelKey: 'home' },
+  { href: '/treatments', labelKey: 'treatments' },
+  { href: '/doctor', labelKey: 'doctor' },
+  { href: '/services', labelKey: 'services' },
+  { href: '/blog', labelKey: 'blog' },
+  { href: '/contact', labelKey: 'contact' },
 ];
 
 export default function Navbar() {
+  const t = useTranslations();
+  const locale = useLocale();
+  const isArabic = locale === 'ar';
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   // Handle scroll detection
   useEffect(() => {
     const handleScroll = () => {
-      // Set to true if page is scrolled down more than 20 pixels
       setIsScrolled(window.scrollY > 20);
     };
 
@@ -55,31 +58,33 @@ export default function Navbar() {
             priority
           />
           <span className={cn('text-white text-lg md:text-xl font-black tracking-wider ml-1', isScrolled ? "text-primary" : "text-white")}>
-            <strong className='uppercase font-serif'>Hurghada Beauty Hub</strong>
-            <small className='text-xs font-normal block line-clamp-none mt-1'>Beauty | skin care | hair care</small>
+            <strong className={cn('uppercase', !isArabic ? 'font-serif' : '')}>{t('homepage.header.logo.name')}</strong>
+            <small className='text-xs font-normal block line-clamp-none mt-1'>{t('homepage.header.logo.subtitle')}</small>
           </span>
         </Link>
 
-        <ul className="hidden md:flex items-center space-x-6 lg:space-x-8">
-          {NAV_LINKS.map((link) => (
-            <li key={link.href}>
-              <Link 
-                href={link.href} 
-                className={`text-sm lg:text-base font-medium uppercase pb-2 tracking-wide transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100 ${
-                  isScrolled ? 'text-foreground/80 hover:text-primary' : 'text-white hover:text-primary'
-                }`}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className='flex gap-8 items-center'>
+          <ul className="hidden md:flex items-center gap-2 lg:gap-4">
+            {NAV_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link 
+                  href={link.href} 
+                  className={`text-sm lg:text-base font-medium uppercase pb-2 tracking-wide transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100 ${
+                    isScrolled ? 'text-foreground/80 hover:text-primary' : 'text-white hover:text-primary'
+                  }`}
+                >
+                  {t(`homepage.header.navigation.${link.labelKey}`)}
+                </Link>
+              </li>
+            ))}
+          </ul>
 
-        <div className="hidden md:flex items-center gap-3 lg:gap-4">
-          <LanguageSwitcher />
-          <Button variant="default" size="lg" className="px-5 py-5 text-sm font-bold shadow-md cursor-pointer hover:shadow-lg transition-all">
-            Book Now
-          </Button>
+          <div className="hidden md:flex items-center gap-3 lg:gap-4">
+            <LanguageSwitcher />
+            <Button variant="default" size="lg" className="px-5 py-5 text-sm font-bold shadow-md cursor-pointer hover:shadow-lg transition-all">
+              {t('homepage.header.btns.book')}
+            </Button>
+          </div>
         </div>
 
         <button
@@ -112,7 +117,7 @@ export default function Navbar() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={cn("block w-full text-xl text-left font-semibold uppercase tracking-wider text-foreground hover:text-primary transition-colors py-2", isScrolled ? "text-black" : "text-white")}
                 >
-                  {link.label}
+                  {t(`homepage.header.navigation.${link.labelKey}`)}
                 </Link>
               </li>
             ))}
@@ -127,7 +132,7 @@ export default function Navbar() {
               size="lg" 
               className="w-full py-6 text-lg font-bold shadow-md"
             >
-              Book Now
+              {t('homepage.header.btns.book')}
             </Button>
           </div>
         </div>

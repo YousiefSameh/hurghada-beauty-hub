@@ -1,4 +1,4 @@
-import { Inter, Playfair_Display, Tajawal } from 'next/font/google';
+import { IBM_Plex_Sans_Arabic, Inter, Playfair_Display } from 'next/font/google';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
@@ -28,10 +28,10 @@ const playfair = Playfair_Display({
   variable: '--font-playfair',
 });
 
-const tajawal = Tajawal({
+const IBMPlexSansArabic = IBM_Plex_Sans_Arabic({
   subsets: ['arabic'],
   weight: ['400', '500', '700'],
-  variable: '--font-tajawal',
+  variable: '--font-IBM-Plex-Sans-Arabic',
 });
 
 export function generateStaticParams() {
@@ -57,7 +57,7 @@ export default async function LocaleLayout({
   const dir = localeDetails[locale as Locale]?.dir || 'ltr';
 
   const isArabic = locale === 'ar';
-  const primaryBodyFontClass = isArabic ? tajawal.className : inter.className;
+  const primaryBodyFontClass = isArabic ? IBMPlexSansArabic.className : inter.className;
 
   const schema = getLocalBusinessSchema();
 
@@ -65,7 +65,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={dir}
-      className={`${inter.variable} ${playfair.variable} ${tajawal.variable} scroll-smooth`}
+      className={`${inter.variable} ${playfair.variable} ${IBMPlexSansArabic.variable} scroll-smooth`}
     >
       <body
         className={`${primaryBodyFontClass} antialiased min-h-screen flex flex-col`}

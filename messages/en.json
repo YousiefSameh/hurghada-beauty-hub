@@ -9,14 +9,36 @@
       "save": "Save Changes",
       "cancel": "Cancel",
       "submit": "Submit"
+    }
+  },
+  "homepage": {
+    "header": {
+      "logo": {
+        "name": "Hurghada Beauty Hub",
+        "subtitle": "Beauty | skin care | hair care"
+      },
+      "navigation": {
+        "home": "Home",
+        "treatments": "Treatments",
+        "doctor": "Doctor",
+        "services": "Services",
+        "blog": "Blog",
+        "contact": "Contact"
+      },
+      "btns": {
+        "book": "Book Now"
+      }
     },
-    "navigation": {
-      "home": "Home",
-      "treatments": "Treatments",
-      "doctor": "Doctor",
-      "services": "Services",
-      "blog": "Blog",
-      "contact": "Contact"
+    "herosection": {
+      "title": "Timeless Beauty.",
+      "titlestrong": "World-Class",
+      "completetitle": "Care",
+      "subtitle": "Experience a new standard of aesthetic care in",
+      "subtitlecomplete": " , where advanced treatments, medical expertise, and personalized attention come together to enhance your natural beauty with confidence and elegance.",
+      "cta": {
+        "book": "Book Consultation",
+        "view": "View Treatments"
+      }
     }
   }
 }

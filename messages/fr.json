@@ -1,0 +1,44 @@
+{
+  "common": {
+    "title": "Beauty Hub Hurghada",
+    "description": "Clinique esthétique de luxe à Hurghada, Égypte",
+    "actions": {
+      "login": "Connexion",
+      "logout": "Déconnexion",
+      "book": "Réserver une consultation",
+      "save": "Enregistrer les modifications",
+      "cancel": "Annuler",
+      "submit": "Soumettre"
+    }
+  },
+  "homepage": {
+    "header": {
+      "logo": {
+        "name": "Hurghada Beauty Hub",
+        "subtitle": "Beauté | Soins de la peau | Soins des cheveux"
+      },
+      "navigation": {
+        "home": "Accueil",
+        "treatments": "Traitements",
+        "doctor": "Docteur",
+        "services": "Services",
+        "blog": "Blog",
+        "contact": "Contact"
+      },
+      "btns": {
+        "book": "Réserver"
+      }
+    },
+    "herosection": {
+      "title": "Beauté intemporelle.",
+      "titlestrong": "Des soins",
+      "completetitle": "de classe mondiale",
+      "subtitle": "Découvrez un nouveau standard de soins esthétiques au",
+      "subtitlecomplete": " , où traitements de pointe, expertise médicale et attention personnalisée se conjuguent pour sublimer votre beauté naturelle avec confiance et élégance.",
+      "cta": {
+        "book": "Réserver une consultation",
+        "view": "Voir les traitements"
+      }
+    }
+  }
+}

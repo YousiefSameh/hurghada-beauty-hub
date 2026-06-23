@@ -1,23 +1,44 @@
 {
   "common": {
     "title": "Beauty Hub Hurghada",
-    "description": "Luxus-Schönheitsklinik in Hurghada, Ägypten",
+    "description": "Luxuriöse Ästhetikklinik in Hurghada, Ägypten",
     "actions": {
       "login": "Einloggen",
       "logout": "Ausloggen",
-      "book": "Konsultation Buchen",
-      "save": "Änderungen Speichern",
+      "book": "Beratung buchen",
+      "save": "Änderungen speichern",
       "cancel": "Abbrechen",
       "submit": "Absenden"
+    }
+  },
+  "homepage": {
+    "header": {
+      "logo": {
+        "name": "Hurghada Beauty Hub",
+        "subtitle": "Schönheit | Hautpflege | Haarpflege"
+      },
+      "navigation": {
+        "home": "Startseite",
+        "treatments": "Behandlungen",
+        "doctor": "Arzt",
+        "services": "Leistungen",
+        "blog": "Blog",
+        "contact": "Kontakt"
+      },
+      "btns": {
+        "book": "Jetzt buchen"
+      }
     },
-    "navigation": {
-      "home": "Startseite",
-      "treatments": "Behandlungen",
-      "blog": "Blog",
-      "reviews": "Bewertungen",
-      "gallery": "Galerie",
-      "contact": "Kontakt",
-      "medicalTourism": "Medizintourismus"
+    "herosection": {
+      "title": "Zeitlose Schönheit.",
+      "titlestrong": "Weltklasse-",
+      "completetitle": "Pflege",
+      "subtitle": "Erleben Sie einen neuen Standard der ästhetischen Pflege im",
+      "subtitlecomplete": " , wo fortschrittliche Behandlungen, medizinische Expertise und persönliche Betreuung zusammenkommen, um Ihre natürliche Schönheit mit Vertrauen und Eleganz zu unterstreichen.",
+      "cta": {
+        "book": "Beratung buchen",
+        "view": "Behandlungen ansehen"
+      }
     }
   }
 }

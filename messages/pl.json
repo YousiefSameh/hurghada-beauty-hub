@@ -5,19 +5,40 @@
     "actions": {
       "login": "Zaloguj się",
       "logout": "Wyloguj się",
-      "book": "Zarezerwuj Konsultację",
-      "save": "Zapisz Zmiany",
+      "book": "Zarezerwuj konsultację",
+      "save": "Zapisz zmiany",
       "cancel": "Anuluj",
       "submit": "Wyślij"
+    }
+  },
+  "homepage": {
+    "header": {
+      "logo": {
+        "name": "Hurghada Beauty Hub",
+        "subtitle": "Piękno | Pielęgnacja skóry | Pielęgnacja włosów"
+      },
+      "navigation": {
+        "home": "Strona główna",
+        "treatments": "Zabiegi",
+        "doctor": "Lekarz",
+        "services": "Usługi",
+        "blog": "Blog",
+        "contact": "Kontakt"
+      },
+      "btns": {
+        "book": "Zarezerwuj teraz"
+      }
     },
-    "navigation": {
-      "home": "Strona Główna",
-      "treatments": "Zabiegi",
-      "blog": "Blog",
-      "reviews": "Opinie",
-      "gallery": "Galeria",
-      "contact": "Kontakt",
-      "medicalTourism": "Turystyka Medyczna"
+    "herosection": {
+      "title": "Ponadczasowe piękno.",
+      "titlestrong": "Światowej klasy",
+      "completetitle": "Opieka",
+      "subtitle": "Poznaj nowy standard opieki estetycznej w" ,
+      "subtitlecomplete": " , gdzie zaawansowane zabiegi, wiedza medyczna i indywidualne podejście łączą się, aby podkreślić Twoje naturalne piękno z pewnością siebie i elegancją.",
+      "cta": {
+        "book": "Zarezerwuj konsultację",
+        "view": "Zobacz zabiegi"
+      }
     }
   }
 }

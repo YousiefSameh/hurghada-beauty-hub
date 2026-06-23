@@ -120,7 +120,7 @@
 
   --font-sans: var(--font-inter), sans-serif;
   --font-serif: var(--font-playfair), serif;
-  --font-tajawal: var(--font-tajawal), sans-serif;
+  --font-ibm-plex-sans-arabic: var(--font-ibm-plex-sans-arabic), sans-serif;
 }
 
 body {

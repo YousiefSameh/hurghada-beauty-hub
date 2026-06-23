@@ -3,7 +3,7 @@
 import { MessageCircle, Phone, X } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'; // ضفنا FaWhatsapp هنا
 
 export default function FloatingBtns() {
   const [isSocialMenuOpen, setIsSocialMenuOpen] = useState(false);
@@ -21,6 +21,7 @@ export default function FloatingBtns() {
         {/* Facebook */}
         <Link
           href="https://www.facebook.com/profile.php?id=61576576883375"
+          target="_blank"
           className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-lg hover:scale-110 transition-transform"
           aria-label="Facebook"
         >
@@ -30,17 +31,29 @@ export default function FloatingBtns() {
         {/* Instagram */}
         <Link
           href="https://www.instagram.com/beautyhub.center/"
+          target="_blank"
           className="flex h-12 w-12 items-center justify-center rounded-full bg-linear-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white shadow-lg hover:scale-110 transition-transform"
           aria-label="Instagram"
         >
           <FaInstagram className="h-5 w-5" />
         </Link>
 
-        {/* WhatsApp (Note: Lucide doesn't have a specific WhatsApp icon, so we use Phone) */}
+        {/* WhatsApp - الزر الجديد */}
         <Link
-          href="tel:+201277702008"
+          href="https://wa.me/201277702008"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg hover:scale-110 transition-transform"
           aria-label="WhatsApp"
+        >
+          <FaWhatsapp className="h-6 w-6" />
+        </Link>
+
+        {/* Phone Call - تعديل الأيقونة والرابط للاتصال المباشر */}
+        <Link
+          href="tel:+201277702008"
+          className="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-800 text-white shadow-lg hover:scale-110 transition-transform"
+          aria-label="Call Us"
         >
           <Phone className="h-5 w-5" fill="currentColor" />
         </Link>
@@ -52,7 +65,6 @@ export default function FloatingBtns() {
         className="flex h-14 w-14 items-center justify-center rounded-full bg-white text-black shadow-xl hover:scale-105 transition-transform z-10"
         aria-label="Toggle Social Menu"
       >
-        {/* Switches between the X icon and the Message icon smoothly */}
         {isSocialMenuOpen ? (
           <X className="h-6 w-6 animate-in spin-in-90 duration-200" />
         ) : (
