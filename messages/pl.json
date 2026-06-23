@@ -117,19 +117,115 @@
       "title_highlight": "Portfolio",
       "description": "Odkryj naszą ekskluzywną kolekcję 10 spersonalizowanych zabiegów estetycznych, starannie zaprojektowanych, aby odsłonić Twoją ponadczasową elegancję.",
       "services": [
-        { "id": "01", "title": "Sygnaturowy Lifting Twarzy", "desc": "Niechirurgiczne konturowanie dla podniesionego, młodzieńczego wyglądu.", "image": "/assets/images/service-1.png", "link_text": "Odkryj" },
-        { "id": "02", "title": "Rzeźbienie Skóry", "desc": "Precyzyjne wypełniacze przywracające objętość i definiujące architekturę twarzy.", "image": "/assets/images/service-2.png", "link_text": "Odkryj" },
-        { "id": "03", "title": "Terapia Botulinowa", "desc": "Zaawansowane rozluźnienie zmarszczek dla gładkiego, naturalnego wyrazu.", "image": "/assets/images/service-3.png", "link_text": "Odkryj" },
-        { "id": "04", "title": "Resurfacing Laserowy", "desc": "Kliniczne zabiegi laserowe dla nieskazitelnej, promiennej tekstury skóry.", "image": "/assets/images/service-4.png", "link_text": "Odkryj" },
-        { "id": "05", "title": "Komórkowy PRP", "desc": "Terapia regeneracyjna wykorzystująca własne czynniki wzrostu organizmu.", "image": "/assets/images/service-5.png", "link_text": "Odkryj" },
-        { "id": "06", "title": "Lifting Niciowy", "desc": "Delikatny, natychmiastowy lifting za pomocą wchłanialnych nici chirurgicznych.", "image": "/assets/images/service-6.png", "link_text": "Odkryj" },
-        { "id": "07", "title": "Infuzja IV Wellness", "desc": "Spersonalizowane kroplówki witaminowe dla zdrowia wewnętrznego i zewnętrznego blasku.", "image": "/assets/images/service-7.png", "link_text": "Odkryj" },
-        { "id": "08", "title": "Peeling Chemiczny", "desc": "Medyczny peeling celujący w przebarwienia i starzenie.", "image": "/assets/images/service-8.png", "link_text": "Odkryj" },
-        { "id": "09", "title": "Konturowanie Ciała", "desc": "Nieinwazyjne protokoły redukcji tłuszczu i ujędrniania skóry.", "image": "/assets/images/service-9.png", "link_text": "Odkryj" },
-        { "id": "10", "title": "Regeneracja Włosów", "desc": "Celowane rozwiązania kliniczne dla gęstości włosów i witalności skóry głowy.", "image": "/assets/images/service-10.png", "link_text": "Odkryj" }
+        {
+          "id": "01",
+          "title": "Sygnaturowy Lifting Twarzy",
+          "desc": "Niechirurgiczne konturowanie dla podniesionego, młodzieńczego wyglądu.",
+          "image": "/assets/images/service-1.png",
+          "link_text": "Odkryj"
+        },
+        {
+          "id": "02",
+          "title": "Rzeźbienie Skóry",
+          "desc": "Precyzyjne wypełniacze przywracające objętość i definiujące architekturę twarzy.",
+          "image": "/assets/images/service-2.png",
+          "link_text": "Odkryj"
+        },
+        {
+          "id": "03",
+          "title": "Terapia Botulinowa",
+          "desc": "Zaawansowane rozluźnienie zmarszczek dla gładkiego, naturalnego wyrazu.",
+          "image": "/assets/images/service-3.png",
+          "link_text": "Odkryj"
+        },
+        {
+          "id": "04",
+          "title": "Resurfacing Laserowy",
+          "desc": "Kliniczne zabiegi laserowe dla nieskazitelnej, promiennej tekstury skóry.",
+          "image": "/assets/images/service-4.png",
+          "link_text": "Odkryj"
+        },
+        {
+          "id": "05",
+          "title": "Komórkowy PRP",
+          "desc": "Terapia regeneracyjna wykorzystująca własne czynniki wzrostu organizmu.",
+          "image": "/assets/images/service-5.png",
+          "link_text": "Odkryj"
+        },
+        {
+          "id": "06",
+          "title": "Lifting Niciowy",
+          "desc": "Delikatny, natychmiastowy lifting za pomocą wchłanialnych nici chirurgicznych.",
+          "image": "/assets/images/service-6.png",
+          "link_text": "Odkryj"
+        },
+        {
+          "id": "07",
+          "title": "Infuzja IV Wellness",
+          "desc": "Spersonalizowane kroplówki witaminowe dla zdrowia wewnętrznego i zewnętrznego blasku.",
+          "image": "/assets/images/service-7.png",
+          "link_text": "Odkryj"
+        },
+        {
+          "id": "08",
+          "title": "Peeling Chemiczny",
+          "desc": "Medyczny peeling celujący w przebarwienia i starzenie.",
+          "image": "/assets/images/service-8.png",
+          "link_text": "Odkryj"
+        },
+        {
+          "id": "09",
+          "title": "Konturowanie Ciała",
+          "desc": "Nieinwazyjne protokoły redukcji tłuszczu i ujędrniania skóry.",
+          "image": "/assets/images/service-9.png",
+          "link_text": "Odkryj"
+        },
+        {
+          "id": "10",
+          "title": "Regeneracja Włosów",
+          "desc": "Celowane rozwiązania kliniczne dla gęstości włosów i witalności skóry głowy.",
+          "image": "/assets/images/service-10.png",
+          "link_text": "Odkryj"
+        }
       ],
       "btn_all": "Zobacz Wszystkie Zabiegi",
       "slider_nav": { "prev": "Poprzedni", "next": "Następny" }
+    },
+    "blog_section": {
+      "sectionLabel": "Wglądy",
+      "titleStart": "Beauty",
+      "titleStrong": "Journal",
+      "subtitle": "Eksperckie insights na temat Botoxu, odmładzania skóry, zabiegów na włosy i pielęgnacji estetycznej w Hurghadzie.",
+      "readMore": "Czytaj artykuł",
+      "ctaTitle": "Odkryj nasze najnowsze insights o urodzie",
+      "ctaSubtitle": "Pomocne artykuły zaprojektowane, aby poprowadzić Cię do właściwego zabiegu.",
+      "ctaButton": "Zobacz wszystkie wpisy",
+      "posts": [
+        {
+          "title": "Botox w Hurghadzie: Czego się spodziewać",
+          "excerpt": "Dowiedz się, jak działają zabiegi Botox, jak długo utrzymują się efekty i dlaczego tak wielu międzynarodowych klientów wybiera Beauty Hub Hurghada.",
+          "category": "Botox",
+          "readTime": "4 min czytania",
+          "date": "Marzec 2026",
+          "href": "/blog/botox-in-hurghada"
+        },
+        {
+          "title": "Najlepsze zabiegi odmładzające skórę dla zdrowego blasku",
+          "excerpt": "Od Hydrafacial po peelingi chemiczne — odkryj najlepsze opcje przywracania świeżej, promiennej skóry.",
+          "category": "Pielęgnacja Skóry",
+          "readTime": "5 min czytania",
+          "date": "Marzec 2026",
+          "href": "/blog/skin-rejuvenation-treatments"
+        },
+        {
+          "title": "Dlaczego pacjenci turystyki medycznej wybierają Hurghadę",
+          "excerpt": "Hurghada oferuje idealne połączenie premium opieki estetycznej, komfortu rekonwalescencji i relaksującego doświadczenia podróżniczego.",
+          "category": "Turystyka Medyczna",
+          "readTime": "3 min czytania",
+          "date": "Marzec 2026",
+          "href": "/blog/medical-tourism-in-hurghada"
+        }
+      ]
     }
   }
 }

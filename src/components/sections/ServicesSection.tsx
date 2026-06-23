@@ -145,7 +145,7 @@ export default function ServicesSection() {
           </div>
 
           {/* Endless Navigation Buttons */}
-          <div className="items-center gap-4 lg:pb-4 hidden sm:flex">
+          <div className="items-center gap-4 lg:pb-4 flex">
             <button 
               onClick={() => scrollNextPrev('left')}
               className="w-14 h-14 rounded-full border border-stone-300 flex items-center justify-center transition-all duration-300 hover:bg-[#CD6C3E] hover:border-[#CD6C3E] hover:text-white text-stone-900 cursor-pointer"
