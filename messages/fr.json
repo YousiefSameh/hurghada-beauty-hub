@@ -79,6 +79,29 @@
           ]
         }
       }
+    },
+    "doctor_preview": {
+      "section_subtitle": "Notre Directeur Médical",
+      "title": "Excellence Médicale &",
+      "title_highlight": "Art Esthétique",
+      "specialist_tag": "HURGHADA BEAUTY HUB • SPÉCIALISTE PRINCIPAL",
+      "name": "Dr. Alaa Zaki",
+      "role": "Dermatologue Consultante & Maître en Esthétique",
+      "quote": "\"La vraie beauté est l'évolution de votre moi naturel, sculptée avec précision médicale et la touche d'un artiste.\"",
+      "bio": "Avec plus d'une décennie d'excellence clinique, le Dr Alaa combine une science dermatologique avancée avec des protocoles esthétiques sophistiqués. Son approche est ancrée dans la délivrance de résultats exceptionnellement précis, élégants et durables, adaptés à votre toile anatomique unique.",
+      "credentials": ["Dermatologue Certifiée", "Consultante Esthétique Internationale"],
+      "stats": {
+        "exp_val": "5+",
+        "exp_lbl": "Années d'Excellence",
+        "rate_val": "4.9 ★",
+        "rate_lbl": "Satisfaction des Patients",
+        "focus_val": "4",
+        "focus_lbl": "Disciplines Principales"
+      },
+      "btns": {
+        "book": "Prendre Rendez-vous",
+        "profile": "Explorer le Profil Complet"
+      }
     }
   }
 }

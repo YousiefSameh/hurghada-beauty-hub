@@ -79,6 +79,32 @@
           ]
         }
       }
+    },
+    "doctor_preview": {
+      "section_subtitle": "Our Medical Director",
+      "title": "Medical Excellence &",
+      "title_highlight": "Aesthetic Artistry",
+      "specialist_tag": "HURGHADA BEAUTY HUB • LEAD SPECIALIST",
+      "name": "Dr. Alaa Zaki",
+      "role": "Consultant Dermatologist & Aesthetic Master",
+      "quote": "\"True beauty is an evolution of your natural self, crafted with medical precision and an artist's touch.\"",
+      "bio": "With over a decade of clinical excellence, Dr. Randa combines advanced dermatological science with sophisticated aesthetic protocols. Her approach is rooted in delivering exceptionally precise, elegant, and lasting results tailored to your unique anatomical canvas.",
+      "credentials": [
+        "Board Certified Dermatologist",
+        "International Aesthetic Consultant"
+      ],
+      "stats": {
+        "exp_val": "5+",
+        "exp_lbl": "Years of Excellence",
+        "rate_val": "4.9 ★",
+        "rate_lbl": "Patient Satisfaction",
+        "focus_val": "4",
+        "focus_lbl": "Core Disciplines"
+      },
+      "btns": {
+        "book": "Schedule Consultation",
+        "profile": "Explore Full Profile"
+      }
     }
   }
 }

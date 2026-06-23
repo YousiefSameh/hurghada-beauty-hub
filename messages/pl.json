@@ -79,6 +79,32 @@
           ]
         }
       }
+    },
+    "doctor_preview": {
+      "section_subtitle": "Nasz Dyrektor Medyczny",
+      "title": "Doskonałość Medyczna &",
+      "title_highlight": "Estetyczna Sztuka",
+      "specialist_tag": "HURGHADA BEAUTY HUB • GŁÓWNY SPECJALISTA",
+      "name": "Dr Alaa Zaki",
+      "role": "Konsultant Dermatolog & Mistrz Estetyki",
+      "quote": "\"Prawdziwe piękno to ewolucja Twojego naturalnego ja, stworzona z medyczną precyzją i dotykiem artysty.\"",
+      "bio": "Z ponad dziesięcioletnim doświadczeniem klinicznym, dr Alaa łączy zaawansowaną naukę dermatologiczną z wyrafinowanymi protokołami estetycznymi. Jej podejście opiera się na dostarczaniu wyjątkowo precyzyjnych, eleganckich i trwałych rezultatów dostosowanych do Twojej unikalnej anatomii.",
+      "credentials": [
+        "Certyfikowany Dermatolog",
+        "Międzynarodowy Konsultant Estetyczny"
+      ],
+      "stats": {
+        "exp_val": "5+",
+        "exp_lbl": "Lat Doskonałości",
+        "rate_val": "4.9 ★",
+        "rate_lbl": "Zadowolenie Pacjentów",
+        "focus_val": "4",
+        "focus_lbl": "Główne Dyscypliny"
+      },
+      "btns": {
+        "book": "Umów Konsultację",
+        "profile": "Poznaj Pełny Profil"
+      }
     }
   }
 }
