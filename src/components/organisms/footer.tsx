@@ -31,7 +31,9 @@ export default function Footer() {
                 priority
               />
               <span className={'text-primary text-lg md:text-xl font-black tracking-wider ml-1'}>
-                <strong className={cn("uppercase", isArabic ? "" : "font-serif")}>{t('homepage.header.logo.name')}</strong>
+                <strong className={cn("uppercase", isArabic ? "" : "font-serif")}>
+                  {t('homepage.header.logo.name')}
+                </strong>
                 <small className="text-xs font-normal block line-clamp-none mt-1">
                   {t('homepage.footer.tagline')}
                 </small>
@@ -43,7 +45,7 @@ export default function Footer() {
             </p>
 
             <div className="mt-8 flex items-center gap-4">
-              {/* Facebook */}
+              {/* Social Links */}
               <Link
                 href="https://www.facebook.com/profile.php?id=61576576883375"
                 target="_blank"
@@ -53,7 +55,6 @@ export default function Footer() {
                 <FaFacebook className="h-5 w-5" fill="currentColor" />
               </Link>
 
-              {/* Instagram */}
               <Link
                 href="https://www.instagram.com/beautyhub.center/"
                 target="_blank"
@@ -63,7 +64,6 @@ export default function Footer() {
                 <FaInstagram className="h-5 w-5" />
               </Link>
 
-              {/* WhatsApp */}
               <Link
                 href="https://wa.me/201277702008"
                 target="_blank"
@@ -74,7 +74,6 @@ export default function Footer() {
                 <FaWhatsapp className="h-6 w-6" />
               </Link>
 
-              {/* Phone Call */}
               <Link
                 href="tel:+201277702008"
                 className="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-800 text-white shadow-lg hover:scale-110 transition-transform"
@@ -132,20 +131,14 @@ export default function Footer() {
 
               <div className="flex items-center gap-3">
                 <Phone size={18} className="text-primary" />
-                <a
-                  href="tel:+201277702008"
-                  className="text-sm text-foreground/70 hover:text-primary"
-                >
+                <a href="tel:+201277702008" className="text-sm text-foreground/70 hover:text-primary">
                   {t('homepage.footer.contact.phone')}
                 </a>
               </div>
 
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-primary" />
-                <a
-                  href="mailto:info@hurghadabeautyhub.com"
-                  className="text-sm text-foreground/70 hover:text-primary"
-                >
+                <a href="mailto:info@hurghadabeautyhub.com" className="text-sm text-foreground/70 hover:text-primary">
                   {t('homepage.footer.contact.email')}
                 </a>
               </div>
@@ -155,10 +148,18 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 border-t border-black/5 pt-8">
-          <div className="flex flex-col items-center justify-center gap-4 text-center md:flex-row">
+          <div className="flex flex-col items-center justify-between gap-4 text-center md:flex-row">
             <p className="text-sm text-foreground/50">
               {t('homepage.footer.copyright')}
             </p>
+            
+            <Link 
+              href="https://yousiefsameh-me.vercel.app" 
+              target="_blank"
+              className="text-sm text-foreground/50 hover:text-primary transition-colors"
+            >
+              {t('homepage.footer.madeBy')}
+            </Link>
           </div>
         </div>
       </div>
