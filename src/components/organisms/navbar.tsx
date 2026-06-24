@@ -11,11 +11,11 @@ import { useLocale, useTranslations } from 'next-intl'; // أو استخدم م�
 
 const NAV_LINKS = [
   { href: '/', labelKey: 'home' },
-  { href: '/treatments', labelKey: 'treatments' },
-  { href: '/doctor', labelKey: 'doctor' },
-  { href: '/services', labelKey: 'services' },
-  { href: '/blog', labelKey: 'blog' },
-  { href: '/contact', labelKey: 'contact' },
+  { href: '#treatments', labelKey: 'treatments' },
+  { href: '#doctor', labelKey: 'doctor' },
+  { href: '#services', labelKey: 'services' },
+  { href: '#blog', labelKey: 'blog' },
+  { href: '#contact', labelKey: 'contact' },
 ];
 
 export default function Navbar() {

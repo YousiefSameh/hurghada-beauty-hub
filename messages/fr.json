@@ -82,7 +82,6 @@
           "description": "Restaurez la vitalité cellulaire et la confiance. Nos protocoles PRP à haute concentration et de mésothérapie personnalisés sont scientifiquement conçus pour traiter à la fois la vitalité du cuir chevelu et l'éclat profond de la peau.",
           "items": [
             "Séances de nutrition et de renforcement des cheveux",
-            "Séances d'épilation au laser",
             "Injections de mésothérapie et de PRP (Plasma) pour une peau éclatante"
           ]
         }
@@ -226,6 +225,91 @@
           "href": "/blog/medical-tourism-in-hurghada"
         }
       ]
+    },
+    "reviews": {
+      "sectionLabel": "Témoignages",
+      "titleStart": "Expériences",
+      "titleStrong": "des Patients",
+      "subtitle": "Découvrez pourquoi des patients du monde entier font confiance à Hurghada Beauty Hub.",
+      "ctaLabel": "Avis Google",
+      "ctaTitle": "Découvrez l’avis de nos patients",
+      "ctaSubtitle": "Lisez les témoignages authentiques de patients locaux et internationaux.",
+      "ctaButton": "Voir tous les avis"
+    },
+    "contact": {
+      "sectionLabel": "Contact",
+      "titleStart": "Réservez",
+      "titleStrong": "Votre Visite",
+      "subtitle": "Contactez notre équipe pour des consultations, des demandes de traitements ou des rendez-vous. Nous sommes là pour vous aider à planifier votre expérience au Hurghada Beauty Hub.",
+      "addressLabel": "Notre Adresse",
+      "address": "Al Kawthar Metro Street, Above Khedive Palace Restaurant, Al-Ra’i Al-Saleh Building, 2nd Floor, Hurghada, Red Sea, Egypt",
+      "workingHours": {
+        "saturdayToThursday": {
+          "days": "Samedi - Jeudi",
+          "time": "10:00 - 22:00"
+        },
+        "friday": {
+          "days": "Vendredi",
+          "time": "Fermé"
+        }
+      },
+      "phoneLabel": "Téléphone",
+      "emailLabel": "Email",
+      "hoursLabel": "Heures d'ouverture",
+      "whatsapp": "Contactez-nous sur WhatsApp",
+      "formButton": "Ouvrir le formulaire",
+      "formLabel": "Demande de rendez-vous",
+      "formTitle": "Envoyez-nous vos informations",
+      "formSubtitle": "Dites-nous quel traitement vous intéresse et notre équipe vous répondra dans les plus brefs délais.",
+      "submit": "Envoyer la demande",
+      "formNote": "En soumettant ce formulaire, vous acceptez d'être contacté par notre équipe concernant votre demande de consultation.",
+      "fields": {
+        "name": "Nom complet",
+        "country": "Pays",
+        "email": "Email",
+        "phone": "Numéro de téléphone",
+        "treatment": "Traitement souhaité",
+        "date": "Date préférée",
+        "message": "Notes supplémentaires"
+      },
+      "placeholders": {
+        "name": "Votre nom complet",
+        "country": "Votre pays",
+        "email": "vous@example.com",
+        "phone": "+33 ...",
+        "treatment": "Botox / Soins de la peau / Traitement capillaire",
+        "message": "Dites-nous en plus sur vos besoins"
+      }
+    },
+    "footer": {
+      "logoAlt": "Logo Hurghada Beauty Hub",
+      "tagline": "Beauté | Soins de la Peau | Soins Capillaires",
+      "description": "Traitements esthétiques de luxe à Hurghada, combinant expertise médicale avancée, technologie innovante et soins personnalisés pour des résultats naturels.",
+      "quickLinks": {
+        "title": "Liens Rapides",
+        "home": "Accueil",
+        "treatments": "Traitements",
+        "doctor": "Docteur",
+        "services": "Services",
+        "blog": "Blog",
+        "contact": "Contact"
+      },
+      "treatments": {
+        "title": "Traitements",
+        "botox": "Botox",
+        "fillers": "Fillers",
+        "prp": "PRP",
+        "skinCare": "Soins de la Peau",
+        "hairRestoration": "Restauration Capillaire"
+      },
+      "contact": {
+        "title": "Contact",
+        "address": "Al Kawthar, Hurghada, Mer Rouge, Égypte",
+        "phone": "+20 127 770 2008",
+        "email": "info@hurghadabeautyhub.com"
+      },
+      "callUs": "Appelez-nous",
+      "copyright": "© 2026 Hurghada Beauty Hub. Tous droits réservés."
     }
   }
 }

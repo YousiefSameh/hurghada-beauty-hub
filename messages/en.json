@@ -82,7 +82,6 @@
           "description": "Restore cellular vitality and confidence. Our high-concentration PRP and customized mesotherapy protocols are scientifically designed to treat both scalp vitality and deep dermal glow.",
           "items": [
             "Hair nutrition & strengthening sessions",
-            "Laser hair removal sessions",
             "Mesotherapy & PRP (Plasma) injections for glowing skin"
           ]
         }
@@ -94,16 +93,16 @@
       "title_highlight": "Aesthetic Artistry",
       "specialist_tag": "HURGHADA BEAUTY HUB • LEAD SPECIALIST",
       "name": "Dr. Alaa Zaki",
-      "role": "Consultant Dermatologist & Aesthetic Master",
+      "role": "Aesthetic Pharmacist & Non-Surgical Aesthetics Specialist",
       "quote": "\"True beauty is an evolution of your natural self, crafted with medical precision and an artist's touch.\"",
-      "bio": "With over a decade of clinical excellence, Dr. Randa combines advanced dermatological science with sophisticated aesthetic protocols. Her approach is rooted in delivering exceptionally precise, elegant, and lasting results tailored to your unique anatomical canvas.",
+      "bio": "A Doctor of Pharmacy and Clinical Pharmacology specialist with a passion for advanced skin, hair, and non-surgical aesthetic treatments.",
       "credentials": ["Board Certified Dermatologist", "International Aesthetic Consultant"],
       "stats": {
         "exp_val": "5+",
         "exp_lbl": "Years of Excellence",
         "rate_val": "4.9 ★",
         "rate_lbl": "Patient Satisfaction",
-        "focus_val": "4",
+        "focus_val": "2",
         "focus_lbl": "Core Disciplines"
       },
       "btns": {
@@ -226,6 +225,91 @@
           "href": "/blog/medical-tourism-in-hurghada"
         }
       ]
+    },
+    "reviews": {
+      "sectionLabel": "Testimonials",
+      "titleStart": "Patient",
+      "titleStrong": "Experiences",
+      "subtitle": "Discover why patients from around the world trust Hurghada Beauty Hub for exceptional aesthetic care.",
+      "ctaLabel": "Google Reviews",
+      "ctaTitle": "See what our patients say",
+      "ctaSubtitle": "Read authentic experiences from local and international patients who chose Hurghada Beauty Hub.",
+      "ctaButton": "View All Reviews"
+    },
+    "contact": {
+      "sectionLabel": "Contact",
+      "titleStart": "Book",
+      "titleStrong": "Your Visit",
+      "subtitle": "Reach out to our team for consultations, treatment inquiries, or appointment requests. We are here to help you plan your experience at Hurghada Beauty Hub.",
+      "addressLabel": "Our Location",
+      "address": "Al Kawthar Metro Street, Above Khedive Palace Restaurant, Al-Ra’i Al-Saleh Building, 2nd Floor, Hurghada, Red Sea, Egypt",
+      "workingHours": {
+        "saturdayToThursday": {
+          "days": "Sobota - Czwartek",
+          "time": "10:00 - 22:00"
+        },
+        "friday": {
+          "days": "Piątek",
+          "time": "Zamknięte"
+        }
+      },
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "hoursLabel": "Working Hours",
+      "whatsapp": "WhatsApp Us",
+      "formButton": "Open Form",
+      "formLabel": "Appointment Request",
+      "formTitle": "Send us your details",
+      "formSubtitle": "Tell us what treatment you are interested in, and our team will get back to you as soon as possible.",
+      "submit": "Send Request",
+      "formNote": "By submitting this form, you agree to be contacted by our team regarding your consultation request.",
+      "fields": {
+        "name": "Full Name",
+        "country": "Country",
+        "email": "Email",
+        "phone": "Phone Number",
+        "treatment": "Treatment Interested In",
+        "date": "Preferred Date",
+        "message": "Additional Notes"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "country": "Your country",
+        "email": "you@example.com",
+        "phone": "+49 ...",
+        "treatment": "Botox / Skin Care / Hair Treatment",
+        "message": "Tell us a bit more about what you need"
+      }
+    },
+    "footer": {
+      "logoAlt": "Hurghada Beauty Hub Logo",
+      "tagline": "Beauty | Skin Care | Hair Care",
+      "description": "Luxury aesthetic treatments in Hurghada, combining advanced medical expertise, innovative technology, and personalized care to deliver natural-looking results.",
+      "quickLinks": {
+        "title": "Quick Links",
+        "home": "Home",
+        "treatments": "Treatments",
+        "doctor": "Doctor",
+        "services": "Services",
+        "blog": "Blog",
+        "contact": "Contact"
+      },
+      "treatments": {
+        "title": "Treatments",
+        "botox": "Botox",
+        "fillers": "Fillers",
+        "prp": "PRP",
+        "skinCare": "Skin Care",
+        "hairRestoration": "Hair Restoration"
+      },
+      "contact": {
+        "title": "Contact",
+        "address": "Al Kawthar, Hurghada, Red Sea, Egypt",
+        "phone": "+20 127 770 2008",
+        "email": "info@hurghadabeautyhub.com"
+      },
+      "callUs": "Call Us",
+      "copyright": "© 2026 Hurghada Beauty Hub. All rights reserved."
     }
   }
 }

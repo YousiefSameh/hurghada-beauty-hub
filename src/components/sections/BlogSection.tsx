@@ -24,7 +24,7 @@ export default function BlogSection() {
   const blogPosts = t.raw('homepage.blog_section.posts') as BlogItem[];
 
   return (
-    <section className="relative w-full bg-[#f8f1ea] py-24 sm:py-28">
+    <section id='blog' className="relative w-full bg-[#f8f1ea] py-24 sm:py-28">
       <div className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
         {/* Section Header */}
         <div className="mb-14 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">

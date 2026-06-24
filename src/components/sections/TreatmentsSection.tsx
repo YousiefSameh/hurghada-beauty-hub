@@ -48,7 +48,7 @@ export default function TreatmentsSection() {
   }, [activeService.sliderImages.length]);
 
   return (
-    <section className="bg-[#FAF7F2] py-12 md:py-28 px-4 sm:px-6 md:px-12 lg:px-24">
+    <section id='treatments' className="bg-[#FAF7F2] py-12 md:py-28 px-4 sm:px-6 md:px-12 lg:px-24">
       <div className="container px-4 sm:px-0 mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 md:mb-32 gap-8">
           <div className="max-w-2xl">

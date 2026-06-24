@@ -10,6 +10,7 @@ import { hasLocale } from 'next-intl';
 import { getLocalBusinessSchema } from '@/lib/seo/schema';
 import Navbar from '@/components/organisms/navbar';
 import FloatingBtns from '@/components/molecules/FloatingBtn';
+import Footer from '@/components/organisms/footer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -73,6 +74,7 @@ export default async function LocaleLayout({
         <AppProviders locale={locale} messages={messages}>
           <Navbar />
           {children}
+          <Footer />
           <FloatingBtns />
           <script
             type="application/ld+json"

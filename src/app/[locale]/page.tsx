@@ -1,6 +1,8 @@
 import BlogSection from '@/components/sections/BlogSection';
+import ContactSection from '@/components/sections/ContactSection';
 import DoctorSection from '@/components/sections/DoctorSection';
 import HeroSection from '@/components/sections/HeroSection';
+import ReviewsSection from '@/components/sections/ReviewsSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import TreatmentsSection from '@/components/sections/TreatmentsSection';
 import { setRequestLocale } from 'next-intl/server';
@@ -20,6 +22,8 @@ export default async function LocalizedHomePage({
       <DoctorSection />
       <ServicesSection />
       <BlogSection />
+      <ReviewsSection />
+      <ContactSection />
     </main>
   );
 }

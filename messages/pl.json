@@ -82,7 +82,6 @@
           "description": "Przywróć witalność komórkową i pewność siebie. Nasze protokoły PRP o wysokim stężeniu oraz spersonalizowana mezoterapia są naukowo opracowane, aby leczyć zarówno witalność skóry głowy, jak i głęboki blask skóry.",
           "items": [
             "Sesje odżywiania i wzmacniania włosów",
-            "Sesje depilacji laserowej",
             "Zastrzyki z mezoterapii i PRP (osocza) dla rozświetlonej skóry"
           ]
         }
@@ -226,6 +225,92 @@
           "href": "/blog/medical-tourism-in-hurghada"
         }
       ]
+    },
+    "reviews": {
+      "sectionLabel": "Opinie Pacjentów",
+      "titleStart": "Doświadczenia",
+      "titleStrong": "Pacjentów",
+      "subtitle": "Dowiedz się, dlaczego pacjenci z całego świata wybierają Hurghada Beauty Hub.",
+      "ctaLabel": "Opinie Google",
+      "ctaTitle": "Zobacz opinie naszych pacjentów",
+      "ctaSubtitle": "Przeczytaj autentyczne doświadczenia lokalnych i zagranicznych pacjentów.",
+      "ctaButton": "Zobacz wszystkie opinie"
+    },
+    "contact": {
+      "sectionLabel": "Kontakt",
+      "titleStart": "Zarezerwuj",
+      "titleStrong": "Swoją Wizytę",
+      "subtitle": "Skontaktuj się z naszym zespołem w sprawie konsultacji, zapytań o zabiegi lub rezerwacji terminu. Jesteśmy tu, aby pomóc Ci zaplanować wizytę w Hurghada Beauty Hub.",
+      "addressLabel": "Nasza lokalizacja",
+      "address": "Al Kawthar Metro Street, Above Khedive Palace Restaurant, Al-Ra’i Al-Saleh Building, 2nd Floor, Hurghada, Red Sea, Egypt",
+      "workingHours": {
+        "saturdayToThursday": {
+          "days": "Sobota - Czwartek",
+          "time": "10:00 - 22:00"
+        },
+        "friday": {
+          "days": "Piątek",
+          "time": "Zamknięte"
+        }
+      },
+      "phoneLabel": "Telefon",
+      "phone": "+20 114 323 8669",
+      "emailLabel": "Email",
+      "hoursLabel": "Godziny otwarcia",
+      "whatsapp": "Napisz na WhatsApp",
+      "formButton": "Otwórz formularz",
+      "formLabel": "Wniosek o wizytę",
+      "formTitle": "Wyślij swoje dane",
+      "formSubtitle": "Powiedz nam, jaki zabieg Cię interesuje, a nasz zespół skontaktuje się z Tobą jak najszybciej.",
+      "submit": "Wyślij wniosek",
+      "formNote": "Wysyłając ten formularz, zgadzasz się na kontakt ze strony naszego zespołu w sprawie Twojej prośby o konsultację.",
+      "fields": {
+        "name": "Imię i nazwisko",
+        "country": "Kraj",
+        "email": "Email",
+        "phone": "Numer telefonu",
+        "treatment": "Zabieg, którym jesteś zainteresowany/a",
+        "date": "Preferowana data",
+        "message": "Dodatkowe uwagi"
+      },
+      "placeholders": {
+        "name": "Twoje pełne imię i nazwisko",
+        "country": "Twój kraj",
+        "email": "you@example.com",
+        "phone": "+48 ...",
+        "treatment": "Botox / Pielęgnacja skóry / Zabieg na włosy",
+        "message": "Opowiedz nam więcej o swoich potrzebach"
+      }
+    },
+    "footer": {
+      "logoAlt": "Logo Hurghada Beauty Hub",
+      "tagline": "Uroda | Pielęgnacja Skóry | Pielęgnacja Włosów",
+      "description": "Luksusowe zabiegi estetyczne w Hurghadzie, łączące zaawansowaną wiedzę medyczną, innowacyjną technologię i spersonalizowaną opiekę, aby uzyskać naturalne efekty.",
+      "quickLinks": {
+        "title": "Szybkie Linki",
+        "home": "Strona Główna",
+        "treatments": "Zabiegi",
+        "doctor": "Lekarz",
+        "services": "Usługi",
+        "blog": "Blog",
+        "contact": "Kontakt"
+      },
+      "treatments": {
+        "title": "Zabiegi",
+        "botox": "Botox",
+        "fillers": "Fillery",
+        "prp": "PRP",
+        "skinCare": "Pielęgnacja Skóry",
+        "hairRestoration": "Regeneracja Włosów"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "address": "Al Kawthar, Hurghada, Morze Czerwone, Egipt",
+        "phone": "+20 127 770 2008",
+        "email": "info@hurghadabeautyhub.com"
+      },
+      "callUs": "Zadzwoń do nas",
+      "copyright": "© 2026 Hurghada Beauty Hub. Wszelkie prawa zastrzeżone."
     }
   }
 }

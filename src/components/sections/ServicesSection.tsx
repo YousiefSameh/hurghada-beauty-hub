@@ -115,7 +115,7 @@ export default function ServicesSection() {
     : "scroll-pl-4 sm:scroll-pl-6 md:scroll-pl-12 lg:scroll-pl-24";
 
   return (
-    <section className="py-24 md:py-32 overflow-hidden relative z-0 bg-[#FAF7F2]">
+    <section id='services' className="py-24 md:py-32 overflow-hidden relative z-0 bg-[#FAF7F2]">
       
       {/* Background Decor */}
       <div className="absolute top-1/4 left-0 w-1/3 h-1/2 bg-[#CD6C3E]/5 blur-[120px] rounded-full pointer-events-none -z-10" />

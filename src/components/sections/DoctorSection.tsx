@@ -15,7 +15,7 @@ export default function DoctorSection() {
   const credentials = t.raw('credentials') as string[];
 
   return (
-    <section className="py-20 md:py-32 px-4 sm:px-6 md:px-12 lg:px-24 overflow-hidden relative z-0">
+    <section id='doctor' className="py-20 md:py-32 px-4 sm:px-6 md:px-12 lg:px-24 overflow-hidden relative z-0">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-white/40 blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-[#CD6C3E]/5 blur-[120px] -z-10" />

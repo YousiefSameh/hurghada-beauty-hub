@@ -9,7 +9,7 @@ export default function FloatingBtns() {
   const [isSocialMenuOpen, setIsSocialMenuOpen] = useState(false);
 
   return (
-    <div className="sticky bottom-8 left-[80%] md:left-[95%] z-30 flex w-fit flex-col items-center gap-3">
+    <div className="fixed bottom-8 left-[80%] md:left-[95%] z-30 flex w-fit flex-col items-center gap-3">
       {/* --- Expandable Social Menu --- */}
       <div
         className={`flex flex-col gap-3 transition-all duration-300 ease-out origin-bottom ${
