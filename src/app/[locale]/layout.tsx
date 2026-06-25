@@ -1,4 +1,4 @@
-import { Inter, Felipa, Tajawal } from 'next/font/google';
+import { IBM_Plex_Sans_Arabic, Inter, Playfair_Display } from 'next/font/google';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
@@ -7,22 +7,32 @@ import { AppProviders } from '@/providers/AppProviders';
 import { generatePageMetadata } from '@/lib/seo/metadata';
 import '@/app/globals.css';
 import { hasLocale } from 'next-intl';
+import { getLocalBusinessSchema } from '@/lib/seo/schema';
+import Navbar from '@/components/organisms/navbar';
+import FloatingBtns from '@/components/molecules/FloatingBtn';
+import Footer from '@/components/organisms/footer';
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 });
 
-const felipa = Felipa({
+// const climateCrisis = Climate_Crisis({
+//   subsets: ['latin'],
+//   weight: ['400'],
+//   variable: '--font-climate-crisis',
+// });
+
+const playfair = Playfair_Display({
   subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-felipa',
+  weight: ['400', '500', '600', '700', '800', '900'],
+  variable: '--font-playfair',
 });
 
-const tajawal = Tajawal({
+const IBMPlexSansArabic = IBM_Plex_Sans_Arabic({
   subsets: ['arabic'],
-  weight: ['400', '500', '700'], // Non-variable fonts need explicit weights
-  variable: '--font-tajawal',
+  weight: ['400', '500', '700'],
+  variable: '--font-IBM-Plex-Sans-Arabic',
 });
 
 export function generateStaticParams() {
@@ -48,19 +58,28 @@ export default async function LocaleLayout({
   const dir = localeDetails[locale as Locale]?.dir || 'ltr';
 
   const isArabic = locale === 'ar';
-  const primaryBodyFontClass = isArabic ? tajawal.className : inter.className;
+  const primaryBodyFontClass = isArabic ? IBMPlexSansArabic.className : inter.className;
+
+  const schema = getLocalBusinessSchema();
 
   return (
     <html
       lang={locale}
       dir={dir}
-      className={`${inter.variable} ${felipa.variable} ${tajawal.variable} scroll-smooth`}
+      className={`${inter.variable} ${playfair.variable} ${IBMPlexSansArabic.variable} scroll-smooth`}
     >
       <body
-        className={`${primaryBodyFontClass} antialiased bg-brand-dark-950 text-brand-light-50 min-h-screen flex flex-col`}
+        className={`${primaryBodyFontClass} antialiased min-h-screen flex flex-col`}
       >
         <AppProviders locale={locale} messages={messages}>
+          <Navbar />
           {children}
+          <Footer />
+          <FloatingBtns />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
         </AppProviders>
       </body>
     </html>

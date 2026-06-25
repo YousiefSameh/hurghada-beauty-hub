@@ -1,6 +1,6 @@
 export const defaultLocale = 'en';
 
-export const locales = ['en', 'ar', 'de', 'ru', 'pl'] as const;
+export const locales = ['en', 'ar', 'de', 'ru', 'pl', 'fr'] as const;
 
 export type Locale = (typeof locales)[number];
 
@@ -12,4 +12,5 @@ export const localeDetails = {
   de: { label: 'Deutsch', dir: 'ltr', code: 'de' },
   ru: { label: 'Русский', dir: 'ltr', code: 'ru' },
   pl: { label: 'Polski', dir: 'ltr', code: 'pl' },
+  fr: { label: 'Francais', dir: 'ltr', code: 'fr' }
 } as const;
