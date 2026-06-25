@@ -3,15 +3,16 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'; // إضافة usePathname
 import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '../molecules/LanguageSwitcher';
 import { Button } from '../atoms/button';
 import { cn } from '@/lib/utils';
-import { useLocale, useTranslations } from 'next-intl'; // أو استخدم مكتبتك المفضلة للـ i18n
+import { useLocale, useTranslations } from 'next-intl';
 
 const NAV_LINKS = [
   { href: '/', labelKey: 'home' },
-  { href: '#treatments', labelKey: 'treatments' },
+  { href: '/treatments', labelKey: 'treatments' },
   { href: '#doctor', labelKey: 'doctor' },
   { href: '#services', labelKey: 'services' },
   { href: '#blog', labelKey: 'blog' },
@@ -21,9 +22,19 @@ const NAV_LINKS = [
 export default function Navbar() {
   const t = useTranslations();
   const locale = useLocale();
+  const pathname = usePathname();
   const isArabic = locale === 'ar';
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const isTransparentPage =
+    pathname === '/' ||
+    pathname === `/${locale}` ||
+    pathname === '/treatments' ||
+    pathname === `/${locale}/treatments`;
+
+  const isSolid = isScrolled || !isTransparentPage;
 
   // Handle scroll detection
   useEffect(() => {
@@ -42,7 +53,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled
+        isSolid
           ? 'bg-background/95 backdrop-blur-md border-b border-border shadow-sm py-2'
           : 'bg-transparent border-b border-transparent py-4'
       }`}
@@ -62,8 +73,8 @@ export default function Navbar() {
           />
           <span
             className={cn(
-              'text-white text-lg md:text-xl font-black tracking-wider ml-1',
-              isScrolled ? 'text-primary' : 'text-white'
+              'text-lg md:text-xl font-black tracking-wider ml-1 transition-colors',
+              isSolid ? 'text-primary' : 'text-white'
             )}
           >
             <strong className={cn('uppercase', !isArabic ? 'font-serif' : '')}>
@@ -82,7 +93,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   className={`text-sm lg:text-base font-medium uppercase pb-2 tracking-wide transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100 ${
-                    isScrolled
+                    isSolid
                       ? 'text-foreground/80 hover:text-primary'
                       : 'text-white hover:text-primary'
                   }`}
@@ -107,7 +118,7 @@ export default function Navbar() {
 
         <button
           className={`md:hidden relative z-50 p-2 focus:outline-none transition-colors ${
-            isScrolled ? 'text-foreground' : 'text-white'
+            isSolid ? 'text-foreground' : 'text-white'
           }`}
           onClick={toggleMobileMenu}
           aria-label="Toggle Navigation"
@@ -120,11 +131,12 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* Mobile Menu */}
       <div
         className={cn(
-          `fixed inset-0 top-[70px] z-40 h-dvh bg-background/95 backdrop-blur-lg transition-transform duration-300 ease-in-out md:hidden`,
+          `fixed inset-0 top-[70px] z-40 h-dvh transition-transform duration-300 ease-in-out md:hidden`,
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full',
-          isScrolled ? 'bg-background/95' : 'bg-transparent backdrop-blur-md'
+          isSolid ? 'bg-background/95 backdrop-blur-lg' : 'bg-black/40 backdrop-blur-md' // خلفية مظللة للموبايل في الصفحات الشفافة لتوضيح النص
         )}
       >
         <div className="flex flex-col items-center justify-start pt-10 h-full space-y-8 px-6">
@@ -135,8 +147,8 @@ export default function Navbar() {
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={cn(
-                    'block w-full text-xl text-left font-semibold uppercase tracking-wider text-foreground hover:text-primary transition-colors py-2',
-                    isScrolled ? 'text-black' : 'text-white'
+                    'block w-full text-xl text-left font-semibold uppercase tracking-wider transition-colors py-2 hover:text-primary',
+                    isSolid ? 'text-foreground' : 'text-white'
                   )}
                 >
                   {t(`homepage.header.navigation.${link.labelKey}`)}
@@ -148,7 +160,9 @@ export default function Navbar() {
           <div className="w-full h-px bg-border/50 my-6" />
 
           <div className="flex flex-col items-center gap-6 w-full pb-10">
-            <LanguageSwitcher />
+            <div className={cn('p-1 rounded-md', !isSolid && 'bg-white/10')}>
+              <LanguageSwitcher />
+            </div>
             <Button variant="default" size="lg" className="w-full py-6 text-lg font-bold shadow-md">
               {t('homepage.header.btns.book')}
             </Button>

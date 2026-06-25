@@ -92,7 +92,7 @@ export default function Footer() {
 
             <div className="mt-5 flex flex-col gap-3 text-sm text-foreground/70">
               <Link href="/">{t('homepage.footer.quickLinks.home')}</Link>
-              <Link href="#treatments">{t('homepage.footer.quickLinks.treatments')}</Link>
+              <Link href="/treatments">{t('homepage.footer.quickLinks.treatments')}</Link>
               <Link href="#doctor">{t('homepage.footer.quickLinks.doctor')}</Link>
               <Link href="#services">{t('homepage.footer.quickLinks.services')}</Link>
               <Link href="#blog">{t('homepage.footer.quickLinks.blog')}</Link>
