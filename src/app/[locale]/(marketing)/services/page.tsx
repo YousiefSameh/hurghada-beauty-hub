@@ -226,7 +226,7 @@ export default function TreatmentsPage() {
 
                 <div className="flex items-center justify-between pt-4 border-t border-stone-200 mt-auto">
                   <Link
-                    href={`/${locale}/treatments/${treatment.slug}`}
+                    href={`/${locale}/services/${treatment.slug}`}
                     className="text-xs font-semibold uppercase tracking-widest text-stone-900 hover:text-[#A05C3C] transition-colors flex items-center gap-2 group/link"
                   >
                     {isArabic ? 'اكتشف المزيد' : 'Learn More'}

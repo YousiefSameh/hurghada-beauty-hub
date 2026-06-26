@@ -10,20 +10,21 @@ import { Button } from '../atoms/button';
 import { cn } from '@/lib/utils';
 import { useLocale, useTranslations } from 'next-intl';
 
-const NAV_LINKS = [
-  { href: '/', labelKey: 'home' },
-  { href: '/treatments', labelKey: 'treatments' },
-  { href: '#doctor', labelKey: 'doctor' },
-  { href: '#services', labelKey: 'services' },
-  { href: '#blog', labelKey: 'blog' },
-  { href: '#contact', labelKey: 'contact' },
-];
+
 
 export default function Navbar() {
   const t = useTranslations();
   const locale = useLocale();
   const pathname = usePathname();
   const isArabic = locale === 'ar';
+
+  const NAV_LINKS = [
+    { href: `/${locale}`, labelKey: 'home' },
+    { href: `/${locale}/#treatments`, labelKey: 'treatments' },
+    { href: `/${locale}/doctor`, labelKey: 'doctor' },
+    { href: `/${locale}/services`, labelKey: 'services' },
+    { href: `/${locale}/#contact`, labelKey: 'contact' },
+  ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);

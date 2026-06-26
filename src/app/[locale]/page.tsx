@@ -21,7 +21,6 @@ export default async function LocalizedHomePage({
       <TreatmentsSection />
       <DoctorSection />
       <ServicesSection />
-      <BlogSection />
       <ReviewsSection />
       <ContactSection />
     </main>
