@@ -23,6 +23,7 @@ export default async function LocalizedHomePage({
       <ServicesSection />
       <ReviewsSection />
       <ContactSection />
+
     </main>
   );
 }
