@@ -1,50 +1,16 @@
-import { NextAuthOptions } from 'next-auth';
-import CredentialsProvider from 'next-auth/providers/credentials';
+import { betterAuth } from 'better-auth';
+import { prismaAdapter } from 'better-auth/adapters/prisma';
+import { prisma } from './prisma';
+import { admin } from "better-auth/plugins";
 
-export const authOptions: NextAuthOptions = {
-  providers: [
-    CredentialsProvider({
-      name: 'Credentials',
-      credentials: {
-        email: { label: 'Email', type: 'text' },
-        password: { label: 'Password', type: 'password' },
-      },
-      async authorize(credentials) {
-        // Placeholder authentication logic
-        if (
-          credentials?.email === 'admin@beautyhub.com' &&
-          credentials?.password === 'password'
-        ) {
-          return {
-            id: '1',
-            name: 'Clinic Administrator',
-            email: 'admin@beautyhub.com',
-            role: 'ADMIN',
-          };
-        }
-        return null;
-      },
-    }),
-  ],
-  callbacks: {
-    async jwt({ token, user }) {
-      if (user) {
-        token.role = (user as any).role;
-      }
-      return token;
-    },
-    async session({ session, token }) {
-      if (session.user) {
-        (session.user as any).role = token.role;
-      }
-      return session;
-    },
+export const auth = betterAuth({
+  database: prismaAdapter(prisma, {
+    provider: 'postgresql',
+  }),
+  emailAndPassword: {
+    enabled: true
   },
-  pages: {
-    signIn: '/auth/login',
-  },
-  session: {
-    strategy: 'jwt',
-  },
-  secret: process.env.NEXTAUTH_SECRET,
-};
+  plugins: [
+    admin(),
+  ]
+});

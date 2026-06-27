@@ -10,6 +10,7 @@
     "format": "prettier --write .",
     "postinstall": "prisma generate"
   },
+  "type": "module",
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
@@ -22,15 +23,18 @@
   "dependencies": {
     "@base-ui/react": "^1.6.0",
     "@hookform/resolvers": "^5.4.0",
+    "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "@reduxjs/toolkit": "^2.12.0",
     "@tanstack/react-query": "^5.101.0",
     "@tanstack/react-table": "^8.21.3",
+    "better-auth": "^1.6.20",
     "class-variance-authority": "^0.7.1",
     "cloudinary": "^2.10.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "date-fns": "^4.4.0",
+    "dotenv": "^17.4.2",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.40.0",
     "input-otp": "^1.4.2",
@@ -39,6 +43,7 @@
     "next-auth": "^4.24.14",
     "next-intl": "^4.13.0",
     "next-themes": "^0.4.6",
+    "pg": "^8.22.0",
     "radix-ui": "^1.6.0",
     "react": "19.1.0",
     "react-day-picker": "^10.0.1",
@@ -59,6 +64,7 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/pg": "^8.20.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",

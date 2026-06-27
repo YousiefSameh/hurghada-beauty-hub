@@ -1,0 +1,191 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id            String    @id
+  name          String
+  email         String
+  emailVerified Boolean   @default(false)
+  image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  role          String?   @default("user")
+  banned        Boolean?  @default(false)
+  banReason     String?
+  banExpires    DateTime?
+  sessions      Session[]
+  accounts      Account[]
+
+  @@unique([email])
+  @@map("user")
+}
+
+model Session {
+  id             String   @id
+  expiresAt      DateTime
+  token          String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  ipAddress      String?
+  userAgent      String?
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  impersonatedBy String?
+
+  @@unique([token])
+  @@index([userId])
+  @@map("session")
+}
+
+model Account {
+  id                    String    @id
+  accountId             String
+  providerId            String
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  @@index([userId])
+  @@map("account")
+}
+
+model Verification {
+  id         String   @id
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([identifier])
+  @@map("verification")
+}
+
+model GlobalSettings {
+  id String @id @default("global")
+
+  phone       String
+  email       String
+  whatsapp    String
+  address     Json
+  mapEmbedUrl String?
+
+  facebook  String?
+  instagram String?
+  tiktok    String?
+
+  // SEO
+  globalMetaTitle Json?
+  globalMetaDesc  Json?
+
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id         String      @id @default(cuid())
+  slug       String      @unique
+  name       Json
+  treatments Treatment[]
+}
+
+model Treatment {
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  categoryId String
+  category   Category @relation(fields: [categoryId], references: [id])
+
+  heroImage String
+  cardImage String
+
+  title            Json
+  tagline          Json
+  shortDescription Json
+  howItWorks       Json
+  resultsTimeline  Json
+
+  achievements     Json
+  preInstructions  Json
+  postInstructions Json
+
+  products Product[]
+  cases    BeforeAfterCase[]
+
+  metaTitle Json?
+  metaDesc  Json?
+
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Product {
+  id          String    @id @default(cuid())
+  treatmentId String
+  treatment   Treatment @relation(fields: [treatmentId], references: [id], onDelete: Cascade)
+
+  image       String
+  name        String
+  description Json
+}
+
+model BeforeAfterCase {
+  id          String    @id @default(cuid())
+  treatmentId String
+  treatment   Treatment @relation(fields: [treatmentId], references: [id], onDelete: Cascade)
+
+  beforeImage String
+  afterImage  String
+
+  label       Json
+  description Json
+}
+
+model Doctor {
+  id    String @id @default(cuid())
+  slug  String @unique
+  image String
+
+  name      Json
+  title     Json
+  quote     Json
+  biography Json
+
+  stats Json?
+
+  credentials Credential[]
+  expertises  Expertise[]
+}
+
+model Credential {
+  id       String @id @default(cuid())
+  doctorId String
+  doctor   Doctor @relation(fields: [doctorId], references: [id], onDelete: Cascade)
+
+  icon        String
+  title       Json
+  description Json
+}
+
+model Expertise {
+  id       String @id @default(cuid())
+  doctorId String
+  doctor   Doctor @relation(fields: [doctorId], references: [id], onDelete: Cascade)
+
+  icon        String
+  title       Json
+  description Json
+}
