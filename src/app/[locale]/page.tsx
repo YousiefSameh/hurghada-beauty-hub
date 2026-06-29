@@ -1,4 +1,3 @@
-import BlogSection from '@/components/sections/BlogSection';
 import ContactSection from '@/components/sections/ContactSection';
 import DoctorSection from '@/components/sections/DoctorSection';
 import HeroSection from '@/components/sections/HeroSection';
@@ -21,7 +20,6 @@ export default async function LocalizedHomePage({
       <TreatmentsSection />
       <DoctorSection />
       <ServicesSection />
-      <BlogSection />
       <ReviewsSection />
       <ContactSection />
     </main>

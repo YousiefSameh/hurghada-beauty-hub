@@ -19,18 +19,18 @@ export default function TreatmentsSection() {
       title: t('services.face.title'),
       shortDesc: t('services.face.shortDesc'),
       description: t('services.face.description'),
-      image: '/assets/images/face-female.jpg',
+      image: '/assets/images/face-female.webp',
       items: t.raw('services.face.items') as string[],
-      sliderImages: ['/assets/images/face-female.jpg', '/assets/images/face-male.jpg'],
+      sliderImages: ['/assets/images/face-female.webp', '/assets/images/face-male.webp'],
     },
     {
       id: 'hair',
       title: t('services.hair.title'),
       shortDesc: t('services.hair.shortDesc'),
       description: t('services.hair.description'),
-      image: '/assets/images/hair-female.jpg',
+      image: '/assets/images/hair-female.webp',
       items: t.raw('services.hair.items') as string[],
-      sliderImages: ['/assets/images/hair-female.jpg', '/assets/images/hair-male.jpg'],
+      sliderImages: ['/assets/images/hair-female.webp', '/assets/images/hair-male.webp'],
     },
   ];
 
@@ -48,13 +48,14 @@ export default function TreatmentsSection() {
   }, [activeService.sliderImages.length]);
 
   return (
-    <section id='treatments' className="bg-[#FAF7F2] py-12 md:py-28 px-4 sm:px-6 md:px-12 lg:px-24">
+    <section id="treatments" className="bg-[#FAF7F2] py-12 md:py-28 px-4 sm:px-6 md:px-12 lg:px-24">
       <div className="container px-4 sm:px-0 mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 md:mb-32 gap-8">
           <div className="max-w-2xl">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-px bg-[#CD6C3E]" />
-              <span className="uppercase tracking-[0.2em] text-xs md:text-sm font-semibold text-[#CD6C3E]">
+              <div className="w-16 h-px bg-[#CD6C3E]" />
+              <span className="uppercase tracking-[0.25em] text-sm font-semibold text-[#CD6C3E] flex items-center gap-2">
+                <Sparkles className="w-4 h-4" />
                 {t('section_subtitle')}
               </span>
             </div>
@@ -158,7 +159,7 @@ export default function TreatmentsSection() {
                         className="flex items-start gap-2.5 text-stone-700 text-xs md:text-sm"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-[#CD6C3E] mt-2 shrink-0" />
-                        <span className="font-medium leading-tight">{item}</span>
+                        <span className="font-medium capitalize leading-tight">{item}</span>
                       </div>
                     ))}
                   </div>

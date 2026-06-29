@@ -18,11 +18,7 @@ export const routesConfig = {
     blog: '/admin/blog',
     services: '/admin/services',
     settings: '/admin/settings',
-  },
-  auth: {
-    login: '/auth/login',
-    forgotPassword: '/auth/forgot-password',
-  },
+  }
 } as const;
 
 export type RoutesConfig = typeof routesConfig;

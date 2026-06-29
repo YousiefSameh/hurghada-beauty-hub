@@ -3,6 +3,7 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/atoms/button';
 import { useTranslations, useLocale } from 'next-intl';
+import Link from 'next/link';
 
 export default function HeroSection() {
   const t = useTranslations();
@@ -19,7 +20,7 @@ export default function HeroSection() {
           muted
           loop
           playsInline
-          poster="/assets/images/hero_video_poster.png"
+          poster="/assets/images/hero_video_poster.webp"
         >
           <source src="/assets/videos/hero_video.mp4" type="video/mp4" />
         </video>
@@ -52,20 +53,26 @@ export default function HeroSection() {
 
         {/* Call to Action Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-          <Button className="w-full sm:w-auto rounded-full px-8 py-7 text-xs sm:text-sm font-semibold tracking-widest uppercase transition-all shadow-lg flex items-center gap-2 border-0 cursor-pointer">
-            {t('homepage.herosection.cta.book')}
-            {isArabic ? (
-              <ArrowLeft className="w-4 h-4 ml-2" />
-            ) : (
-              <ArrowRight className="w-4 h-4 ml-2" />
-            )}
+          <Button
+            asChild
+            className="w-full sm:w-auto rounded-full px-8 py-7 text-xs sm:text-sm font-semibold tracking-widest uppercase transition-all shadow-lg flex items-center gap-2 border-0 cursor-pointer"
+          >
+            <Link href={`${locale}#contact`}>
+              {t('homepage.herosection.cta.book')}
+              {isArabic ? (
+                <ArrowLeft className="w-4 h-4 ml-2" />
+              ) : (
+                <ArrowRight className="w-4 h-4 ml-2" />
+              )}
+            </Link>
           </Button>
 
           <Button
+            asChild
             variant="outline"
             className="w-full sm:w-auto rounded-full bg-transparent border-white/50 text-white hover:bg-white hover:text-primary px-8 py-7 text-xs sm:text-sm font-semibold tracking-widest uppercase transition-all backdrop-blur-sm cursor-pointer"
           >
-            {t('homepage.herosection.cta.view')}
+            <Link href={`${locale}/services`}>{t('homepage.herosection.cta.view')}</Link>
           </Button>
         </div>
         {/* Luxury Stats */}

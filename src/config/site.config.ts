@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: 'Beauty Hub',
   domain: 'hurghadabeautyhub.com',
   url: 'https://hurghadabeautyhub.com',
-  ogImage: 'https://hurghadabeautyhub.com/og-image.jpg',
+  ogImage: 'https://hurghadabeautyhub.com/og-image.webp',
   contact: {
     phone: '+201277702008',
     email: 'info@hurghadabeautyhub.com',
@@ -21,7 +21,7 @@ export const siteConfig = {
     facebook: 'https://www.facebook.com/p/Beauty-Hub-Hurghada-61576576883375/',
   },
   businessHours: {
-    weekdays: '10:00 AM - 10:00 PM',
+    weekdays: '17:00 AM - 17:00 PM',
     weekend: '12:00 PM - 08:00 PM',
   },
 } as const;

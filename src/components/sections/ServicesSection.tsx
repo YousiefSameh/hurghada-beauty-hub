@@ -4,61 +4,54 @@ import React, { useRef, useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { ArrowRight, ArrowLeft, Sparkles, MoveRight } from 'lucide-react';
-import { Button } from '@/components/atoms/button';
-
-interface ServiceItem {
-  id: string;
-  title: string;
-  desc: string;
-  image: string;
-  link_text: string;
-}
+import Link from 'next/link';
+// استدعاء البيانات الموحدة
+import { treatmentsData } from '@/data/services';
 
 export default function ServicesSection() {
-  const locale = useLocale();
+  const locale = useLocale() as 'en' | 'ar';
   const isArabic = locale === 'ar';
   const t = useTranslations('homepage.services_section');
-  const baseServices = t.raw('services') as ServiceItem[];
+  
+  const preparedServices = treatmentsData.map((s, idx) => ({
+    ...s,
+    displayId: String(idx + 1).padStart(2, '0')
+  }));
 
-  // 1. Triple the array to create the Infinite Loop illusion
   const infiniteServices = [
-    ...baseServices.map(s => ({ ...s, uniqueId: `${s.id}-copy1` })),
-    ...baseServices.map(s => ({ ...s, uniqueId: `${s.id}-copy2` })),
-    ...baseServices.map(s => ({ ...s, uniqueId: `${s.id}-copy3` })),
+    ...preparedServices.map(s => ({ ...s, uniqueId: `${s.slug}-copy1` })),
+    ...preparedServices.map(s => ({ ...s, uniqueId: `${s.slug}-copy2` })),
+    ...preparedServices.map(s => ({ ...s, uniqueId: `${s.slug}-copy3` })),
   ];
 
   const sliderRef = useRef<HTMLDivElement>(null);
   const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const [isReady, setIsReady] = useState(false);
 
-  // Exact math to know the width of one full copy of services
   const getSingleCopyWidth = useCallback(() => {
     const isMd = window.innerWidth >= 768;
-    const cardTotalWidth = isMd ? 460 : 344; // Card width + Empty space gap
-    return baseServices.length * cardTotalWidth;
-  }, [baseServices.length]);
+    const cardTotalWidth = isMd ? 460 : 344;
+    return preparedServices.length * cardTotalWidth;
+  }, [preparedServices.length]);
 
-  // 2. Center the scroll position instantly on load
   useEffect(() => {
     const initScroll = () => {
       if (sliderRef.current) {
         const container = sliderRef.current;
         const singleCopyWidth = getSingleCopyWidth();
         
-        container.style.scrollBehavior = 'auto'; // Disable smooth scroll for instant jump
+        container.style.scrollBehavior = 'auto';
 
         if (isArabic) {
-          // RTL safe logic
           const isNegativeScroll = getComputedStyle(container).direction === 'rtl';
           container.scrollLeft = isNegativeScroll ? -singleCopyWidth : singleCopyWidth;
         } else {
           container.scrollLeft = singleCopyWidth;
         }
 
-        // Force reflow and re-enable smooth scrolling
         void container.offsetWidth;
         container.style.scrollBehavior = 'smooth';
-        setIsReady(true); // Fade in the slider elegantly
+        setIsReady(true);
       }
     };
 
@@ -66,11 +59,9 @@ export default function ServicesSection() {
     return () => clearTimeout(timer);
   }, [isArabic, getSingleCopyWidth]);
 
-  // 3. The "Silent Jump" Logic to keep it infinite
-  const handleScroll = () => {
+    const handleScroll = () => {
     if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
 
-    // Wait for scroll momentum to finish to avoid breaking mobile swipe physics
     scrollTimeoutRef.current = setTimeout(() => {
       if (!sliderRef.current) return;
       const container = sliderRef.current;
@@ -78,7 +69,6 @@ export default function ServicesSection() {
       const currentScroll = container.scrollLeft;
       const absScroll = Math.abs(currentScroll);
 
-      // If user reaches the first copy, silently jump them forward
       if (absScroll < singleCopyWidth * 0.5) {
         container.style.scrollBehavior = 'auto';
         container.scrollLeft = currentScroll > 0 
@@ -87,7 +77,6 @@ export default function ServicesSection() {
         void container.offsetWidth;
         container.style.scrollBehavior = 'smooth';
       }
-      // If user reaches the third copy, silently jump them back
       else if (absScroll > singleCopyWidth * 1.5) {
         container.style.scrollBehavior = 'auto';
         container.scrollLeft = currentScroll > 0 
@@ -121,7 +110,7 @@ export default function ServicesSection() {
       <div className="absolute top-1/4 left-0 w-1/3 h-1/2 bg-[#CD6C3E]/5 blur-[120px] rounded-full pointer-events-none -z-10" />
 
       {/* Header Block */}
-      <div className="container px-4 sm:px-6 md:px-12 lg:px-24 mx-auto mb-16 md:mb-20">
+      <div className="container px-4 md:px-0 mx-auto mb-8 md:mb-12">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
           <div className="max-w-3xl">
             <div className="flex items-center gap-4 mb-6">
@@ -144,7 +133,6 @@ export default function ServicesSection() {
             </p>
           </div>
 
-          {/* Endless Navigation Buttons */}
           <div className="items-center gap-4 lg:pb-4 flex">
             <button 
               onClick={() => scrollNextPrev('left')}
@@ -170,19 +158,18 @@ export default function ServicesSection() {
         style={{ scrollbarWidth: 'none' }}
       >
         {infiniteServices.map((service) => (
-          // Wrapper handles the exact width and spacing mathematically
-          <div 
+          <Link
             key={service.uniqueId} 
             className="shrink-0 snap-start flex justify-start w-[344px] md:w-[460px]"
+            href={`/${locale}/services/${service.slug}`}
           >
-            {/* The Actual Card */}
             <div className="group cursor-pointer flex flex-col w-[320px] md:w-[420px]">
               
-              {/* Magazine Style Image Card */}
+              {/* Image Card */}
               <div className="relative w-[400px] h-[300px] overflow-hidden rounded-2xl mb-8 bg-stone-200 shadow-sm transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-[#CD6C3E]/20">
                 <Image
                   src={service.image}
-                  alt={service.title}
+                  alt={service.title[locale]}
                   fill
                   className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
                   sizes="(max-width: 768px) 320px, 420px"
@@ -191,7 +178,7 @@ export default function ServicesSection() {
                 <div className="absolute inset-0 bg-stone-900/10 group-hover:bg-stone-900/0 transition-colors duration-500" />
                 
                 <div className="absolute top-6 left-6 w-12 h-12 backdrop-blur-md bg-white/40 border border-white/50 rounded-full flex items-center justify-center text-stone-900 font-medium z-10 shadow-lg">
-                  <span className={!isArabic ? 'font-serif' : ''}>{service.id}</span>
+                  <span className={!isArabic ? 'font-serif' : ''}>{service.displayId}</span>
                 </div>
               </div>
 
@@ -200,31 +187,29 @@ export default function ServicesSection() {
                 <div className="w-12 h-px bg-stone-300 mb-6 transition-all duration-500 group-hover:w-24 group-hover:bg-[#CD6C3E]" />
                 
                 <h3 className={`text-2xl md:text-3xl font-bold text-stone-900 mb-4 transition-colors duration-300 group-hover:text-[#CD6C3E] ${!isArabic ? 'font-serif' : ''}`}>
-                  {service.title}
+                  {service.title[locale]}
                 </h3>
                 
                 <p className="text-stone-500 font-light leading-relaxed mb-8 grow text-sm md:text-base line-clamp-2">
-                  {service.desc}
+                  {service.desc[locale]}
                 </p>
                 
                 <div className="flex items-center gap-3 text-sm font-semibold tracking-widest uppercase text-stone-900 mt-auto">
                   <span className="relative overflow-hidden inline-block">
                     <span className="block transition-transform duration-500 ease-out group-hover:-translate-y-full">
-                      Discover The {service.title} World Here
+                      {t("btn")}
                     </span>
                     <span className="absolute inset-0 block transition-transform duration-500 ease-out translate-y-full group-hover:translate-y-0 text-[#CD6C3E]">
-                      Discover The {service.title} World Here
+                      {t("btn")}
                     </span>
                   </span>
                   <MoveRight className={`w-5 h-5 transition-transform duration-500 ease-out group-hover:translate-x-3 group-hover:text-[#CD6C3E] ${isArabic ? 'rotate-180 group-hover:-translate-x-3' : ''}`} />
                 </div>
               </div>
-
             </div>
-          </div>
+          </Link>
         ))}
       </div>
-
     </section>
   );
 }
