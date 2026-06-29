@@ -6,7 +6,7 @@ export function getLocalBusinessSchema() {
     '@type': 'MedicalBusiness',
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: `${siteConfig.url}/logo.png`,
+    logo: `${siteConfig.url}/logo.webp`,
     image: siteConfig.ogImage,
     telephone: siteConfig.contact.phone,
     email: siteConfig.contact.email,
@@ -22,7 +22,7 @@ export function getLocalBusinessSchema() {
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        opens: '10:00',
+        opens: '17:00',
         closes: '22:00',
       },
     ],

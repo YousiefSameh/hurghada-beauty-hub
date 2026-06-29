@@ -18,12 +18,9 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-12">
           {/* Brand */}
           <div className="lg:col-span-5">
-            <Link
-              href="/"
-              className="relative z-50 flex items-center gap-2 transition-opacity hover:opacity-80"
-            >
+            <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-80">
               <Image
-                src="/assets/images/logo.jpeg"
+                src="/assets/images/logo.webp"
                 alt={t('homepage.footer.logoAlt')}
                 width={60}
                 height={60}
@@ -31,11 +28,11 @@ export default function Footer() {
                 priority
               />
               <span className={'text-primary text-lg md:text-xl font-black tracking-wider ml-1'}>
-                <strong className={cn("uppercase", isArabic ? "" : "font-serif")}>
+                <strong className={cn('uppercase', isArabic ? '' : 'font-serif')}>
                   {t('homepage.header.logo.name')}
                 </strong>
-                <small className="text-xs font-normal block line-clamp-none mt-1">
-                  {t('homepage.footer.tagline')}
+                <small className="text-xs uppercase font-normal block line-clamp-none mt-1">
+                  {t('homepage.header.logo.subtitle')}
                 </small>
               </span>
             </Link>
@@ -92,9 +89,9 @@ export default function Footer() {
 
             <div className="mt-5 flex flex-col gap-3 text-sm text-foreground/70">
               <Link href="/">{t('homepage.footer.quickLinks.home')}</Link>
-              <Link href="/treatments">{t('homepage.footer.quickLinks.treatments')}</Link>
+              <Link href="#treatments">{t('homepage.footer.quickLinks.treatments')}</Link>
               <Link href="/doctor">{t('homepage.footer.quickLinks.doctor')}</Link>
-              <Link href="#services">{t('homepage.footer.quickLinks.services')}</Link>
+              <Link href="/services">{t('homepage.footer.quickLinks.services')}</Link>
               <Link href="#contact">{t('homepage.footer.quickLinks.contact')}</Link>
             </div>
           </div>
@@ -106,11 +103,13 @@ export default function Footer() {
             </h4>
 
             <div className="mt-5 flex flex-col gap-3 text-sm text-foreground/70">
-              <Link href="/treatments/botox">{t('homepage.footer.treatments.botox')}</Link>
-              <Link href="/treatments/fillers">{t('homepage.footer.treatments.fillers')}</Link>
-              <Link href="/treatments/prp">{t('homepage.footer.treatments.prp')}</Link>
-              <Link href="/treatments/skin-care">{t('homepage.footer.treatments.skinCare')}</Link>
-              <Link href="/treatments/hair-restoration">{t('homepage.footer.treatments.hairRestoration')}</Link>
+              <Link href="/services/botox">{t('homepage.footer.treatments.botox')}</Link>
+              <Link href="/services/fillers">{t('homepage.footer.treatments.fillers')}</Link>
+              <Link href="/services/prp">{t('homepage.footer.treatments.prp')}</Link>
+              <Link href="/services/skin-care">{t('homepage.footer.treatments.skinCare')}</Link>
+              <Link href="/services/hair-restoration">
+                {t('homepage.footer.treatments.hairRestoration')}
+              </Link>
             </div>
           </div>
 
@@ -130,15 +129,21 @@ export default function Footer() {
 
               <div className="flex items-center gap-3">
                 <Phone size={18} className="text-primary" />
-                <a href="tel:+201277702008" className="text-sm text-foreground/70 hover:text-primary">
+                <a
+                  href="tel:+201277702008"
+                  className="text-sm text-foreground/70 hover:text-primary"
+                >
                   {t('homepage.footer.contact.phone')}
                 </a>
               </div>
 
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-primary" />
-                <a href="mailto:info@hurghadabeautyhub.com" className="text-sm text-foreground/70 hover:text-primary">
-                  {t('homepage.footer.contact.email')}
+                <a
+                  href="mailto:alaazaki.beautyhub@gmail.com"
+                  className="text-sm text-foreground/70 hover:text-primary"
+                >
+                  alaazaki.beautyhub@gmail.com
                 </a>
               </div>
             </div>
@@ -148,14 +153,12 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 border-t border-black/5 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 text-center md:flex-row">
-            <p className="text-sm text-foreground/50">
-              {t('homepage.footer.copyright')}
-            </p>
-            
-            <Link 
-              href="https://yousiefsameh-me.vercel.app" 
+            <p className="text-foreground/50">{t('homepage.footer.copyright')}</p>
+
+            <Link
+              href="https://yousiefsameh-me.vercel.app"
               target="_blank"
-              className="text-sm text-foreground/50 hover:text-primary transition-colors"
+              className="text-primary hover:scale-105 cursor-pointer hover:rotate-1 transition-all"
             >
               {t('homepage.footer.madeBy')}
             </Link>

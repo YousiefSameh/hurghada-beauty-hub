@@ -4,8 +4,11 @@ import { MessageCircle, Phone, X } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'; // ضفنا FaWhatsapp هنا
+import { Button } from '../atoms/button';
+import { useLocale } from 'next-intl';
 
 export default function FloatingBtns() {
+  const locale = useLocale()
   const [isSocialMenuOpen, setIsSocialMenuOpen] = useState(false);
 
   return (
@@ -73,9 +76,11 @@ export default function FloatingBtns() {
       </button>
 
       {/* --- Static Book Button --- */}
-      <button className="flex h-14 w-14 items-center justify-center rounded-full bg-[#CD6C3E] text-white shadow-lg hover:scale-105 transition-transform text-[10px] font-bold uppercase tracking-wider z-10 mt-2">
-        Book
-      </button>
+      <Button asChild className="flex h-14 w-14 items-center justify-center rounded-full bg-[#CD6C3E] text-white shadow-lg hover:scale-105 transition-transform text-[10px] font-bold uppercase tracking-wider z-10 mt-2">
+        <Link href={`/${locale}#contact`}>
+          Book
+        </Link>
+      </Button>
     </div>
   );
 }

@@ -27,7 +27,7 @@ export function LanguageSwitcher() {
     <Select value={currentLocale} onValueChange={handleLanguageChange}>
       <SelectTrigger
         dir={localeDetails[currentLocale].dir}
-        className="w-full h-11 bg-brand-dark-900 cursor-pointer border border-brand-gold/20 text-brand-light-200 hover:text-white px-4 py-5 text-sm font-bold rounded-lg transition-colors duration-200 focus:ring-1 focus:ring-brand-gold/50 focus:ring-offset-0"
+        className="w-full bg-brand-dark-900 cursor-pointer border border-brand-gold/20 text-brand-light-200 hover:text-white px-6 py-6 text-base font-bold rounded-lg transition-colors duration-200 focus:ring-1 focus:ring-brand-gold/50 focus:ring-offset-0"
       >
         <SelectValue placeholder={localeDetails[currentLocale].label} />
       </SelectTrigger>

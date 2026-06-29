@@ -15,74 +15,74 @@
     "header": {
       "logo": {
         "name": "Hurghada Beauty Hub",
-        "subtitle": "Beauté | Soins de la peau | Soins des cheveux"
+        "subtitle": "L'essence de votre beauté"
       },
       "navigation": {
         "home": "Accueil",
         "treatments": "Traitements",
-        "doctor": "Docteur",
+        "doctor": "Médecin",
         "services": "Services",
         "blog": "Blog",
         "contact": "Contact"
       },
       "btns": {
-        "book": "Réserver"
+        "book": "Réserver maintenant"
       }
     },
     "herosection": {
-      "title": "Beauté Intemporelle.",
-      "titlestrong": "Soins de Classe",
-      "completetitle": "Mondiale",
-      "subtitle": "Découvrez un nouveau standard de soins esthétiques à",
-      "subtitlecomplete": ", où traitements de pointe, expertise médicale et attention personnalisée se conjuguent pour sublimer votre beauté naturelle avec confiance et élégance.",
+      "title": "Beauté intemporelle.",
+      "titlestrong": "Soins de classe",
+      "completetitle": "mondiale",
+      "subtitle": "Découvrez une nouvelle norme de soins esthétiques à",
+      "subtitlecomplete": ", où les traitements avancés, l'expertise médicale et l'attention personnalisée se rejoignent pour sublimer votre beauté naturelle avec confiance et élégance.",
       "cta": {
-        "book": "Réserver une Consultation",
-        "view": "Voir les Traitements"
+        "book": "Réserver une consultation",
+        "view": "Voir les traitements"
       },
       "stats": {
         "rating_val": "5.0★",
-        "rating_lbl": "Note Google",
+        "rating_lbl": "Avis Google",
         "reviews_val": "60+",
-        "reviews_lbl": "Avis Vérifiés",
-        "exp_val": "8+",
-        "exp_lbl": "Ans d'Expérience"
+        "reviews_lbl": "Avis vérifiés",
+        "exp_val": "5+",
+        "exp_lbl": "Années d'expérience"
       }
     },
     "our_services": {
       "section_subtitle": "Nos Services",
-      "title": "Conçu Pour",
+      "title": "Conçu pour",
       "title_highlight": "Vous",
-      "description": "Visage et cheveux — nos disciplines de base, chacune répondant à une norme unique et intransigeante de soins sur mesure.",
+      "description": "Le visage et les cheveux — nos disciplines principales, chacune soumise à une seule exigence intransigeante de soins sur mesure.",
       "premium_badge": "Sélection Premium",
-      "book_btn": "Réserver une Consultation",
-      "active_status": "Discipline Active",
-      "explore_status": "Cliquez pour Explorer",
+      "book_btn": "Réserver une consultation",
+      "active_status": "Discipline active",
+      "explore_status": "Cliquez pour explorer",
       "services": {
         "face": {
-          "title": "Discipline Visage",
-          "shortDesc": "Sculpture faciale avancée & rajeunissement de la peau premium.",
-          "description": "Découvrez l'excellence clinique conçue pour rehausser vos traits naturels. Nos traitements non chirurgicaux avancés offrent des résultats visibles et luxueux pour tous les types de peau.",
+          "title": "Discipline du Visage",
+          "shortDesc": "Sculpture faciale avancée & rajeunissement de la peau.",
+          "description": "Expérimentez l'excellence clinique conçue pour améliorer vos traits naturels. Nos traitements non chirurgicaux avancés offrent des résultats visibles et luxueux pour tous les types de peau.",
           "items": [
-            "Injections de Botox et de comblement",
+            "Injections de Botox & Acide hyaluronique",
             "Séances de nettoyage du visage",
             "Traitement Mini HydraFacial",
-            "Raffermissement de la peau et réduction des rides",
+            "Raffermissement de la peau & réduction des rides",
             "Séances de rajeunissement de la peau",
             "Séances de peeling chimique",
-            "Traitement de la pigmentation et des taches superficielles",
-            "Séances spécialisées pour l'acné et les cicatrices d'acné",
-            "Séances de nutrition et d'éclat de la peau",
-            "Traitement de l'acné et des pores dilatés",
-            "Dispositif de radiofréquence RF pour le raffermissement de la peau et la réduction des rides"
+            "Traitement de la pigmentation & taches",
+            "Séances spécialisées pour l'acné & cicatrices d'acné",
+            "Séances de nutrition & d'éclat de la peau",
+            "Traitement de l'acné & des pores dilatés",
+            "Raffermissement de la peau par radiofréquence RF"
           ]
         },
         "hair": {
           "title": "Cheveux & Plasma",
           "shortDesc": "Thérapies régénératives & injections de plasma médical.",
-          "description": "Restaurez la vitalité cellulaire et la confiance. Nos protocoles PRP à haute concentration et de mésothérapie personnalisés sont scientifiquement conçus pour traiter à la fois la vitalité du cuir chevelu et l'éclat profond de la peau.",
+          "description": "Restaurez la vitalité cellulaire et la confiance. Nos protocoles de PRP à haute concentration et de mésothérapie personnalisée sont scientifiquement conçus pour traiter la vitalité du cuir chevelu et l'éclat dermique profond.",
           "items": [
-            "Séances de nutrition et de renforcement des cheveux",
-            "Injections de mésothérapie et de PRP (Plasma) pour une peau éclatante"
+            "Séances de nutrition & renforcement des cheveux",
+            "Mésothérapie & Injections de PRP (Plasma)"
           ]
         }
       }
@@ -93,135 +93,67 @@
       "title_highlight": "Art Esthétique",
       "specialist_tag": "HURGHADA BEAUTY HUB • SPÉCIALISTE PRINCIPAL",
       "name": "Dr. Alaa Zaki",
-      "role": "Dermatologue Consultante & Maître en Esthétique",
-      "quote": "\"La vraie beauté est l'évolution de votre moi naturel, sculptée avec précision médicale et la touche d'un artiste.\"",
-      "bio": "Avec plus d'une décennie d'excellence clinique, le Dr Alaa combine une science dermatologique avancée avec des protocoles esthétiques sophistiqués. Son approche est ancrée dans la délivrance de résultats exceptionnellement précis, élégants et durables, adaptés à votre toile anatomique unique.",
-      "credentials": ["Dermatologue Certifiée", "Consultante Esthétique Internationale"],
+      "role": "Pharmacien esthétique & Spécialiste en esthétique non chirurgicale",
+      "quote": "\"La vraie beauté est une évolution de votre être naturel, conçue avec précision médicale et une touche artistique.\"",
+      "bio": "Docteur en pharmacie et spécialiste en pharmacologie clinique, passionné par les traitements avancés de la peau, des cheveux et de l'esthétique non chirurgicale.",
+      "credentials": ["Dermatologue certifié", "Consultant international en esthétique"],
       "stats": {
         "exp_val": "5+",
-        "exp_lbl": "Années d'Excellence",
+        "exp_lbl": "Années d'excellence",
         "rate_val": "4.9 ★",
-        "rate_lbl": "Satisfaction des Patients",
-        "focus_val": "4",
-        "focus_lbl": "Disciplines Principales"
+        "rate_lbl": "Satisfaction patient",
+        "focus_val": "2",
+        "focus_lbl": "Disciplines principales"
       },
       "btns": {
-        "book": "Prendre Rendez-vous",
-        "profile": "Explorer le Profil Complet"
+        "book": "Planifier une consultation",
+        "profile": "Explorer le profil complet"
       }
     },
     "services_section": {
       "subtitle": "Notre Expertise",
       "title": "Le Portfolio",
       "title_highlight": "Signature",
-      "description": "Découvrez notre collection exclusive de 10 traitements esthétiques sur mesure, conçus avec précision pour révéler votre élégance intemporelle.",
-      "services": [
-        {
-          "id": "01",
-          "title": "Signature Facelift",
-          "desc": "Contourage non chirurgical pour une apparence liftée et juvénile.",
-          "image": "/assets/images/service-1.png",
-          "link_text": "Découvrir"
-        },
-        {
-          "id": "02",
-          "title": "Sculpture Dermique",
-          "desc": "Fillers de précision pour restaurer le volume et définir l'architecture faciale.",
-          "image": "/assets/images/service-2.png",
-          "link_text": "Découvrir"
-        },
-        {
-          "id": "03",
-          "title": "Thérapie Botulinique",
-          "desc": "Relaxation avancée des rides pour une expression naturelle et lisse.",
-          "image": "/assets/images/service-3.png",
-          "link_text": "Découvrir"
-        },
-        {
-          "id": "04",
-          "title": "Resurfaçage Laser",
-          "desc": "Traitements laser cliniques pour une texture de peau impeccable et éclatante.",
-          "image": "/assets/images/service-4.png",
-          "link_text": "Découvrir"
-        },
-        {
-          "id": "05",
-          "title": "PRP Cellulaire",
-          "desc": "Thérapie régénérative utilisant les facteurs de croissance de votre corps.",
-          "image": "/assets/images/service-5.png",
-          "link_text": "Découvrir"
-        },
-        {
-          "id": "06",
-          "title": "Lifting par Fils",
-          "desc": "Lifting subtil et instantané avec des fils chirurgicaux résorbables.",
-          "image": "/assets/images/service-6.png",
-          "link_text": "Découvrir"
-        },
-        {
-          "id": "07",
-          "title": "Perfusion IV Bien-être",
-          "desc": "Goutte-à-goutte de vitamines sur mesure pour la santé intérieure et l'éclat extérieur.",
-          "image": "/assets/images/service-7.png",
-          "link_text": "Découvrir"
-        },
-        {
-          "id": "08",
-          "title": "Peeling Chimique",
-          "desc": "Exfoliation médicale ciblant la pigmentation et le vieillissement.",
-          "image": "/assets/images/service-8.png",
-          "link_text": "Découvrir"
-        },
-        {
-          "id": "09",
-          "title": "Contourage du Corps",
-          "desc": "Protocoles non invasifs de réduction des graisses et raffermissement de la peau.",
-          "image": "/assets/images/service-9.png",
-          "link_text": "Découvrir"
-        },
-        {
-          "id": "10",
-          "title": "Restauration Capillaire",
-          "desc": "Solutions cliniques ciblées pour la densité des cheveux et la vitalité du cuir chevelu.",
-          "image": "/assets/images/service-10.png",
-          "link_text": "Découvrir"
-        }
-      ],
-      "btn_all": "Voir Tous les Traitements",
-      "slider_nav": { "prev": "Précédent", "next": "Suivant" }
+      "description": "Explorez notre collection exclusive de 10 traitements esthétiques sur mesure, méticuleusement conçus pour dévoiler votre élégance intemporelle.",
+      "btn": "Découvrez-en plus",
+      "btn_all": "Voir Tous Les Traitements",
+      "slider_nav": {
+        "prev": "Précédent",
+        "next": "Suivant"
+      }
     },
     "blog_section": {
-      "sectionLabel": "Perspectives",
-      "titleStart": "Beauty",
-      "titleStrong": "Journal",
-      "subtitle": "Insights experts sur le Botox, le rajeunissement de la peau, les traitements capillaires et les soins esthétiques à Hurghada.",
+      "sectionLabel": "Aperçus",
+      "titleStart": "Journal de",
+      "titleStrong": "Beauté",
+      "subtitle": "Aperçus d'experts sur le Botox, le rajeunissement de la peau, les traitements capillaires et les soins à Hurghada.",
       "readMore": "Lire l'article",
-      "ctaTitle": "Découvrez nos derniers insights beauté",
-      "ctaSubtitle": "Articles utiles conçus pour vous guider vers le bon traitement.",
+      "ctaTitle": "Explorez nos dernières actualités beauté",
+      "ctaSubtitle": "Des articles utiles conçus pour vous guider vers le bon traitement.",
       "ctaButton": "Voir tous les articles",
       "posts": [
         {
-          "title": "Botox à Hurghada : À quoi s'attendre",
-          "excerpt": "Découvrez comment fonctionnent les traitements au Botox, leur durée et pourquoi tant de clients internationaux choisissent Beauty Hub Hurghada.",
+          "title": "Botox à Hurghada : à quoi s'attendre",
+          "excerpt": "Découvrez comment fonctionnent les traitements au Botox, leur durée et pourquoi les clients internationaux nous choisissent.",
           "category": "Botox",
           "readTime": "4 min de lecture",
-          "date": "Mars 2026",
+          "date": "Mar 2026",
           "href": "/blog/botox-in-hurghada"
         },
         {
-          "title": "Meilleurs traitements de rajeunissement cutané pour un éclat sain",
-          "excerpt": "Du Hydrafacial au peeling chimique, découvrez les meilleures options pour restaurer une peau fraîche et radieuse.",
-          "category": "Soins de la Peau",
+          "title": "Top des traitements de rajeunissement",
+          "excerpt": "Du hydrafacial aux peelings chimiques, découvrez les meilleures options pour restaurer une peau fraîche.",
+          "category": "Soins de la peau",
           "readTime": "5 min de lecture",
-          "date": "Mars 2026",
+          "date": "Mar 2026",
           "href": "/blog/skin-rejuvenation-treatments"
         },
         {
           "title": "Pourquoi les patients en tourisme médical choisissent Hurghada",
-          "excerpt": "Hurghada offre le mélange parfait entre soins esthétiques premium, confort de récupération et expérience de voyage relaxante.",
-          "category": "Tourisme Médical",
+          "excerpt": "Hurghada offre le mélange parfait de soins esthétiques de qualité, de confort de récupération et d'expérience de voyage.",
+          "category": "Tourisme médical",
           "readTime": "3 min de lecture",
-          "date": "Mars 2026",
+          "date": "Mar 2026",
           "href": "/blog/medical-tourism-in-hurghada"
         }
       ]
@@ -229,24 +161,24 @@
     "reviews": {
       "sectionLabel": "Témoignages",
       "titleStart": "Expériences",
-      "titleStrong": "des Patients",
-      "subtitle": "Découvrez pourquoi des patients du monde entier font confiance à Hurghada Beauty Hub.",
+      "titleStrong": "Patients",
+      "subtitle": "Découvrez pourquoi les patients du monde entier font confiance au Hurghada Beauty Hub pour des soins esthétiques exceptionnels.",
       "ctaLabel": "Avis Google",
-      "ctaTitle": "Découvrez l’avis de nos patients",
-      "ctaSubtitle": "Lisez les témoignages authentiques de patients locaux et internationaux.",
+      "ctaTitle": "Voyez ce que disent nos patients",
+      "ctaSubtitle": "Lisez des expériences authentiques de patients locaux et internationaux qui ont choisi Hurghada Beauty Hub.",
       "ctaButton": "Voir tous les avis"
     },
     "contact": {
       "sectionLabel": "Contact",
       "titleStart": "Réservez",
       "titleStrong": "Votre Visite",
-      "subtitle": "Contactez notre équipe pour des consultations, des demandes de traitements ou des rendez-vous. Nous sommes là pour vous aider à planifier votre expérience au Hurghada Beauty Hub.",
-      "addressLabel": "Notre Adresse",
-      "address": "Al Kawthar Metro Street, Above Khedive Palace Restaurant, Al-Ra’i Al-Saleh Building, 2nd Floor, Hurghada, Red Sea, Egypt",
+      "subtitle": "Contactez notre équipe pour des consultations, des demandes de traitement ou des demandes de rendez-vous.",
+      "addressLabel": "Notre Emplacement",
+      "address": "Al Kawthar Metro Street, Au-dessus du restaurant Khedive Palace, Hurghada, Mer Rouge, Égypte",
       "workingHours": {
         "saturdayToThursday": {
           "days": "Samedi - Jeudi",
-          "time": "10:00 - 22:00"
+          "time": "17h00 - 00h00"
         },
         "friday": {
           "days": "Vendredi",
@@ -259,37 +191,49 @@
       "whatsapp": "Contactez-nous sur WhatsApp",
       "formButton": "Ouvrir le formulaire",
       "formLabel": "Demande de rendez-vous",
-      "formTitle": "Envoyez-nous vos informations",
-      "formSubtitle": "Dites-nous quel traitement vous intéresse et notre équipe vous répondra dans les plus brefs délais.",
+      "formTitle": "Envoyez-nous vos coordonnées",
+      "formSubtitle": "Indiquez-nous le traitement qui vous intéresse et notre équipe vous contactera dans les plus brefs délais.",
       "submit": "Envoyer la demande",
+      "submitting": "Envoi en cours...",
+      "successMessage": "Message envoyé avec succès ! Nous vous contacterons bientôt.",
+      "errorMessage": "Échec de l'envoi du message. Veuillez réessayer.",
       "formNote": "En soumettant ce formulaire, vous acceptez d'être contacté par notre équipe concernant votre demande de consultation.",
       "fields": {
         "name": "Nom complet",
         "country": "Pays",
         "email": "Email",
         "phone": "Numéro de téléphone",
-        "treatment": "Traitement souhaité",
-        "date": "Date préférée",
+        "treatment": "Traitement intéressé",
+        "date": "Date souhaitée",
         "message": "Notes supplémentaires"
       },
       "placeholders": {
         "name": "Votre nom complet",
         "country": "Votre pays",
-        "email": "vous@example.com",
+        "email": "vous@exemple.fr",
         "phone": "+33 ...",
         "treatment": "Botox / Soins de la peau / Traitement capillaire",
-        "message": "Dites-nous en plus sur vos besoins"
+        "message": "Dites-nous en un peu plus sur ce dont vous avez besoin"
+      },
+      "errors": {
+        "name": "Le nom est requis",
+        "country": "Le pays est requis",
+        "email": "Adresse e-mail invalide",
+        "phone": "Le numéro de téléphone est requis",
+        "treatment": "Le traitement est requis",
+        "date": "La date est requise",
+        "message": "Le message doit comporter au moins 10 caractères"
       }
     },
     "footer": {
       "logoAlt": "Logo Hurghada Beauty Hub",
-      "tagline": "Beauté | Soins de la Peau | Soins Capillaires",
-      "description": "Traitements esthétiques de luxe à Hurghada, combinant expertise médicale avancée, technologie innovante et soins personnalisés pour des résultats naturels.",
+      "tagline": "Beauté | Soins de la peau | Soins capillaires",
+      "description": "Traitements esthétiques de luxe à Hurghada, combinant expertise médicale avancée, technologie innovante et soins personnalisés.",
       "quickLinks": {
         "title": "Liens Rapides",
         "home": "Accueil",
         "treatments": "Traitements",
-        "doctor": "Docteur",
+        "doctor": "Médecin",
         "services": "Services",
         "blog": "Blog",
         "contact": "Contact"
@@ -297,10 +241,10 @@
       "treatments": {
         "title": "Traitements",
         "botox": "Botox",
-        "fillers": "Fillers",
+        "fillers": "Injections",
         "prp": "PRP",
-        "skinCare": "Soins de la Peau",
-        "hairRestoration": "Restauration Capillaire"
+        "skinCare": "Soins de la peau",
+        "hairRestoration": "Restauration capillaire"
       },
       "contact": {
         "title": "Contact",
@@ -312,5 +256,82 @@
       "copyright": "© 2026 Hurghada Beauty Hub. Tous droits réservés.",
       "madeBy": "Créé par Yousief Sameh"
     }
-  }
+  },
+
+  "servicesPage": {
+    "hero": {
+      "tag": "Nos Protocoles Thérapeutiques",
+      "titleLine1": "Chefs-d'œuvre de la Science Esthétique",
+      "titleHighlight": "Consultation Offerte",
+      "ctaButton": "Planifiez Votre Consultation"
+    },
+    "intro": {
+      "titleRegular": "Thérapies Sur Mesure.",
+      "titleHighlighted": "Un Standard Absolu.",
+      "description": "Découvrez notre prestigieuse sélection de soins esthétiques de luxe, conçus pour sublimer votre élégance naturelle selon les normes cliniques internationales les plus strictes."
+    },
+    "categories": {
+      "all": "Tous",
+      "face": "Visage",
+      "hairPlasma": "Cheveux & Plasma"
+    },
+    "card": {
+      "learnMore": "En Savoir Plus",
+      "bookNow": "Réserver"
+    }
+  },
+  "doctorPage": {
+    "backToHome": "Retour à l'accueil",
+    "medicalExpert": "Expert Médical",
+    "name": "Dr. Alaa Zaki",
+    "title": "Praticien Esthétique Principal & Fondateur",
+    "bio1": "Avec plus de 15 ans d'expérience dédiée à la médecine esthétique avancée, le Dr Alaa Zaki s'est imposé comme un pionnier de l'harmonisation faciale non chirurgicale à Hurghada. Alliant une compréhension profonde de l'anatomie faciale à un œil artistique raffiné, il se spécialise dans l'obtention de résultats sur mesure et naturels.",
+    "bio2": "Diplômé avec les honneurs et formé par la suite auprès de leaders mondiaux de la dermatologie esthétique en Europe et au Moyen-Orient, le Dr Zaki apporte constamment les dernières innovations cliniques fondées sur des preuves au Hurghada Beauty Hub. Son approche donne la priorité absolue à la sécurité des patients, en utilisant uniquement des produits injectables approuvés par la FDA et des technologies de pointe pour inverser les signes du vieillissement tout en préservant votre identité unique.",
+    "bookConsultation": "Réserver une consultation avec le Dr Zaki",
+    "quote": "La vraie beauté ne consiste pas à changer qui vous êtes, mais à révéler le chef-d'œuvre qui existe déjà en vous. Précision, sécurité et art sont les piliers de ma pratique.",
+    "areasOfExpertise": "Domaines d'Expertise",
+    "expertise": {
+      "facialHarmonization": {
+        "title": "Harmonisation Faciale",
+        "desc": "Placement stratégique de produits de comblement dermique pour équilibrer le profil et les proportions."
+      },
+      "antiAging": {
+        "title": "Injectables Anti-Âge",
+        "desc": "Protocoles avancés de Botox pour la réduction des rides et le lifting du visage."
+      },
+      "biostimulators": {
+        "title": "Biostimulateurs",
+        "desc": "Traitements inducteurs de collagène comme Radiesse et Sculptra pour une jeunesse durable."
+      },
+      "skinRejuvenation": {
+        "title": "Rajeunissement de la Peau",
+        "desc": "Maîtrise des thérapies au laser et des peelings chimiques profonds pour une peau parfaite."
+      }
+    },
+    "cta": {
+      "title": "Prêt à commencer votre voyage ?",
+      "subtitle": "Réservez votre consultation privée avec le Dr Alaa Zaki dès aujourd'hui et découvrez votre protocole de traitement sur mesure.",
+      "button": "Contactez-nous pour planifier"
+    }
+  },
+  
+    "TreatmentDetail": {
+      "backToPortfolio": "Retour au portefeuille",
+      "consultButton": "Consulter pour ce traitement",
+      "howItWorksTitle": "Comment ça fonctionne",
+      "whenResultsTitle": "Quand verrez-vous les résultats",
+      "achievementsTitle": "Ce que vous allez accomplir",
+      "clinicalResultsTitle": "Résultats Cliniques",
+      "dragToInteract": "Faites glisser pour interagir",
+      "beforeLabel": "Avant",
+      "afterLabel": "Après",
+      "careInstructionsTitle": "Instructions de soins",
+      "preTreatment": "Avant le traitement",
+      "postTreatment": "Après le traitement",
+      "sidebarTitle": "Commencez votre voyage",
+      "sidebarDescription": "Nous sommes là pour répondre à vos questions et concevoir un protocole sur mesure pour révéler votre beauté exceptionnelle.",
+      "sidebarButton": "Réserver une consultation gratuite",
+      "sidebarContactLabel": "Ou contactez-nous directement"
+    }
+  
 }

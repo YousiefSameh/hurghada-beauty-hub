@@ -10,8 +10,6 @@ import { Button } from '../atoms/button';
 import { cn } from '@/lib/utils';
 import { useLocale, useTranslations } from 'next-intl';
 
-
-
 export default function Navbar() {
   const t = useTranslations();
   const locale = useLocale();
@@ -65,11 +63,11 @@ export default function Navbar() {
           className="relative z-50 flex items-center gap-2 transition-opacity hover:opacity-80"
         >
           <Image
-            src="/assets/images/logo.jpeg"
+            src="/assets/images/logo.webp"
             alt="Hurghada Beauty Hub Logo"
             width={60}
             height={60}
-            className="rounded-lg object-cover lg:w-[60px] lg:h-[60px]"
+            className="rounded-lg object-cover lg:w-[70px] lg:h-[70px]"
             priority
           />
           <span
@@ -81,7 +79,7 @@ export default function Navbar() {
             <strong className={cn('uppercase', !isArabic ? 'font-serif' : '')}>
               {t('homepage.header.logo.name')}
             </strong>
-            <small className="text-xs font-normal block line-clamp-none mt-1">
+            <small className="text-xs uppercase font-normal block line-clamp-none mt-2">
               {t('homepage.header.logo.subtitle')}
             </small>
           </span>
@@ -110,7 +108,7 @@ export default function Navbar() {
             <Button
               variant="default"
               size="lg"
-              className="px-5 py-5 text-sm font-bold shadow-md cursor-pointer hover:shadow-lg transition-all"
+              className="px-6 py-6 text-base font-bold shadow-md cursor-pointer hover:shadow-lg transition-all"
             >
               {t('homepage.header.btns.book')}
             </Button>
