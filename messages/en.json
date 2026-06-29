@@ -1,0 +1,333 @@
+{
+  "common": {
+    "title": "Beauty Hub Hurghada",
+    "description": "Luxury aesthetic clinic in Hurghada, Egypt",
+    "actions": {
+      "login": "Login",
+      "logout": "Logout",
+      "book": "Book Consultation",
+      "save": "Save Changes",
+      "cancel": "Cancel",
+      "submit": "Submit"
+    }
+  },
+  "homepage": {
+    "header": {
+      "logo": {
+        "name": "Hurghada Beauty Hub",
+        "subtitle": "The Essence Of Your Beauty"
+      },
+      "navigation": {
+        "home": "Home",
+        "treatments": "Treatments",
+        "doctor": "Meet The Doctor",
+        "services": "Services",
+        "blog": "Blog",
+        "contact": "Contact"
+      },
+      "btns": {
+        "book": "Book Now"
+      }
+    },
+    "herosection": {
+      "title": "Timeless Beauty.",
+      "titlestrong": "World-Class",
+      "completetitle": "Care",
+      "subtitle": "Experience a new standard of aesthetic care at",
+      "subtitlecomplete": ", where advanced treatments, medical expertise, and personalized attention come together to enhance your natural beauty with confidence and elegance.",
+      "cta": {
+        "book": "Book Consultation",
+        "view": "View Treatments"
+      },
+      "stats": {
+        "rating_val": "5.0★",
+        "rating_lbl": "Google Rating",
+        "reviews_val": "60+",
+        "reviews_lbl": "Verified Reviews",
+        "exp_val": "5+",
+        "exp_lbl": "Years Of Experience"
+      }
+    },
+    "our_services": {
+      "section_subtitle": "Our Treatments",
+      "title": "Tailored For",
+      "title_highlight": "You",
+      "description": "Face and hair — our core disciplines, each held to a single, uncompromising standard of tailored care.",
+      "premium_badge": "Premium Treatments",
+      "book_btn": "Book Consultation",
+      "active_status": "Active Discipline",
+      "explore_status": "Click to Explore",
+      "services": {
+        "face": {
+          "title": "Facial Treatments",
+          "shortDesc": "Advanced facial sculpting & premium skin rejuvenation.",
+          "description": "Experience clinical excellence tailored to enhance your natural facial features. Our advanced non-surgical treatments deliver visible, luxurious results for all skin types.",
+          "items": [
+            "Botox & filler injections",
+            "Facial cleansing sessions",
+            "Mini HydraFacial treatment",
+            "Skin tightening & wrinkle reduction",
+            "Skin rejuvenation sessions",
+            "Chemical peeling sessions",
+            "Treatment of pigmentation & surface spots",
+            "Specialized acne & acne scar sessions",
+            "Skin nourishment & glow sessions",
+            "Acne & enlarged pores treatment",
+            "RF radiofrequency skin tightening & wrinkle reduction"
+          ]
+        },
+        "hair": {
+          "title": "Hair & Plasma",
+          "shortDesc": "Regenerative therapies & medical plasma injections.",
+          "description": "Restore cellular vitality and confidence. Our high-concentration PRP and customized mesotherapy protocols are scientifically designed to treat both scalp vitality and deep dermal glow.",
+          "items": [
+            "Hair nutrition & strengthening sessions",
+            "Mesotherapy & PRP (Plasma) injections for glowing skin"
+          ]
+        }
+      }
+    },
+    "doctor_preview": {
+      "section_subtitle": "Our Medical Director",
+      "title": "Medical Excellence &",
+      "title_highlight": "Aesthetic Artistry",
+      "specialist_tag": "HURGHADA BEAUTY HUB • LEAD SPECIALIST",
+      "name": "Dr. Alaa Zaki",
+      "role": "Clinical Aesthetic Pharmacist & Non-Surgical Aesthetics Specialist",
+      "quote": "\"True beauty is an evolution of your natural self, crafted with medical precision and an artist's touch.\"",
+      "bio": "A Doctor of Pharmacy and Clinical Pharmacology specialist with a passion for advanced skin, hair, and non-surgical aesthetic treatments.",
+      "stats": {
+        "exp_val": "5+",
+        "exp_lbl": "Years of Excellence",
+        "rate_val": "4.9 ★",
+        "rate_lbl": "Patient Rating",
+        "focus_val": "2",
+        "focus_lbl": "Core Specialties"
+      },
+      "btns": {
+        "book": "Schedule Consultation",
+        "profile": "Explore Full Profile"
+      }
+    },
+    "services_section": {
+      "subtitle": "Our Expertise",
+      "title": "The Signature",
+      "title_highlight": "Portfolio",
+      "description": "Explore our exclusive collection of our signature aesthetic treatments, meticulously designed to unveil your timeless elegance.",
+      "btn": "Discover More",
+      "btn_all": "View All Treatments",
+      "slider_nav": {
+        "prev": "Previous",
+        "next": "Next"
+      }
+    },
+    "blog_section": {
+      "sectionLabel": "Insights",
+      "titleStart": "Beauty",
+      "titleStrong": "Journal",
+      "subtitle": "Expert insights on Botox, skin rejuvenation, hair treatments, and aesthetic care in Hurghada.",
+      "readMore": "Read Article",
+      "ctaTitle": "Explore our latest beauty insights",
+      "ctaSubtitle": "Helpful articles designed to guide you toward the right treatment.",
+      "ctaButton": "View All Posts",
+      "posts": [
+        {
+          "title": "Botox in Hurghada: What to Expect",
+          "excerpt": "Learn how Botox treatments work, how long they last, and why so many international clients choose Beauty Hub Hurghada.",
+          "category": "Botox",
+          "readTime": "4 min read",
+          "date": "Mar 2026",
+          "href": "/blog/botox-in-hurghada"
+        },
+        {
+          "title": "Top Skin Rejuvenation Treatments for a Healthy Glow",
+          "excerpt": "From hydrafacial to chemical peels, discover the best options for restoring fresh, radiant skin.",
+          "category": "Skin Care",
+          "readTime": "5 min read",
+          "date": "Mar 2026",
+          "href": "/blog/skin-rejuvenation-treatments"
+        },
+        {
+          "title": "Why Medical Tourism Patients Choose Hurghada",
+          "excerpt": "Hurghada offers the perfect mix of premium aesthetic care, recovery comfort, and a relaxing travel experience.",
+          "category": "Medical Tourism",
+          "readTime": "3 min read",
+          "date": "Mar 2026",
+          "href": "/blog/medical-tourism-in-hurghada"
+        }
+      ]
+    },
+    "reviews": {
+      "sectionLabel": "Testimonials",
+      "titleStart": "Patient",
+      "titleStrong": "Experiences",
+      "subtitle": "Discover why patients from around the world trust Hurghada Beauty Hub for exceptional aesthetic care.",
+      "ctaLabel": "Google Reviews",
+      "ctaTitle": "See what our patients say",
+      "ctaSubtitle": "Read authentic experiences from local and international patients who chose Hurghada Beauty Hub.",
+      "ctaButton": "View All Reviews"
+    },
+    "contact": {
+      "sectionLabel": "Contact",
+      "titleStart": "Book",
+      "titleStrong": "Your Visit",
+      "subtitle": "Reach out to our team for consultations, treatment inquiries, or appointment requests. We are here to help you plan your experience at Hurghada Beauty Hub.",
+      "addressLabel": "Our Location",
+      "address": "Al Kawthar Metro Street, Above Khedive Palace Restaurant, Al-Ra’i Al-Saleh Building, 2nd Floor, Hurghada, Red Sea, Egypt",
+      "workingHours": {
+        "saturdayToThursday": {
+          "days": "Saturday - Thursday",
+          "time": "5:00 PM - 12:00 AM"
+        },
+        "friday": {
+          "days": "Friday",
+          "time": "Closed"
+        }
+      },
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "hoursLabel": "Working Hours",
+      "whatsapp": "Chat on WhatsApp",
+      "formButton": "Open Form",
+      "formLabel": "Appointment Request",
+      "formTitle": "Send us your details",
+      "formSubtitle": "Tell us what treatment you are interested in, and our team will get back to you as soon as possible.",
+      "submit": "Send Request",
+      "submitting": "Sending...",
+      "successMessage": "Message sent successfully! We will contact you soon.",
+      "errorMessage": "Failed to send message. Please try again.",
+      "formNote": "By submitting this form, you agree to be contacted by our team regarding your consultation request.",
+      "fields": {
+        "name": "Full Name",
+        "country": "Country",
+        "email": "Email",
+        "phone": "Phone Number",
+        "treatment": "Treatment Interested In",
+        "date": "Preferred Date",
+        "message": "Additional Notes"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "country": "Your country",
+        "email": "you@example.com",
+        "phone": "+49 ...",
+        "treatment": "Botox / Skin Care / Hair Treatment",
+        "message": "Tell us a bit more about what you need"
+      },
+      "errors": {
+        "name": "Name is required",
+        "country": "Country is required",
+        "email": "Invalid email address",
+        "phone": "Phone number is required",
+        "treatment": "Treatment is required",
+        "date": "Date is required",
+        "message": "Message must be at least 10 characters"
+      }
+    },
+    "footer": {
+      "logoAlt": "Hurghada Beauty Hub Logo",
+      "tagline": "Beauty | Skin Care | Hair Care",
+      "description": "Luxury aesthetic treatments in Hurghada, combining advanced medical expertise, innovative technology, and personalized care to deliver natural-looking results.",
+      "quickLinks": {
+        "title": "Quick Links",
+        "home": "Home",
+        "treatments": "Treatments",
+        "doctor": "Meet The Doctor",
+        "services": "Services",
+        "blog": "Blog",
+        "contact": "Contact"
+      },
+      "treatments": {
+        "title": "Treatments",
+        "botox": "Botox",
+        "fillers": "Fillers",
+        "prp": "PRP",
+        "skinCare": "Skin Care",
+        "hairRestoration": "Hair Restoration"
+      },
+      "contact": {
+        "title": "Contact",
+        "address": "Al Kawthar, Hurghada, Red Sea, Egypt",
+        "phone": "+20 127 770 2008",
+        "email": "info@hurghadabeautyhub.com"
+      },
+      "callUs": "Call Us",
+      "copyright": "© 2026 Hurghada Beauty Hub. All rights reserved.",
+      "madeBy": "Website designed & developed by Yousief Sameh"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "tag": "Our Therapeutic Protocols",
+      "titleLine1": "Masterpieces of Aesthetic Science",
+      "titleHighlight": "Complimentary Consultation",
+      "ctaButton": "Schedule Your Consultation"
+    },
+    "intro": {
+      "titleRegular": "Bespoke Therapies.",
+      "titleHighlighted": "One Absolute Standard.",
+      "description": "Explore our meticulously curated portfolio of luxury aesthetic treatments, engineered to unveil your natural radiance through world-class clinical and medical standards."
+    },
+    "categories": {
+      "all": "All",
+      "face": "Face",
+      "hairPlasma": "Hair & Plasma"
+    },
+    "card": {
+      "learnMore": "Discover More",
+      "bookNow": "Book Appointment"
+    }
+  },
+  "doctorPage": {
+    "backToHome": "Back to Home",
+    "medicalExpert": "Medical Expert",
+    "name": "Dr. Alaa Zaki",
+    "title": "Lead Aesthetic Practitioner & Founder",
+    "bio1": "With over 15 years of dedicated experience in advanced aesthetic medicine, Dr. Alaa Zaki has established himself as a pioneer in non-surgical facial harmonization in Hurghada. Merging a profound understanding of facial anatomy with a refined artistic eye, he specializes in delivering bespoke, natural-looking results.",
+    "bio2": "Graduating with top honors and subsequently training under global leaders in aesthetic dermatology across Europe and the Middle East, Dr. Zaki constantly brings the latest, evidence-based clinical innovations to Hurghada Beauty Hub. His approach prioritizes patient safety, utilizing only FDA-approved injectables and state-of-the-art modalities to reverse the signs of aging while preserving your unique identity.",
+    "bookConsultation": "Book Consultation with Dr. Zaki",
+    "quote": "True beauty is not about altering who you are, but revealing the masterpiece that already exists within you. Precision, safety, and artistry are the pillars of my practice.",
+    "areasOfExpertise": "Areas of Expertise",
+    "expertise": {
+      "facialHarmonization": {
+        "title": "Facial Harmonization",
+        "desc": "Strategic placement of dermal fillers to balance profile and proportions."
+      },
+      "antiAging": {
+        "title": "Anti-Aging Injectables",
+        "desc": "Advanced Botox protocols for wrinkle reduction and facial lifting."
+      },
+      "biostimulators": {
+        "title": "Biostimulators",
+        "desc": "Collagen-inducing treatments like Radiesse and Sculptra for long-term youth."
+      },
+      "skinRejuvenation": {
+        "title": "Skin Rejuvenation",
+        "desc": "Mastering laser therapies and deep chemical peels for flawless skin."
+      }
+    },
+    "cta": {
+      "title": "Ready to begin your journey?",
+      "subtitle": "Book your private consultation with Dr. Alaa Zaki today and discover your bespoke treatment protocol.",
+      "button": "Contact Us to Schedule"
+    }
+  },
+  "TreatmentDetail": {
+    "backToPortfolio": "Back to Portfolio",
+    "consultButton": "Consult for this treatment",
+    "howItWorksTitle": "How it works",
+    "whenResultsTitle": "When you will see results",
+    "achievementsTitle": "What you will achieve",
+    "clinicalResultsTitle": "Clinical Results",
+    "dragToInteract": "Drag to interact",
+    "beforeLabel": "Before",
+    "afterLabel": "After",
+    "careInstructionsTitle": "Care Instructions",
+    "preTreatment": "Pre-Treatment",
+    "postTreatment": "Post-Treatment",
+    "sidebarTitle": "Begin Your Journey",
+    "sidebarDescription": "We are here to answer your questions and craft a bespoke protocol to unveil your exceptional beauty.",
+    "sidebarButton": "Book Complimentary Consultation",
+    "sidebarContactLabel": "Or Contact Us Directly"
+  }
+}

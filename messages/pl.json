@@ -1,0 +1,335 @@
+{
+  "common": {
+    "title": "Beauty Hub Hurghada",
+    "description": "Luksusowa klinika estetyczna w Hurghadzie, Egipt",
+    "actions": {
+      "login": "Zaloguj się",
+      "logout": "Wyloguj się",
+      "book": "Zarezerwuj konsultację",
+      "save": "Zapisz zmiany",
+      "cancel": "Anuluj",
+      "submit": "Wyślij"
+    }
+  },
+  "homepage": {
+    "header": {
+      "logo": {
+        "name": "Hurghada Beauty Hub",
+        "subtitle": "Esencja Twojego Piękna"
+      },
+      "navigation": {
+        "home": "Strona główna",
+        "treatments": "Zabiegi",
+        "doctor": "Lekarz",
+        "services": "Usługi",
+        "blog": "Blog",
+        "contact": "Kontakt"
+      },
+      "btns": {
+        "book": "Zarezerwuj Teraz"
+      }
+    },
+    "herosection": {
+      "title": "Ponadczasowe Piękno.",
+      "titlestrong": "Światowej Klasy",
+      "completetitle": "Opieka",
+      "subtitle": "Doświadcz nowego standardu opieki estetycznej w",
+      "subtitlecomplete": ", gdzie zaawansowane zabiegi, wiedza medyczna i spersonalizowana uwaga łączą się, aby podkreślić Twoje naturalne piękno z pewnością siebie i elegancją.",
+      "cta": {
+        "book": "Zarezerwuj Konsultację",
+        "view": "Zobacz Zabiegi"
+      },
+      "stats": {
+        "rating_val": "5.0★",
+        "rating_lbl": "Ocena Google",
+        "reviews_val": "60+",
+        "reviews_lbl": "Zweryfikowane Opinie",
+        "exp_val": "5+",
+        "exp_lbl": "Lata Doświadczenia"
+      }
+    },
+    "our_services": {
+      "section_subtitle": "Nasze Usługi",
+      "title": "Dostosowane Do",
+      "title_highlight": "Ciebie",
+      "description": "Twarz i włosy — nasze główne dyscypliny, z których każda jest utrzymywana w jednym, bezkompromisowym standardzie opieki szytej na miarę.",
+      "premium_badge": "Wybór Premium",
+      "book_btn": "Zarezerwuj Konsultację",
+      "active_status": "Aktywna Dyscyplina",
+      "explore_status": "Kliknij, aby Odkryć",
+      "services": {
+        "face": {
+          "title": "Dyscyplina Twarzy",
+          "shortDesc": "Zaawansowane rzeźbienie twarzy i doskonałe odmładzanie skóry.",
+          "description": "Doświadcz doskonałości klinicznej dostosowanej do podkreślenia Twoich naturalnych rysów twarzy. Nasze zaawansowane zabiegi niechirurgiczne zapewniają widoczne, luksusowe rezultaty dla wszystkich rodzajów skóry.",
+          "items": [
+            "Zastrzyki z botoksu i wypełniaczy",
+            "Sesje oczyszczania twarzy",
+            "Zabieg Mini HydraFacial",
+            "Ujędrnianie skóry i redukcja zmarszczek",
+            "Sesje odmładzania skóry",
+            "Sesje peelingu chemicznego",
+            "Leczenie pigmentacji i plam powierzchniowych",
+            "Specjalistyczne sesje na trądzik i blizny potrądzikowe",
+            "Sesje odżywiania i blasku skóry",
+            "Leczenie trądziku i rozszerzonych porów",
+            "RF Ujędrnianie skóry i redukcja zmarszczek falami radiowymi"
+          ]
+        },
+        "hair": {
+          "title": "Włosy i Osocze",
+          "shortDesc": "Terapie regeneracyjne i medyczne zastrzyki osocza.",
+          "description": "Przywróć witalność komórkową i pewność siebie. Nasze protokoły PRP o wysokim stężeniu i zindywidualizowanej mezoterapii są naukowo opracowane w celu leczenia witalności skóry głowy i głębokiego blasku skóry.",
+          "items": [
+            "Sesje odżywiania i wzmacniania włosów",
+            "Mezoterapia i zastrzyki PRP (Osocze) dla promiennej skóry"
+          ]
+        }
+      }
+    },
+    "doctor_preview": {
+      "section_subtitle": "Nasz Dyrektor Medyczny",
+      "title": "Medyczna Doskonałość i",
+      "title_highlight": "Estetyczny Kunszt",
+      "specialist_tag": "HURGHADA BEAUTY HUB • GŁÓWNY SPECJALISTA",
+      "name": "Dr Alaa Zaki",
+      "role": "Farmaceuta Estetyczny i Specjalista ds. Estetyki Niechirurgicznej",
+      "quote": "\"Prawdziwe piękno to ewolucja twojego naturalnego ja, stworzona z medyczną precyzją i dotykiem artysty.\"",
+      "bio": "Doktor farmacji i specjalista farmakologii klinicznej z pasją do zaawansowanych zabiegów na skórę, włosy i zabiegów niechirurgicznych.",
+      "credentials": ["Certyfikowany Dermatolog", "Międzynarodowy Konsultant Estetyczny"],
+      "stats": {
+        "exp_val": "5+",
+        "exp_lbl": "Lata Doskonałości",
+        "rate_val": "4.9 ★",
+        "rate_lbl": "Zadowolenie Pacjentów",
+        "focus_val": "2",
+        "focus_lbl": "Główne Dyscypliny"
+      },
+      "btns": {
+        "book": "Umów Konsultację",
+        "profile": "Odkryj Pełny Profil"
+      }
+    },
+    "services_section": {
+      "subtitle": "Nasze Doświadczenie",
+      "title": "Znakomite",
+      "title_highlight": "Portfolio",
+      "description": "Odkryj naszą ekskluzywną kolekcję 10 zabiegów estetycznych, skrupulatnie zaprojektowanych, aby odsłonić Twoją ponadczasową elegancję.",
+      "btn": "Dowiedz się więcej",
+      "btn_all": "Zobacz Wszystkie Zabiegi",
+      "slider_nav": {
+        "prev": "Poprzedni",
+        "next": "Następny"
+      }
+    },
+    "blog_section": {
+      "sectionLabel": "Spostrzeżenia",
+      "titleStart": "Dziennik",
+      "titleStrong": "Piękna",
+      "subtitle": "Eksperckie spostrzeżenia na temat botoksu, odmładzania skóry, zabiegów na włosy i opieki estetycznej w Hurghadzie.",
+      "readMore": "Czytaj Artykuł",
+      "ctaTitle": "Poznaj nasze najnowsze spostrzeżenia dotyczące piękna",
+      "ctaSubtitle": "Przydatne artykuły mające na celu poprowadzenie Cię w kierunku właściwego leczenia.",
+      "ctaButton": "Zobacz Wszystkie Wpisy",
+      "posts": [
+        {
+          "title": "Botoks w Hurghadzie: Czego się spodziewać",
+          "excerpt": "Dowiedz się, jak działają zabiegi botoksu, jak długo trwają i dlaczego tak wielu międzynarodowych klientów wybiera nas.",
+          "category": "Botoks",
+          "readTime": "4 min czytania",
+          "date": "Marzec 2026",
+          "href": "/blog/botox-in-hurghada"
+        },
+        {
+          "title": "Najlepsze Zabiegi Odmładzania Skóry",
+          "excerpt": "Od hydrafacial po peelingi chemiczne, odkryj najlepsze opcje przywracania świeżej, promiennej skóry.",
+          "category": "Pielęgnacja Skóry",
+          "readTime": "5 min czytania",
+          "date": "Marzec 2026",
+          "href": "/blog/skin-rejuvenation-treatments"
+        },
+        {
+          "title": "Dlaczego Pacjenci Turystyki Medycznej Wybierają Hurghadę",
+          "excerpt": "Hurghada oferuje idealne połączenie najwyższej jakości opieki estetycznej, komfortu rekonwalescencji i relaksującej podróży.",
+          "category": "Turystyka Medyczna",
+          "readTime": "3 min czytania",
+          "date": "Marzec 2026",
+          "href": "/blog/medical-tourism-in-hurghada"
+        }
+      ]
+    },
+    "reviews": {
+      "sectionLabel": "Referencje",
+      "titleStart": "Doświadczenia",
+      "titleStrong": "Pacjentów",
+      "subtitle": "Odkryj, dlaczego pacjenci z całego świata ufają Hurghada Beauty Hub w zakresie wyjątkowej opieki estetycznej.",
+      "ctaLabel": "Opinie Google",
+      "ctaTitle": "Zobacz, co mówią nasi pacjenci",
+      "ctaSubtitle": "Przeczytaj autentyczne doświadczenia pacjentów lokalnych i międzynarodowych, którzy wybrali Hurghada Beauty Hub.",
+      "ctaButton": "Zobacz Wszystkie Opinie"
+    },
+    "contact": {
+      "sectionLabel": "Kontakt",
+      "titleStart": "Zarezerwuj",
+      "titleStrong": "Swoją Wizytę",
+      "subtitle": "Skontaktuj się z naszym zespołem w celu konsultacji, zapytań o leczenie lub prośby o wizytę. Jesteśmy tutaj, aby Ci pomóc.",
+      "addressLabel": "Nasza Lokalizacja",
+      "address": "Ulica Metro Al Kawthar, Nad Restauracją Khedive Palace, Hurghada, Morze Czerwone, Egipt",
+      "workingHours": {
+        "saturdayToThursday": {
+          "days": "Sobota - Czwartek",
+          "time": "17:00 - 00:00"
+        },
+        "friday": {
+          "days": "Piątek",
+          "time": "Zamknięte"
+        }
+      },
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-mail",
+      "hoursLabel": "Godziny otwarcia",
+      "whatsapp": "Napisz na WhatsApp",
+      "formButton": "Otwórz Formularz",
+      "formLabel": "Prośba o spotkanie",
+      "formTitle": "Wyślij nam swoje dane",
+      "formSubtitle": "Powiedz nam, jakim zabiegiem jesteś zainteresowany, a nasz zespół skontaktuje się z Tobą tak szybko, jak to możliwe.",
+      "submit": "Wyślij zapytanie",
+      "submitting": "Wysyłanie...",
+      "successMessage": "Wiadomość została wysłana pomyślnie! Wkrótce się z Tobą skontaktujemy.",
+      "errorMessage": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+      "formNote": "Przesyłając ten formularz, wyrażasz zgodę na kontakt ze strony naszego zespołu w związku z Twoją prośbą o konsultację.",
+      "fields": {
+        "name": "Pełne Imię i Nazwisko",
+        "country": "Kraj",
+        "email": "E-mail",
+        "phone": "Numer Telefonu",
+        "treatment": "Zainteresowany Zabieg",
+        "date": "Preferowana Data",
+        "message": "Dodatkowe Notatki"
+      },
+      "placeholders": {
+        "name": "Twoje pełne imię i nazwisko",
+        "country": "Twój kraj",
+        "email": "ty@przyklad.pl",
+        "phone": "+48 ...",
+        "treatment": "Botoks / Pielęgnacja Skóry / Zabieg na Włosy",
+        "message": "Powiedz nam trochę więcej o tym, czego potrzebujesz"
+      },
+      "errors": {
+        "name": "Imię jest wymagane",
+        "country": "Kraj jest wymagany",
+        "email": "Nieprawidłowy adres e-mail",
+        "phone": "Numer telefonu jest wymagany",
+        "treatment": "Zabieg jest wymagany",
+        "date": "Data jest wymagana",
+        "message": "Wiadomość musi mieć co najmniej 10 znaków"
+      }
+    },
+    "footer": {
+      "logoAlt": "Logo Hurghada Beauty Hub",
+      "tagline": "Piękno | Pielęgnacja Skóry | Pielęgnacja Włosów",
+      "description": "Luksusowe zabiegi estetyczne w Hurghadzie, łączące zaawansowaną wiedzę medyczną, innowacyjną technologię i spersonalizowaną opiekę.",
+      "quickLinks": {
+        "title": "Szybkie Linki",
+        "home": "Strona główna",
+        "treatments": "Zabiegi",
+        "doctor": "Lekarz",
+        "services": "Usługi",
+        "blog": "Blog",
+        "contact": "Kontakt"
+      },
+      "treatments": {
+        "title": "Zabiegi",
+        "botox": "Botoks",
+        "fillers": "Wypełniacze",
+        "prp": "PRP",
+        "skinCare": "Pielęgnacja Skóry",
+        "hairRestoration": "Odbudowa Włosów"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "address": "Al Kawthar, Hurghada, Morze Czerwone, Egipt",
+        "phone": "+20 127 770 2008",
+        "email": "info@hurghadabeautyhub.com"
+      },
+      "callUs": "Zadzwoń do nas",
+      "copyright": "© 2026 Hurghada Beauty Hub. Wszelkie prawa zastrzeżone.",
+      "madeBy": "Stworzone przez Yousief Sameh"
+    }
+  },
+
+  "servicesPage": {
+    "hero": {
+      "tag": "Nasze Protokoły Terapeutyczne",
+      "titleLine1": "Arcydzieła Nauki Estetycznej",
+      "titleHighlight": "Bezpłatna Konsultacja",
+      "ctaButton": "Zarezerwuj Konsultację"
+    },
+    "intro": {
+      "titleRegular": "Terapie Szyte Na Miarę.",
+      "titleHighlighted": "Jeden Absolutny Standard.",
+      "description": "Poznaj nasze skrupulatnie wyselekcjonowane portfolio luksusowych zabiegów estetycznych, stworzonych z myślą o wydobyciu Twojego naturalnego piękna według najwyższych światowych standardów klinicznych."
+    },
+    "categories": {
+      "all": "Wszystko",
+      "face": "Twarz",
+      "hairPlasma": "Włosy i Osocze"
+    },
+    "card": {
+      "learnMore": "Odkryj Więcej",
+      "bookNow": "Zarezerwuj"
+    }
+  },
+  "doctorPage": {
+    "backToHome": "Powrót do strony głównej",
+    "medicalExpert": "Ekspert Medyczny",
+    "name": "Dr Alaa Zaki",
+    "title": "Główny Lekarz Medycyny Estetycznej i Założyciel",
+    "bio1": "Posiadając ponad 15-letnie doświadczenie w zaawansowanej medycynie estetycznej, dr Alaa Zaki zyskał miano pioniera w bezoperacyjnej harmonizacji twarzy w Hurghadzie. Łącząc głębokie zrozumienie anatomii twarzy z wyrafinowanym zmysłem artystycznym, specjalizuje się w dostarczaniu spersonalizowanych, naturalnie wyglądających rezultatów.",
+    "bio2": "Ukończywszy studia z wyróżnieniem, a następnie szkoląc się u światowych liderów dermatologii estetycznej w Europie i na Bliskim Wschodzie, dr Zaki stale wprowadza najnowsze, oparte na dowodach innowacje kliniczne do Hurghada Beauty Hub. W swoim podejściu priorytetowo traktuje bezpieczeństwo pacjenta, używając wyłącznie certyfikowanych przez FDA preparatów iniekcyjnych oraz najnowocześniejszych metod, aby cofnąć oznaki starzenia, zachowując jednocześnie Twoją unikalną tożsamość.",
+    "bookConsultation": "Zarezerwuj konsultację z dr Zaki",
+    "quote": "Prawdziwe piękno nie polega na zmienianiu tego, kim jesteś, ale na odkrywaniu arcydzieła, które już w Tobie drzemie. Precyzja, bezpieczeństwo i artyzm to filary mojej pracy.",
+    "areasOfExpertise": "Obszary Specjalizacji",
+    "expertise": {
+      "facialHarmonization": {
+        "title": "Harmonizacja Twarzy",
+        "desc": "Strategiczne podawanie wypełniaczy skórnych w celu zbalansowania profilu i proporcji."
+      },
+      "antiAging": {
+        "title": "Iniekcje Przeciwstarzeniowe",
+        "desc": "Zaawansowane protokoły toksyny botulinowej w celu redukcji zmarszczek i liftingu twarzy."
+      },
+      "biostimulators": {
+        "title": "Biostymulatory",
+        "desc": "Zabiegi indukujące produkcję kolagenu, takie jak Radiesse i Sculptra, dla długotrwałej młodości."
+      },
+      "skinRejuvenation": {
+        "title": "Odmładzanie Skóry",
+        "desc": "Mistrzowskie stosowanie terapii laserowych i głębokich peelingów chemicznych dla nieskazitelnej skóry."
+      }
+    },
+    "cta": {
+      "title": "Gotowy, aby rozpocząć swoją podróż?",
+      "subtitle": "Zarezerwuj prywatną konsultację z dr Alaa Zaki już dziś i odkryj swój spersonalizowany plan zabiegowy.",
+      "button": "Skontaktuj się z nami, aby umówić wizytę"
+    }
+  },
+  "TreatmentDetail": {
+    "backToPortfolio": "Powrót do portfolio",
+    "consultButton": "Konsultacja dotycząca tego zabiegu",
+    "howItWorksTitle": "Jak to działa",
+    "whenResultsTitle": "Kiedy zobaczysz efekty",
+    "achievementsTitle": "Co osiągniesz",
+    "clinicalResultsTitle": "Wyniki kliniczne",
+    "dragToInteract": "Przeciągnij, aby wejść w interakcję",
+    "beforeLabel": "Przed",
+    "afterLabel": "Po",
+    "careInstructionsTitle": "Zalecenia pozabiegowe",
+    "preTreatment": "Przed zabiegiem",
+    "postTreatment": "Po zabiegu",
+    "sidebarTitle": "Rozpocznij swoją podróż",
+    "sidebarDescription": "Jesteśmy tutaj, aby odpowiedzieć na Twoje pytania i stworzyć spersonalizowany plan, który odsłoni Twoje wyjątkowe piękno.",
+    "sidebarButton": "Zarezerwuj bezpłatną konsultację",
+    "sidebarContactLabel": "Lub skontaktuj się z nami bezpośrednio"
+  }
+}
