@@ -11,9 +11,7 @@ interface AppProvidersProps {
 export function AppProviders({ children, locale, messages }: AppProvidersProps) {
   return (
     <I18nProvider locale={locale} messages={messages}>
-      <ThemeProvider defaultTheme="light" storageKey="beauty-hub-theme">
-        {children}
-      </ThemeProvider>
+      {children}
     </I18nProvider>
   );
 }
