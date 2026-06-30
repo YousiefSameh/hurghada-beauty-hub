@@ -72,7 +72,7 @@ export default function Navbar() {
           />
           <span
             className={cn(
-              'text-lg md:text-xl font-black tracking-wider ml-1 transition-colors',
+              'text-base md:text-xl font-black tracking-wider ml-1 transition-colors',
               isSolid ? 'text-primary' : 'text-white'
             )}
           >

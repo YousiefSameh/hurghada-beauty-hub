@@ -1,11 +1,21 @@
-import { Metadata } from 'next';
-import { seoConfig } from '@/config/seo.config';
 import { OpenGraph } from 'next/dist/lib/metadata/types/opengraph-types';
+import { seoConfig } from '@/config/seo.config';
 
-export function getOpenGraphMetadata(custom: OpenGraph | null | undefined): Metadata['openGraph'] {
+export function getOpenGraphMetadata(customOg?: OpenGraph | undefined | null): OpenGraph {
   return {
-    ...seoConfig.openGraph,
-    ...custom,
-    images: custom?.images || seoConfig.openGraph.images,
+    type: 'website',
+    siteName: seoConfig.defaultTitle,
+    title: seoConfig.defaultTitle,
+    description: seoConfig.defaultDescription,
+    url: seoConfig.baseUrl,
+    images: [
+      {
+        url: '/assets/images/favicons/og-image.jpeg',
+        width: 1200,
+        height: 630,
+        alt: seoConfig.defaultTitle,
+      },
+    ],
+    ...customOg,
   };
 }

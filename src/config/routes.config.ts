@@ -1,23 +1,8 @@
 export const routesConfig = {
   marketing: {
     home: '/',
-    treatments: '/treatments',
-    blog: '/blog',
-    reviews: '/reviews',
-    gallery: '/gallery',
-    contact: '/contact',
-    consultation: '/consultation',
-    medicalTourism: '/medical-tourism',
-  },
-  admin: {
-    dashboard: '/admin/dashboard',
-    patients: '/admin/patients',
-    appointments: '/admin/appointments',
-    leads: '/admin/leads',
-    reviews: '/admin/reviews',
-    blog: '/admin/blog',
-    services: '/admin/services',
-    settings: '/admin/settings',
+    doctor: '/doctor',
+    services: '/services',
   }
 } as const;
 
