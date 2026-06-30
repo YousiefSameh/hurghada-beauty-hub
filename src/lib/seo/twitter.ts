@@ -1,12 +1,12 @@
-import { Metadata } from 'next';
-import { seoConfig } from '@/config/seo.config';
 import { Twitter } from 'next/dist/lib/metadata/types/twitter-types';
+import { seoConfig } from '@/config/seo.config';
 
-export function getTwitterMetadata(custom: Twitter | null | undefined): Metadata['twitter'] {
+export function getTwitterMetadata(customTwitter?: Twitter | undefined | null): Twitter {
   return {
-    card: seoConfig.twitter.cardType as 'summary_large_image',
-    site: seoConfig.twitter.site,
-    creator: seoConfig.twitter.handle,
-    ...custom,
+    card: 'summary_large_image',
+    title: seoConfig.defaultTitle,
+    description: seoConfig.defaultDescription,
+    images: ['/assets/images/favicons/og-image.jpeg'],
+    ...customTwitter,
   };
 }

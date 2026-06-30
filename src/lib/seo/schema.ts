@@ -1,30 +1,37 @@
-import { siteConfig } from '@/config/site.config';
+import { seoConfig } from '@/config/seo.config';
 
 export function getLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'MedicalBusiness',
-    name: siteConfig.name,
-    url: siteConfig.url,
-    logo: `${siteConfig.url}/logo.webp`,
-    image: siteConfig.ogImage,
-    telephone: siteConfig.contact.phone,
-    email: siteConfig.contact.email,
+    '@type': 'HealthAndBeautyBusiness',
+    name: seoConfig.defaultTitle,
+    image: `${seoConfig.baseUrl}/assets/images/favicons/android-icon-192x192.png`,
+    '@id': seoConfig.baseUrl,
+    url: seoConfig.baseUrl,
+    telephone: seoConfig.contactPhone,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: siteConfig.contact.address.street,
-      addressLocality: siteConfig.contact.address.city,
-      addressRegion: siteConfig.contact.address.state,
-      postalCode: siteConfig.contact.address.zip,
-      addressCountry: siteConfig.contact.address.country,
+      streetAddress: seoConfig.address.street,
+      addressLocality: seoConfig.address.locality,
+      addressRegion: seoConfig.address.region,
+      addressCountry: seoConfig.address.country,
     },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        opens: '17:00',
-        closes: '22:00',
-      },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: seoConfig.geo.latitude,
+      longitude: seoConfig.geo.longitude,
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Saturday', 'Sunday'
+      ],
+      opens: '10:00',
+      closes: '22:00',
+    },
+    sameAs: [
+      seoConfig.socials.facebook,
+      seoConfig.socials.instagram,
     ],
   };
 }

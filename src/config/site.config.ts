@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: 'Beauty Hub',
   domain: 'hurghadabeautyhub.com',
   url: 'https://hurghadabeautyhub.com',
-  ogImage: 'https://hurghadabeautyhub.com/og-image.webp',
+  ogImage: '/assets/images/favicons/og-image.jpeg',
   contact: {
     phone: '+201277702008',
     email: 'info@hurghadabeautyhub.com',
