@@ -283,9 +283,9 @@
     "medicalExpert": "Medical Expert",
     "name": "Dr. Alaa Zaki",
     "title": "Lead Aesthetic Practitioner & Founder",
-    "bio1": "With over 15 years of dedicated experience in advanced aesthetic medicine, Dr. Alaa Zaki has established himself as a pioneer in non-surgical facial harmonization in Hurghada. Merging a profound understanding of facial anatomy with a refined artistic eye, he specializes in delivering bespoke, natural-looking results.",
-    "bio2": "Graduating with top honors and subsequently training under global leaders in aesthetic dermatology across Europe and the Middle East, Dr. Zaki constantly brings the latest, evidence-based clinical innovations to Hurghada Beauty Hub. His approach prioritizes patient safety, utilizing only FDA-approved injectables and state-of-the-art modalities to reverse the signs of aging while preserving your unique identity.",
-    "bookConsultation": "Book Consultation with Dr. Zaki",
+    "bio1": "With over 5 years of dedicated experience in advanced aesthetic medicine, Dr. Alaa Zaki has established herself as a pioneer in non-surgical facial harmonization in Hurghada. Merging a profound understanding of facial anatomy with a refined artistic eye, she specializes in delivering bespoke, natural-looking results.",
+    "bio2": "Graduating with top honors and subsequently training under global leaders in aesthetic dermatology across Europe and the Middle East, Dr. Alaa constantly brings the latest, evidence-based clinical innovations to Hurghada Beauty Hub. Her approach prioritizes patient safety, utilizing only FDA-approved injectables and state-of-the-art modalities to reverse the signs of aging while preserving your unique identity.",
+    "bookConsultation": "Book Consultation with Dr. Alaa",
     "quote": "True beauty is not about altering who you are, but revealing the masterpiece that already exists within you. Precision, safety, and artistry are the pillars of my practice.",
     "areasOfExpertise": "Areas of Expertise",
     "expertise": {
@@ -303,7 +303,7 @@
       },
       "skinRejuvenation": {
         "title": "Skin Rejuvenation",
-        "desc": "Mastering laser therapies and deep chemical peels for flawless skin."
+        "desc": "Mastering deep chemical peels for flawless skin."
       }
     },
     "cta": {

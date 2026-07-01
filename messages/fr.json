@@ -285,7 +285,7 @@
     "medicalExpert": "Expert Médical",
     "name": "Dr. Alaa Zaki",
     "title": "Praticien Esthétique Principal & Fondateur",
-    "bio1": "Avec plus de 15 ans d'expérience dédiée à la médecine esthétique avancée, le Dr Alaa Zaki s'est imposé comme un pionnier de l'harmonisation faciale non chirurgicale à Hurghada. Alliant une compréhension profonde de l'anatomie faciale à un œil artistique raffiné, il se spécialise dans l'obtention de résultats sur mesure et naturels.",
+    "bio1": "Avec plus de 5 ans d'expérience dédiée à la médecine esthétique avancée, le Dr Alaa Zaki s'est imposé comme un pionnier de l'harmonisation faciale non chirurgicale à Hurghada. Alliant une compréhension profonde de l'anatomie faciale à un œil artistique raffiné, il se spécialise dans l'obtention de résultats sur mesure et naturels.",
     "bio2": "Diplômé avec les honneurs et formé par la suite auprès de leaders mondiaux de la dermatologie esthétique en Europe et au Moyen-Orient, le Dr Zaki apporte constamment les dernières innovations cliniques fondées sur des preuves au Hurghada Beauty Hub. Son approche donne la priorité absolue à la sécurité des patients, en utilisant uniquement des produits injectables approuvés par la FDA et des technologies de pointe pour inverser les signes du vieillissement tout en préservant votre identité unique.",
     "bookConsultation": "Réserver une consultation avec le Dr Zaki",
     "quote": "La vraie beauté ne consiste pas à changer qui vous êtes, mais à révéler le chef-d'œuvre qui existe déjà en vous. Précision, sécurité et art sont les piliers de ma pratique.",
@@ -305,7 +305,7 @@
       },
       "skinRejuvenation": {
         "title": "Rajeunissement de la Peau",
-        "desc": "Maîtrise des thérapies au laser et des peelings chimiques profonds pour une peau parfaite."
+        "desc": "Maîtrise des peelings chimiques profonds pour une peau parfaite."
       }
     },
     "cta": {
@@ -314,24 +314,23 @@
       "button": "Contactez-nous pour planifier"
     }
   },
-  
-    "TreatmentDetail": {
-      "backToPortfolio": "Retour au portefeuille",
-      "consultButton": "Consulter pour ce traitement",
-      "howItWorksTitle": "Comment ça fonctionne",
-      "whenResultsTitle": "Quand verrez-vous les résultats",
-      "achievementsTitle": "Ce que vous allez accomplir",
-      "clinicalResultsTitle": "Résultats Cliniques",
-      "dragToInteract": "Faites glisser pour interagir",
-      "beforeLabel": "Avant",
-      "afterLabel": "Après",
-      "careInstructionsTitle": "Instructions de soins",
-      "preTreatment": "Avant le traitement",
-      "postTreatment": "Après le traitement",
-      "sidebarTitle": "Commencez votre voyage",
-      "sidebarDescription": "Nous sommes là pour répondre à vos questions et concevoir un protocole sur mesure pour révéler votre beauté exceptionnelle.",
-      "sidebarButton": "Réserver une consultation gratuite",
-      "sidebarContactLabel": "Ou contactez-nous directement"
-    }
-  
+
+  "TreatmentDetail": {
+    "backToPortfolio": "Retour au portefeuille",
+    "consultButton": "Consulter pour ce traitement",
+    "howItWorksTitle": "Comment ça fonctionne",
+    "whenResultsTitle": "Quand verrez-vous les résultats",
+    "achievementsTitle": "Ce que vous allez accomplir",
+    "clinicalResultsTitle": "Résultats Cliniques",
+    "dragToInteract": "Faites glisser pour interagir",
+    "beforeLabel": "Avant",
+    "afterLabel": "Après",
+    "careInstructionsTitle": "Instructions de soins",
+    "preTreatment": "Avant le traitement",
+    "postTreatment": "Après le traitement",
+    "sidebarTitle": "Commencez votre voyage",
+    "sidebarDescription": "Nous sommes là pour répondre à vos questions et concevoir un protocole sur mesure pour révéler votre beauté exceptionnelle.",
+    "sidebarButton": "Réserver une consultation gratuite",
+    "sidebarContactLabel": "Ou contactez-nous directement"
+  }
 }
