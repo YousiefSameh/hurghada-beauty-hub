@@ -285,7 +285,7 @@
     "medicalExpert": "Medizinischer Experte",
     "name": "Dr. Alaa Zaki",
     "title": "Leitender ästhetischer Arzt & Gründer",
-    "bio1": "Mit über 15 Jahren engagierter Erfahrung in der fortgeschrittenen ästhetischen Medizin hat sich Dr. Alaa Zaki als Pionier der nicht-chirurgischen Gesichtsharmonisierung in Hurghada etabliert. Er verbindet ein tiefes Verständnis der Gesichtsanatomie mit einem feinen künstlerischen Auge und ist auf maßgeschneiderte, natürlich aussehende Ergebnisse spezialisiert.",
+    "bio1": "Mit über 5 Jahren engagierter Erfahrung in der fortgeschrittenen ästhetischen Medizin hat sich Dr. Alaa Zaki als Pionier der nicht-chirurgischen Gesichtsharmonisierung in Hurghada etabliert. Er verbindet ein tiefes Verständnis der Gesichtsanatomie mit einem feinen künstlerischen Auge und ist auf maßgeschneiderte, natürlich aussehende Ergebnisse spezialisiert.",
     "bio2": "Dr. Zaki schloss sein Studium mit Auszeichnung ab und wurde anschließend von weltweit führenden Experten für ästhetische Dermatologie in Europa und im Nahen Osten ausgebildet. Er bringt stets die neuesten, evidenzbasierten klinischen Innovationen in den Hurghada Beauty Hub. Bei seinem Ansatz steht die Patientensicherheit an erster Stelle. Er verwendet ausschließlich von der FDA zugelassene Injektionspräparate und modernste Verfahren, um die Zeichen alternder Haut umzukehren und gleichzeitig Ihre einzigartige Identität zu bewahren.",
     "bookConsultation": "Konsultation bei Dr. Zaki buchen",
     "quote": "Bei wahrer Schönheit geht es nicht darum, wer Sie sind zu verändern, sondern das Meisterwerk zu enthüllen, das bereits in Ihnen steckt. Präzision, Sicherheit und Kunstfertigkeit sind die Säulen meiner Praxis.",
@@ -305,7 +305,7 @@
       },
       "skinRejuvenation": {
         "title": "Hautverjüngung",
-        "desc": "Beherrschung von Lasertherapien und tiefen chemischen Peelings für makellose Haut."
+        "desc": "Beherrschung tiefen chemischen Peelings für makellose Haut."
       }
     },
     "cta": {

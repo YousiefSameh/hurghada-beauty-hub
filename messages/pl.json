@@ -285,7 +285,7 @@
     "medicalExpert": "Ekspert Medyczny",
     "name": "Dr Alaa Zaki",
     "title": "Główny Lekarz Medycyny Estetycznej i Założyciel",
-    "bio1": "Posiadając ponad 15-letnie doświadczenie w zaawansowanej medycynie estetycznej, dr Alaa Zaki zyskał miano pioniera w bezoperacyjnej harmonizacji twarzy w Hurghadzie. Łącząc głębokie zrozumienie anatomii twarzy z wyrafinowanym zmysłem artystycznym, specjalizuje się w dostarczaniu spersonalizowanych, naturalnie wyglądających rezultatów.",
+    "bio1": "Posiadając ponad 5-letnie doświadczenie w zaawansowanej medycynie estetycznej, dr Alaa Zaki zyskał miano pioniera w bezoperacyjnej harmonizacji twarzy w Hurghadzie. Łącząc głębokie zrozumienie anatomii twarzy z wyrafinowanym zmysłem artystycznym, specjalizuje się w dostarczaniu spersonalizowanych, naturalnie wyglądających rezultatów.",
     "bio2": "Ukończywszy studia z wyróżnieniem, a następnie szkoląc się u światowych liderów dermatologii estetycznej w Europie i na Bliskim Wschodzie, dr Zaki stale wprowadza najnowsze, oparte na dowodach innowacje kliniczne do Hurghada Beauty Hub. W swoim podejściu priorytetowo traktuje bezpieczeństwo pacjenta, używając wyłącznie certyfikowanych przez FDA preparatów iniekcyjnych oraz najnowocześniejszych metod, aby cofnąć oznaki starzenia, zachowując jednocześnie Twoją unikalną tożsamość.",
     "bookConsultation": "Zarezerwuj konsultację z dr Zaki",
     "quote": "Prawdziwe piękno nie polega na zmienianiu tego, kim jesteś, ale na odkrywaniu arcydzieła, które już w Tobie drzemie. Precyzja, bezpieczeństwo i artyzm to filary mojej pracy.",
@@ -305,7 +305,7 @@
       },
       "skinRejuvenation": {
         "title": "Odmładzanie Skóry",
-        "desc": "Mistrzowskie stosowanie terapii laserowych i głębokich peelingów chemicznych dla nieskazitelnej skóry."
+        "desc": "Mistrzowskie głębokich peelingów chemicznych dla nieskazitelnej skóry."
       }
     },
     "cta": {

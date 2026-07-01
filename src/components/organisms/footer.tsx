@@ -103,12 +103,17 @@ export default function Footer() {
             </h4>
 
             <div className="mt-5 flex flex-col gap-3 text-sm text-foreground/70">
-              <Link href="/services/botox">{t('homepage.footer.treatments.botox')}</Link>
-              <Link href="/services/fillers">{t('homepage.footer.treatments.fillers')}</Link>
-              <Link href="/services/prp">{t('homepage.footer.treatments.prp')}</Link>
-              <Link href="/services/skin-care">{t('homepage.footer.treatments.skinCare')}</Link>
-              <Link href="/services/hair-restoration">
-                {t('homepage.footer.treatments.hairRestoration')}
+              <Link href={`${locale}/services/botox-injections`}>
+                {t('homepage.footer.treatments.botox')}
+              </Link>
+              <Link href={`${locale}/services/dermal-filler-injections`}>
+                {t('homepage.footer.treatments.fillers')}
+              </Link>
+              <Link href={`${locale}/services/mesotherapy-prp-plasma-injections-for-glowing-skin`}>
+                {t('homepage.footer.treatments.prp')}
+              </Link>
+              <Link href={`${locale}/services/facial-cleansing-sessions`}>
+                {t('homepage.footer.treatments.skinCare')}
               </Link>
             </div>
           </div>
