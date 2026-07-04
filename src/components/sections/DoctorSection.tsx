@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { Button } from '../atoms/button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import SpecialHeading from '../molecules/SpecialHeading';
 
 export default function DoctorSection() {
   const locale = useLocale();
@@ -13,35 +14,21 @@ export default function DoctorSection() {
   const t = useTranslations('homepage.doctor_preview');
 
   return (
-    <section
-      id="doctor"
-      className="py-20 md:py-32 px-4 sm:px-6 md:px-12 lg:px-24 overflow-hidden relative z-0"
-    >
+    <section id="doctor" className="py-20 md:py-32 overflow-hidden relative z-0">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-white/40 blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-[#CD6C3E]/5 blur-[120px] -z-10" />
 
-      <div className="container px-4 sm:px-0 mx-auto">
-        <div className="w-full flex flex-col mb-12 md:mb-20">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-16 h-px bg-[#CD6C3E]" />
-            <span className="uppercase tracking-[0.25em] text-sm font-semibold text-[#CD6C3E] flex items-center gap-2">
-              <Sparkles className="w-4 h-4" />
-              {t('section_subtitle')}
-            </span>
-          </div>
+      <div className="container px-4 xl:px-0 mx-auto">
+        <SpecialHeading
+          isArabic={isArabic}
+          subtitle={t('section_subtitle')}
+          title={t('title')}
+          titleHighlight={t('title_highlight')}
+          description={t('description')}
+        />
 
-          <h2
-            className={`text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-stone-900 leading-[1.1] ${!isArabic ? 'font-serif italic' : ''}`}
-          >
-            {t('title')} <br className="hidden sm:block" />
-            <span className="text-[#CD6C3E] font-light uppercase text-3xl sm:text-4xl lg:text-5xl xl:text-6xl not-italic tracking-wide">
-              {t('title_highlight')}
-            </span>
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 xl:gap-20 items-start">
           {/* Left Side: Editorial Image Composition */}
           <div className="lg:col-span-5 relative w-full flex justify-center lg:justify-start lg:sticky lg:top-32">
             {/* Main Image Container */}

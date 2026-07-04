@@ -130,7 +130,7 @@ export default function DoctorPage() {
       {/* 3. Expertise Section */}
       <section className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
-          <div className="w-full lg:w-2/3">
+          <div className="w-full">
             <motion.div
               initial="hidden"
               whileInView="visible"

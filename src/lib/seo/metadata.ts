@@ -25,7 +25,7 @@ export function generatePageMetadata(custom: Metadata = {}): Metadata {
 
     icons: {
       icon: [
-        { url: '/assets/images/favicons/favicon.ico', sizes: 'any' }, // الأيقونة الأساسية للمتصفحات
+        { url: '/assets/images/favicons/favicon.ico', sizes: 'any' },
         { url: '/assets/images/favicons/android-icon-36x36.png', sizes: '36x36', type: 'image/png' },
         { url: '/assets/images/favicons/android-icon-48x48.png', sizes: '48x48', type: 'image/png' },
         { url: '/assets/images/favicons/android-icon-72x72.png', sizes: '72x72', type: 'image/png' },
@@ -37,7 +37,7 @@ export function generatePageMetadata(custom: Metadata = {}): Metadata {
         { url: '/assets/images/favicons/android-icon-192x192.png', sizes: '192x192', type: 'image/png' },
       ],
     },
-    manifest: '/manifest.json',
+    manifest: '/assets/images/favicons/manifest.json',
     ...custom,
     openGraph: getOpenGraphMetadata(custom?.openGraph),
     twitter: getTwitterMetadata(custom?.twitter),

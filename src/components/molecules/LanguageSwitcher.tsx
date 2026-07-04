@@ -23,7 +23,7 @@ export function LanguageSwitcher() {
     router.replace(pathname, { locale: newLocale });
   };
 
-  return (  
+  return (
     <Select value={currentLocale} onValueChange={handleLanguageChange}>
       <SelectTrigger
         dir={localeDetails[currentLocale].dir}
@@ -31,7 +31,7 @@ export function LanguageSwitcher() {
       >
         <SelectValue placeholder={localeDetails[currentLocale].label} />
       </SelectTrigger>
-      <SelectContent position='popper'>
+      <SelectContent position="popper">
         <SelectGroup>
           <SelectLabel className="text-[10px] uppercase tracking-wider text-black px-2 py-1.5">
             Languages

@@ -11,7 +11,14 @@ interface AppProvidersProps {
 export function AppProviders({ children, locale, messages }: AppProvidersProps) {
   return (
     <I18nProvider locale={locale} messages={messages}>
-      {children}
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="light"
+        enableSystem={false}
+        forcedTheme="light"
+      >
+        {children}
+      </ThemeProvider>
     </I18nProvider>
   );
 }

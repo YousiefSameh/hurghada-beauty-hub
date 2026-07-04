@@ -47,7 +47,7 @@ export default function TreatmentsPage() {
             <source src="/assets/videos/hero_video.mp4" type="video/mp4" />
           </video>
         </div>
-        <div className="container mx-auto px-4 md:px-0 relative z-20">
+        <div className="container pt-12 mx-auto px-4 xl:px-0 relative z-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -75,13 +75,14 @@ export default function TreatmentsPage() {
 
       {/* Intro & Categories Section */}
       <section className="container mx-auto px-4 md:px-8 mt-20 mb-12">
-        <div className="max-w-3xl mb-12">
+        <div className="max-w-4xl mb-12">
           <h2
             className={`text-4xl md:text-5xl lg:text-6xl text-stone-900 font-light mb-6 ${
               !isArabic ? 'font-serif' : ''
             }`}
           >
-            {t('intro.titleRegular')}{' '}
+            {t('intro.titleRegular')}
+            <br />
             <span className="italic text-[#A05C3C] font-semibold">
               {t('intro.titleHighlighted')}
             </span>
@@ -154,7 +155,7 @@ export default function TreatmentsPage() {
                   {treatment.title[locale] || treatment.title['en']}
                 </h3>
 
-                <p className="text-stone-500 text-sm font-light leading-relaxed mb-6 grow line-clamp-2">
+                <p className="text-stone-500 text-sm font-light leading-relaxed mb-6 ">
                   {treatment.desc[locale] || treatment.desc['en']}
                 </p>
 

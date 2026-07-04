@@ -57,7 +57,7 @@ export default function Navbar() {
           : 'bg-transparent border-b border-transparent py-4'
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between px-4 sm:px-0 transition-all duration-300">
+      <div className="container mx-auto flex items-center justify-between px-4 xl:px-0 transition-all duration-300">
         <Link
           href="/"
           className="relative z-50 flex items-center gap-2 transition-opacity hover:opacity-80"
@@ -86,7 +86,7 @@ export default function Navbar() {
         </Link>
 
         <div className="flex gap-8 items-center">
-          <ul className="hidden md:flex items-center gap-2 lg:gap-4">
+          <ul className="hidden xl:flex items-center gap-2 lg:gap-4">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link
@@ -103,7 +103,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <div className="hidden md:flex items-center gap-3 lg:gap-4">
+          <div className="hidden xl:flex items-center gap-3 lg:gap-4">
             <LanguageSwitcher />
             <Button
               variant="default"
@@ -116,7 +116,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className={`md:hidden relative z-50 p-2 focus:outline-none transition-colors ${
+          className={`xl:hidden relative z-50 p-2 focus:outline-none transition-colors ${
             isSolid ? 'text-foreground' : 'text-white'
           }`}
           onClick={toggleMobileMenu}
@@ -133,7 +133,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={cn(
-          `fixed inset-0 top-[70px] z-40 h-dvh transition-transform duration-300 ease-in-out md:hidden`,
+          `fixed inset-0 pt-[70px] z-40 h-dvh transition-transform duration-300 ease-in-out xl:hidden`,
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full',
           isSolid ? 'bg-background/95 backdrop-blur-lg' : 'bg-black/40 backdrop-blur-md' // خلفية مظللة للموبايل في الصفحات الشفافة لتوضيح النص
         )}
@@ -159,7 +159,7 @@ export default function Navbar() {
           <div className="w-full h-px bg-border/50 my-6" />
 
           <div className="flex flex-col items-center gap-6 w-full pb-10">
-            <div className={cn('p-1 rounded-md', !isSolid && 'bg-white/10')}>
+            <div className={cn('p-1 rounded-md w-full', !isSolid && 'bg-white/10')}>
               <LanguageSwitcher />
             </div>
             <Button variant="default" size="lg" className="w-full py-6 text-lg font-bold shadow-md">

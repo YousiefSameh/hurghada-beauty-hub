@@ -2,7 +2,16 @@
 
 import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { ArrowRight, MapPin, Phone, Mail, Clock3, MessageCircle, Loader2 } from 'lucide-react';
+import {
+  ArrowRight,
+  MapPin,
+  Phone,
+  Mail,
+  Clock3,
+  MessageCircle,
+  Loader2,
+  Sparkles,
+} from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import emailjs from '@emailjs/browser';
@@ -14,6 +23,7 @@ import { Input } from '@/components/atoms/input';
 import { Label } from '@/components/atoms/label';
 import { Textarea } from '@/components/atoms/textarea';
 import Link from 'next/link';
+import SpecialHeading from '../molecules/SpecialHeading';
 
 export default function ContactSection() {
   const t = useTranslations();
@@ -54,13 +64,6 @@ export default function ContactSection() {
   const onSubmit = async (data: FormValues) => {
     setSubmitStatus({ type: null, message: '' });
 
-    // 🔍 سطر الاختبار: قم بإضافة هذا السطر مؤقتاً لمراقبة القيم في الـ Console بالمتصفح
-    console.log('EmailJS Config Check:', {
-      serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-      templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-      publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
-    });
-
     try {
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
@@ -93,25 +96,14 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="relative w-full bg-[#f7f1ea] py-24 sm:py-28">
-      <div className="mx-auto container px-4 md:px-0">
-        <div className="mb-14 max-w-3xl">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-primary/80">
-            {t('homepage.contact.sectionLabel')}
-          </p>
-
-          <h2
-            className={`text-4xl font-black leading-tight text-foreground sm:text-5xl lg:text-6xl ${
-              !isArabic ? 'font-serif italic' : ''
-            }`}
-          >
-            {t('homepage.contact.titleStart')}{' '}
-            <span className="text-primary">{t('homepage.contact.titleStrong')}</span>
-          </h2>
-
-          <p className="mt-5 max-w-2xl text-sm leading-7 text-foreground/70 sm:text-base">
-            {t('homepage.contact.subtitle')}
-          </p>
-        </div>
+      <div className="mx-auto container px-4 xl:px-0">
+        <SpecialHeading
+          isArabic={isArabic}
+          title={t('homepage.contact.titleStart')}
+          titleHighlight={t('homepage.contact.titleStrong')}
+          subtitle={t('homepage.contact.sectionLabel')}
+          description={t('homepage.contact.subtitle')}
+        />
 
         <div className="grid gap-8 lg:grid-cols-12">
           {/* Left Side - Contact Info & Map */}
@@ -148,7 +140,7 @@ export default function ContactSection() {
                     </a>
                   </div>
 
-                  <div className="rounded-2xl border border-black/5 bg-[#fff8f1] p-4">
+                  <div className="rounded-2xl border border-black/5 bg-[#fff8f1] overflow-hidden p-4">
                     <div className="flex items-center gap-3">
                       <Mail className="h-4 w-4 text-primary" />
                       <span className="text-xs font-semibold uppercase tracking-[0.25em] text-foreground/60">

@@ -20,38 +20,38 @@
       "navigation": {
         "home": "Strona główna",
         "treatments": "Zabiegi",
-        "doctor": "Lekarz",
+        "doctor": "Nasz Lekarz",
         "services": "Usługi",
         "blog": "Blog",
         "contact": "Kontakt"
       },
       "btns": {
-        "book": "Zarezerwuj Teraz"
+        "book": "Zarezerwuj teraz"
       }
     },
     "herosection": {
-      "title": "Ponadczasowe Piękno.",
-      "titlestrong": "Światowej Klasy",
-      "completetitle": "Opieka",
-      "subtitle": "Doświadcz nowego standardu opieki estetycznej w",
-      "subtitlecomplete": ", gdzie zaawansowane zabiegi, wiedza medyczna i spersonalizowana uwaga łączą się, aby podkreślić Twoje naturalne piękno z pewnością siebie i elegancją.",
+      "title": "Ponadczasowe piękno.",
+      "titlestrong": "Światowej klasy",
+      "completetitle": "opieka",
+      "subtitle": "Poznaj nowy standard medycyny estetycznej w",
+      "subtitlecomplete": ", gdzie nowoczesne technologie, wiedza medyczna i indywidualne podejście łączą się, aby podkreślić Twoje naturalne piękno z pewnością siebie i elegancją.",
       "cta": {
-        "book": "Zarezerwuj Konsultację",
-        "view": "Zobacz Zabiegi"
+        "book": "Zarezerwuj konsultację",
+        "view": "Zobacz zabiegi"
       },
       "stats": {
-        "rating_val": "5.0★",
+        "rating_val": "4.9+ ★",
         "rating_lbl": "Ocena Google",
-        "reviews_val": "60+",
-        "reviews_lbl": "Zweryfikowane Opinie",
+        "reviews_val": "Najwyżej Oceniane",
+        "reviews_lbl": "Przez naszych klientów",
         "exp_val": "5+",
-        "exp_lbl": "Lata Doświadczenia"
+        "exp_lbl": "Lata doświadczenia"
       }
     },
-    "our_services": {
-      "section_subtitle": "Nasze Usługi",
+    "treatments_section": {
+      "section_subtitle": "NASZE ZABIEGI",
       "title": "Dostosowane Do",
-      "title_highlight": "Ciebie",
+      "title_highlight": "CIEBIE",
       "description": "Twarz i włosy — nasze główne dyscypliny, z których każda jest utrzymywana w jednym, bezkompromisowym standardzie opieki szytej na miarę.",
       "premium_badge": "Wybór Premium",
       "book_btn": "Zarezerwuj Konsultację",
@@ -59,51 +59,52 @@
       "explore_status": "Kliknij, aby Odkryć",
       "services": {
         "face": {
-          "title": "Dyscyplina Twarzy",
-          "shortDesc": "Zaawansowane rzeźbienie twarzy i doskonałe odmładzanie skóry.",
+          "title": "Zabiegi na Twarz",
+          "shortDesc": "Zaawansowane rzeźbienie twarzy i luksusowe odmładzanie skóry.",
           "description": "Doświadcz doskonałości klinicznej dostosowanej do podkreślenia Twoich naturalnych rysów twarzy. Nasze zaawansowane zabiegi niechirurgiczne zapewniają widoczne, luksusowe rezultaty dla wszystkich rodzajów skóry.",
           "items": [
-            "Zastrzyki z botoksu i wypełniaczy",
-            "Sesje oczyszczania twarzy",
+            "Zastrzyki z Botoksu i Wypełniaczy",
+            "Głębokie Oczyszczanie Twarzy",
             "Zabieg Mini HydraFacial",
-            "Ujędrnianie skóry i redukcja zmarszczek",
-            "Sesje odmładzania skóry",
-            "Sesje peelingu chemicznego",
-            "Leczenie pigmentacji i plam powierzchniowych",
-            "Specjalistyczne sesje na trądzik i blizny potrądzikowe",
-            "Sesje odżywiania i blasku skóry",
-            "Leczenie trądziku i rozszerzonych porów",
-            "RF Ujędrnianie skóry i redukcja zmarszczek falami radiowymi"
+            "Ujędrnianie Skóry i Redukcja Zmarszczek",
+            "Sesje Odmładzania Skóry",
+            "Sesje Peelingu Chemicznego",
+            "Leczenie Przebarwień i Plam Powierzchniowych",
+            "Specjalistyczne Terapie na Trądzik i Blizny",
+            "Sesje Odżywiania i Rozświetlania Skóry",
+            "Leczenie Trądziku i Rozszerzonych Pór",
+            "Ujędrnianie Falami Radiowymi RF"
           ]
         },
         "hair": {
           "title": "Włosy i Osocze",
-          "shortDesc": "Terapie regeneracyjne i medyczne zastrzyki osocza.",
-          "description": "Przywróć witalność komórkową i pewność siebie. Nasze protokoły PRP o wysokim stężeniu i zindywidualizowanej mezoterapii są naukowo opracowane w celu leczenia witalności skóry głowy i głębokiego blasku skóry.",
+          "shortDesc": "Terapie regeneracyjne i medyczne zastrzyki z osocza.",
+          "description": "Przywróć witalność komórkową i pewność siebie. Nasze protokoły PRP o wysokim stężeniu i zindywidualizowanej mezoterapii są naukowo opracowane w celu leczenia witalności skóry głowy i stymulacji wzrostu włosów.",
           "items": [
-            "Sesje odżywiania i wzmacniania włosów",
-            "Mezoterapia i zastrzyki PRP (Osocze) dla promiennej skóry"
+            "Sesje Odżywiania i Wzmacniania Włosów",
+            "Medyczne Zastrzyki PRP i Mezoterapia Przeciw Wypadaniu Włosów",
+            "Zabiegi Rewitalizujące Skórę Głowy"
           ]
         }
       }
     },
     "doctor_preview": {
-      "section_subtitle": "Nasz Dyrektor Medyczny",
+      "section_subtitle": "NASZ DYREKTOR MEDYCZNY",
       "title": "Medyczna Doskonałość i",
       "title_highlight": "Estetyczny Kunszt",
+      "description": "Odkryj wyrafinowane podejście do bezoperacyjnego odmładzania twarzy. Pod ścisłym nadzorem klinicznym tworzymy spersonalizowane plany estetyczne, które mają na celu podkreślenie Twojego naturalnego piękna przy zachowaniu pełnego bezpieczeństwa.",
       "specialist_tag": "HURGHADA BEAUTY HUB • GŁÓWNY SPECJALISTA",
       "name": "Dr Alaa Zaki",
-      "role": "Farmaceuta Estetyczny i Specjalista ds. Estetyki Niechirurgicznej",
+      "role": "Specjalista Farmacji Estetycznej i Estetyki Niechirurgicznej",
       "quote": "\"Prawdziwe piękno to ewolucja twojego naturalnego ja, stworzona z medyczną precyzją i dotykiem artysty.\"",
-      "bio": "Doktor farmacji i specjalista farmakologii klinicznej z pasją do zaawansowanych zabiegów na skórę, włosy i zabiegów niechirurgicznych.",
-      "credentials": ["Certyfikowany Dermatolog", "Międzynarodowy Konsultant Estetyczny"],
+      "bio": "Doktor farmacji i specjalista farmakologii klinicznej z pasją do zaawansowanych zabiegów na skórę, włosy oraz procedur niechirurgicznych.",
       "stats": {
         "exp_val": "5+",
         "exp_lbl": "Lata Doskonałości",
-        "rate_val": "4.9 ★",
-        "rate_lbl": "Zadowolenie Pacjentów",
         "focus_val": "2",
-        "focus_lbl": "Główne Dyscypliny"
+        "focus_lbl": "Główne Specjalizacje",
+        "rate_val": "4.9★",
+        "rate_lbl": "Ocena Pacjentów"
       },
       "btns": {
         "book": "Umów Konsultację",
@@ -111,52 +112,16 @@
       }
     },
     "services_section": {
-      "subtitle": "Nasze Doświadczenie",
+      "subtitle": "NASZE DOŚWIADCZENIE",
       "title": "Znakomite",
-      "title_highlight": "Portfolio",
-      "description": "Odkryj naszą ekskluzywną kolekcję 10 zabiegów estetycznych, skrupulatnie zaprojektowanych, aby odsłonić Twoją ponadczasową elegancję.",
-      "btn": "Dowiedz się więcej",
+      "title_highlight": "PORTFOLIO",
+      "description": "Odkryj naszą ekskluzywną kolekcję zabiegów estetycznych, skrupulatnie zaprojektowanych, aby odsłonić Twoją ponadczasową elegancję.",
+      "btn": "Dowiedz Się Więcej",
       "btn_all": "Zobacz Wszystkie Zabiegi",
       "slider_nav": {
         "prev": "Poprzedni",
         "next": "Następny"
       }
-    },
-    "blog_section": {
-      "sectionLabel": "Spostrzeżenia",
-      "titleStart": "Dziennik",
-      "titleStrong": "Piękna",
-      "subtitle": "Eksperckie spostrzeżenia na temat botoksu, odmładzania skóry, zabiegów na włosy i opieki estetycznej w Hurghadzie.",
-      "readMore": "Czytaj Artykuł",
-      "ctaTitle": "Poznaj nasze najnowsze spostrzeżenia dotyczące piękna",
-      "ctaSubtitle": "Przydatne artykuły mające na celu poprowadzenie Cię w kierunku właściwego leczenia.",
-      "ctaButton": "Zobacz Wszystkie Wpisy",
-      "posts": [
-        {
-          "title": "Botoks w Hurghadzie: Czego się spodziewać",
-          "excerpt": "Dowiedz się, jak działają zabiegi botoksu, jak długo trwają i dlaczego tak wielu międzynarodowych klientów wybiera nas.",
-          "category": "Botoks",
-          "readTime": "4 min czytania",
-          "date": "Marzec 2026",
-          "href": "/blog/botox-in-hurghada"
-        },
-        {
-          "title": "Najlepsze Zabiegi Odmładzania Skóry",
-          "excerpt": "Od hydrafacial po peelingi chemiczne, odkryj najlepsze opcje przywracania świeżej, promiennej skóry.",
-          "category": "Pielęgnacja Skóry",
-          "readTime": "5 min czytania",
-          "date": "Marzec 2026",
-          "href": "/blog/skin-rejuvenation-treatments"
-        },
-        {
-          "title": "Dlaczego Pacjenci Turystyki Medycznej Wybierają Hurghadę",
-          "excerpt": "Hurghada oferuje idealne połączenie najwyższej jakości opieki estetycznej, komfortu rekonwalescencji i relaksującej podróży.",
-          "category": "Turystyka Medyczna",
-          "readTime": "3 min czytania",
-          "date": "Marzec 2026",
-          "href": "/blog/medical-tourism-in-hurghada"
-        }
-      ]
     },
     "reviews": {
       "sectionLabel": "Referencje",
@@ -169,12 +134,12 @@
       "ctaButton": "Zobacz Wszystkie Opinie"
     },
     "contact": {
-      "sectionLabel": "Kontakt",
+      "sectionLabel": "KONTAKT",
       "titleStart": "Zarezerwuj",
-      "titleStrong": "Swoją Wizytę",
-      "subtitle": "Skontaktuj się z naszym zespołem w celu konsultacji, zapytań o leczenie lub prośby o wizytę. Jesteśmy tutaj, aby Ci pomóc.",
+      "titleStrong": "SWOJA WIZYTĘ",
+      "subtitle": "Skontaktuj się z naszym zespołem w celu konsultacji, zapytań o leczenie lub prośby o wizytę. Jesteśmy tutaj, aby pomóc Ci zaplanować wizytę w Hurghada Beauty Hub.",
       "addressLabel": "Nasza Lokalizacja",
-      "address": "Ulica Metro Al Kawthar, Nad Restauracją Khedive Palace, Hurghada, Morze Czerwone, Egipt",
+      "address": "Ulica Metro Al Kawthar, Nad Restauracją Khedive Palace, Budynek Al-Ra’i Al-Saleh, 2. piętro, Hurghada, Morze Czerwone, Egipt",
       "workingHours": {
         "saturdayToThursday": {
           "days": "Sobota - Czwartek",
@@ -187,13 +152,13 @@
       },
       "phoneLabel": "Telefon",
       "emailLabel": "E-mail",
-      "hoursLabel": "Godziny otwarcia",
+      "hoursLabel": "Godziny Otwarcia",
       "whatsapp": "Napisz na WhatsApp",
       "formButton": "Otwórz Formularz",
       "formLabel": "Prośba o spotkanie",
       "formTitle": "Wyślij nam swoje dane",
       "formSubtitle": "Powiedz nam, jakim zabiegiem jesteś zainteresowany, a nasz zespół skontaktuje się z Tobą tak szybko, jak to możliwe.",
-      "submit": "Wyślij zapytanie",
+      "submit": "Wyślij Zapytanie",
       "submitting": "Wysyłanie...",
       "successMessage": "Wiadomość została wysłana pomyślnie! Wkrótce się z Tobą skontaktujemy.",
       "errorMessage": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
@@ -203,7 +168,7 @@
         "country": "Kraj",
         "email": "E-mail",
         "phone": "Numer Telefonu",
-        "treatment": "Zainteresowany Zabieg",
+        "treatment": "Interesujący Zabieg",
         "date": "Preferowana Data",
         "message": "Dodatkowe Notatki"
       },
@@ -257,17 +222,16 @@
       "madeBy": "Stworzone przez Yousief Sameh"
     }
   },
-
   "servicesPage": {
     "hero": {
-      "tag": "Nasze Protokoły Terapeutyczne",
+      "tag": "NASZE PROTOKOŁY TERAPEUTYCZNE",
       "titleLine1": "Arcydzieła Nauki Estetycznej",
-      "titleHighlight": "Bezpłatna Konsultacja",
+      "titleHighlight": "BEZPŁATNA KONSULTACJA",
       "ctaButton": "Zarezerwuj Konsultację"
     },
     "intro": {
       "titleRegular": "Terapie Szyte Na Miarę.",
-      "titleHighlighted": "Jeden Absolutny Standard.",
+      "titleHighlighted": "JEDEN ABSOLUTNY STANDARD.",
       "description": "Poznaj nasze skrupulatnie wyselekcjonowane portfolio luksusowych zabiegów estetycznych, stworzonych z myślą o wydobyciu Twojego naturalnego piękna według najwyższych światowych standardów klinicznych."
     },
     "categories": {
@@ -282,12 +246,12 @@
   },
   "doctorPage": {
     "backToHome": "Powrót do strony głównej",
-    "medicalExpert": "Ekspert Medyczny",
+    "medicalExpert": "EKSPERT MEDYCZNY",
     "name": "Dr Alaa Zaki",
-    "title": "Główny Lekarz Medycyny Estetycznej i Założyciel",
-    "bio1": "Posiadając ponad 5-letnie doświadczenie w zaawansowanej medycynie estetycznej, dr Alaa Zaki zyskał miano pioniera w bezoperacyjnej harmonizacji twarzy w Hurghadzie. Łącząc głębokie zrozumienie anatomii twarzy z wyrafinowanym zmysłem artystycznym, specjalizuje się w dostarczaniu spersonalizowanych, naturalnie wyglądających rezultatów.",
-    "bio2": "Ukończywszy studia z wyróżnieniem, a następnie szkoląc się u światowych liderów dermatologii estetycznej w Europie i na Bliskim Wschodzie, dr Zaki stale wprowadza najnowsze, oparte na dowodach innowacje kliniczne do Hurghada Beauty Hub. W swoim podejściu priorytetowo traktuje bezpieczeństwo pacjenta, używając wyłącznie certyfikowanych przez FDA preparatów iniekcyjnych oraz najnowocześniejszych metod, aby cofnąć oznaki starzenia, zachowując jednocześnie Twoją unikalną tożsamość.",
-    "bookConsultation": "Zarezerwuj konsultację z dr Zaki",
+    "title": "Kliniczny Farmaceuta Estetyczny i Specjalista Medycyny Estetycznej Nieinwazyjnej",
+    "bio1": "Posiadając ponad 5-letnie doświadczenie w zaawansowanej medycynie estetycznej, dr Alaa Zaki zyskała miano pionierki w bezoperacyjnej harmonizacji twarzy w Hurghadzie. Łącząc głębokie zrozumienie anatomii twarzy z wyrafinowanym zmysłem artystycznym, specjalizuje się w dostarczaniu spersonalizowanych, naturalnie wyglądających rezultatów.",
+    "bio2": "Ukończywszy studia z wyróżnieniem, a następnie szkoląc się u światowych liderów dermatologii estetycznej w Europie i na Bliskim Wschodzie, dr Alaa stale wprowadza najnowsze, oparte na dowodach innowacje kliniczne do Hurghada Beauty Hub. W swoim podejściu priorytetowo traktuje bezpieczeństwo pacjenta, używając wyłącznie certyfikowanych przez FDA preparatów iniekcyjnych oraz najnowocześniejszych metod, aby cofnąć oznaki starzenia, zachowując jednocześnie Twoją unikalną tożsamość.",
+    "bookConsultation": "Zarezerwuj konsultację z dr Alaa",
     "quote": "Prawdziwe piękno nie polega na zmienianiu tego, kim jesteś, ale na odkrywaniu arcydzieła, które już w Tobie drzemie. Precyzja, bezpieczeństwo i artyzm to filary mojej pracy.",
     "areasOfExpertise": "Obszary Specjalizacji",
     "expertise": {
@@ -300,12 +264,12 @@
         "desc": "Zaawansowane protokoły toksyny botulinowej w celu redukcji zmarszczek i liftingu twarzy."
       },
       "biostimulators": {
-        "title": "Biostymulatory",
+        "title": "Biostimulatory",
         "desc": "Zabiegi indukujące produkcję kolagenu, takie jak Radiesse i Sculptra, dla długotrwałej młodości."
       },
       "skinRejuvenation": {
         "title": "Odmładzanie Skóry",
-        "desc": "Mistrzowskie głębokich peelingów chemicznych dla nieskazitelnej skóry."
+        "desc": "Mistrzowskie stosowanie głębokich peelingów chemicznych dla nieskazitelnej skóry."
       }
     },
     "cta": {

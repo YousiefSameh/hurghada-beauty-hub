@@ -4,6 +4,9 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { ArrowRight, ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
+import { Button } from '../atoms/button';
+import Link from 'next/link';
+import SpecialHeading from '../molecules/SpecialHeading';
 
 export default function TreatmentsSection() {
   const [activeTab, setActiveTab] = useState('face');
@@ -11,7 +14,7 @@ export default function TreatmentsSection() {
 
   const locale = useLocale();
   const isArabic = locale === 'ar';
-  const t = useTranslations('homepage.our_services');
+  const t = useTranslations('homepage.treatments_section');
 
   const servicesData = [
     {
@@ -48,32 +51,15 @@ export default function TreatmentsSection() {
   }, [activeService.sliderImages.length]);
 
   return (
-    <section id="treatments" className="bg-[#FAF7F2] py-12 md:py-28 px-4 sm:px-6 md:px-12 lg:px-24">
-      <div className="container px-4 sm:px-0 mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 md:mb-32 gap-8">
-          <div className="max-w-2xl">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-px bg-[#CD6C3E]" />
-              <span className="uppercase tracking-[0.25em] text-sm font-semibold text-[#CD6C3E] flex items-center gap-2">
-                <Sparkles className="w-4 h-4" />
-                {t('section_subtitle')}
-              </span>
-            </div>
-
-            <h2
-              className={`text-4xl sm:text-5xl lg:text-6xl font-black text-stone-900 leading-tight ${
-                !isArabic ? 'font-serif italic' : ''
-              }`}
-            >
-              {t('title')}{' '}
-              <span className="text-[#CD6C3E] font-light uppercase">{t('title_highlight')}</span>
-            </h2>
-          </div>
-
-          <p className="max-w-md text-stone-600 font-light text-base md:text-lg leading-relaxed pb-2">
-            {t('description')}
-          </p>
-        </div>
+    <section id="treatments" className="bg-[#FAF7F2] py-12 md:py-28">
+      <div className="container px-4 xl:px-0 mx-auto">
+        <SpecialHeading
+          isArabic={isArabic}
+          subtitle={t('section_subtitle')}
+          title={t('title')}
+          titleHighlight={t('title_highlight')}
+          description={t('description')}
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
           <div className="lg:col-span-5 xl:col-span-4 order-1 lg:order-2 flex flex-row lg:flex-col gap-4 w-full">
@@ -83,7 +69,7 @@ export default function TreatmentsSection() {
                 <button
                   key={service.id}
                   onClick={() => setActiveTab(service.id)}
-                  className={`group relative flex-1 rounded-2xl lg:rounded-3xl overflow-hidden text-left p-4 lg:p-8 flex flex-col justify-end transition-all duration-500 border cursor-pointer h-24 sm:h-32 lg:h-auto ${
+                  className={`group relative flex-1 rounded-2xl lg:rounded-3xl overflow-hidden ${isArabic ? 'text-right' : 'text-left'} p-4 lg:p-8 flex flex-col justify-end transition-all duration-500 border cursor-pointer h-24 sm:h-32 lg:h-auto ${
                     isSelected
                       ? 'border-[#CD6C3E] ring-2 ring-[#CD6C3E]/20 shadow-lg scale-[1.01]'
                       : 'border-stone-200/40 hover:border-stone-400'
@@ -102,7 +88,7 @@ export default function TreatmentsSection() {
                     <h4
                       className={`text-sm sm:text-xl lg:text-2xl xl:text-3xl font-bold text-white transition-colors duration-300 ${
                         isSelected ? 'text-[#CD6C3E]' : 'group-hover:text-[#CD6C3E]'
-                      } ${!isArabic ? 'font-serif italic' : ''}`}
+                      } ${!isArabic ? 'font-serif' : ''}`}
                     >
                       {service.title}
                     </h4>
@@ -134,7 +120,7 @@ export default function TreatmentsSection() {
           </div>
 
           <div className="lg:col-span-7 xl:col-span-8 order-2 lg:order-1 bg-white rounded-3xl border border-stone-200/60 p-6 md:p-10 shadow-xs flex flex-col justify-between min-h-[520px] sm:min-h-[580px] lg:min-h-[680px]">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 h-full items-center">
+            <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 h-full items-center">
               <div className="md:col-span-6 flex flex-col justify-between h-full py-2">
                 <div>
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#CD6C3E]/10 text-[#CD6C3E] text-xs font-medium mb-4">
@@ -152,7 +138,7 @@ export default function TreatmentsSection() {
                     {activeService.description}
                   </p>
 
-                  <div className="space-y-2.5 max-h-[260px] md:max-h-[320px] overflow-y-auto pr-2 scrollbar-thin">
+                  <div className="space-y-2.5 max-h-[260px] md:max-h-[320px] pb-1 overflow-y-auto pr-2 scrollbar-thin">
                     {activeService.items.map((item, index) => (
                       <div
                         key={index}
@@ -165,10 +151,15 @@ export default function TreatmentsSection() {
                   </div>
                 </div>
 
-                <button className="inline-flex items-center justify-center gap-2 bg-[#CD6C3E] text-white px-6 py-3.5 rounded-xl text-sm font-semibold tracking-wide hover:bg-[#b85b30] transition-colors shadow-xs mt-8 w-full sm:w-fit">
-                  {t('book_btn')}
-                  <ArrowRight className={`w-4 h-4 ${isArabic ? 'rotate-180' : ''}`} />
-                </button>
+                <Button
+                  asChild
+                  className="h-auto px-6 py-3.5 mt-6 text-base rounded-xl shadow-xs w-full sm:w-fit"
+                >
+                  <Link href="#contact">
+                    {t('book_btn')}
+                    <ArrowRight className={`w-4 h-4 ${isArabic ? 'rotate-180' : ''}`} />
+                  </Link>
+                </Button>
               </div>
 
               <div className="md:col-span-6 relative aspect-4/5 w-full rounded-2xl overflow-hidden bg-stone-100 group">

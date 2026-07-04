@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
@@ -14,7 +14,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-black/5 bg-[#f3ece5]">
-      <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:px-16">
+      <div className="container mx-auto px-4 xl:px-0 py-20">
         <div className="grid gap-12 lg:grid-cols-12">
           {/* Brand */}
           <div className="lg:col-span-5">
@@ -88,11 +88,13 @@ export default function Footer() {
             </h4>
 
             <div className="mt-5 flex flex-col gap-3 text-sm text-foreground/70">
-              <Link href="/">{t('homepage.footer.quickLinks.home')}</Link>
-              <Link href="#treatments">{t('homepage.footer.quickLinks.treatments')}</Link>
-              <Link href="/doctor">{t('homepage.footer.quickLinks.doctor')}</Link>
-              <Link href="/services">{t('homepage.footer.quickLinks.services')}</Link>
-              <Link href="#contact">{t('homepage.footer.quickLinks.contact')}</Link>
+              <Link href={`/${locale}`}>{t('homepage.footer.quickLinks.home')}</Link>
+              <Link href={`/${locale}#treatments`}>
+                {t('homepage.footer.quickLinks.treatments')}
+              </Link>
+              <Link href={`/${locale}/doctor`}>{t('homepage.footer.quickLinks.doctor')}</Link>
+              <Link href={`/${locale}/services`}>{t('homepage.footer.quickLinks.services')}</Link>
+              <Link href={`/${locale}/#contact`}>{t('homepage.footer.quickLinks.contact')}</Link>
             </div>
           </div>
 
@@ -103,16 +105,16 @@ export default function Footer() {
             </h4>
 
             <div className="mt-5 flex flex-col gap-3 text-sm text-foreground/70">
-              <Link href={`${locale}/services/botox-injections`}>
+              <Link href={`/${locale}/services/botox-injections`}>
                 {t('homepage.footer.treatments.botox')}
               </Link>
-              <Link href={`${locale}/services/dermal-filler-injections`}>
+              <Link href={`/${locale}/services/dermal-filler-injections`}>
                 {t('homepage.footer.treatments.fillers')}
               </Link>
-              <Link href={`${locale}/services/mesotherapy-prp-plasma-injections-for-glowing-skin`}>
+              <Link href={`/${locale}/services/mesotherapy-prp-plasma-injections-for-glowing-skin`}>
                 {t('homepage.footer.treatments.prp')}
               </Link>
-              <Link href={`${locale}/services/facial-cleansing-sessions`}>
+              <Link href={`/${locale}/services/facial-cleansing-sessions`}>
                 {t('homepage.footer.treatments.skinCare')}
               </Link>
             </div>
@@ -125,13 +127,6 @@ export default function Footer() {
             </h4>
 
             <div className="mt-5 space-y-5">
-              <div className="flex items-start gap-3">
-                <MapPin size={18} className="mt-1 text-primary" />
-                <p className="text-sm leading-6 text-foreground/70">
-                  {t('homepage.footer.contact.address')}
-                </p>
-              </div>
-
               <div className="flex items-center gap-3">
                 <Phone size={18} className="text-primary" />
                 <a

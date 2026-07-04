@@ -11,7 +11,7 @@ export default function HeroSection() {
   const isArabic = locale === 'ar';
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-black text-white">
+    <section className="relative max-h-[800px] h-screen w-full overflow-hidden bg-black text-white">
       {/* 1. Background Video & Overlays */}
       <div className="absolute inset-0">
         <video
@@ -27,13 +27,15 @@ export default function HeroSection() {
       </div>
 
       {/* Gradient/Dark Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-linear-to-r from-primary/40 via-primary/20 to-transparent" />
+      <div
+        className={`absolute inset-0 ${isArabic ? 'bg-linear-to-l' : 'bg-linear-to-r'} from-primary/40 via-primary/20 to-transparent`}
+      />
 
       {/* 2. Main Content Container */}
-      <div className="relative z-10 flex h-full w-full flex-col pt-14 justify-center px-4 md:px-0 container mx-auto">
+      <div className="relative z-10 flex h-full w-full flex-col pt-14 justify-center px-4 xl:px-0 container mx-auto">
         <div>
           <h1
-            className={`italic text-[42px] font-black sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[1.1] w-full text-white drop-shadow-sm ${
+            className={`italic text-[38px] sm:text-[42px] font-black md:text-6xl lg:text-7xl xl:text-[6.5rem] leading-[1.1] w-full text-white drop-shadow-sm ${
               !isArabic ? 'font-serif' : ''
             }`}
           >
@@ -45,7 +47,7 @@ export default function HeroSection() {
         </div>
 
         {/* Paragraph */}
-        <p className="mt-6 max-w-2xl text-base md:text-lg text-white font-light leading-relaxed">
+        <p className="mt-6 max-w-2xl text-sm md:text-base lg:text-lg text-white font-light leading-relaxed">
           {t('homepage.herosection.subtitle')}{' '}
           <strong className="font-bold">{t('homepage.header.logo.name')}</strong>
           {t('homepage.herosection.subtitlecomplete')}
@@ -76,40 +78,40 @@ export default function HeroSection() {
           </Button>
         </div>
         {/* Luxury Stats */}
-        <div className="flex flex-wrap items-center gap-6 md:gap-8 pt-8 w-full sm:w-auto">
-          <div>
+        <div className="flex flex-wrap items-center gap-6 lg:gap-8 pt-8 w-full sm:w-auto">
+          <div className="hover:scale-120 transition-all duration-300 ease-in-out cursor-pointer">
             <p
-              className={`text-3xl md:text-4xl font-bold text-white ${!isArabic ? 'font-serif' : ''}`}
+              className={`text-xl md:text-3xl lg:text-4xl font-bold text-white ${!isArabic ? 'font-serif' : ''}`}
             >
               {t('homepage.herosection.stats.rating_val')}
             </p>
-            <span className="text-[10px] md:text-xs uppercase tracking-widest text-white/60 block mt-1 font-medium">
+            <span className="text-[8px] md:text-[10px] lg:text-xs uppercase tracking-widest text-white/60 block mt-1 font-medium">
               {t('homepage.herosection.stats.rating_lbl')}
             </span>
           </div>
 
           <div className="h-10 w-px bg-white/10 hidden sm:block" />
 
-          <div>
+          <div className="hover:scale-120 transition-all duration-300 ease-in-out cursor-pointer">
             <p
-              className={`text-3xl md:text-4xl font-bold text-white ${!isArabic ? 'font-serif' : ''}`}
+              className={`text-lg md:text-2xl lg:text-3xl font-bold uppercase text-white ${!isArabic ? 'font-serif' : ''}`}
             >
               {t('homepage.herosection.stats.reviews_val')}
             </p>
-            <span className="text-[10px] md:text-xs uppercase tracking-widest text-white/60 block mt-1 font-medium">
+            <span className="text-[8px] md:text-[10px] lg:text-xs uppercase tracking-widest text-white/60 block mt-1 font-medium">
               {t('homepage.herosection.stats.reviews_lbl')}
             </span>
           </div>
 
           <div className="h-10 w-px bg-white/10 hidden sm:block" />
 
-          <div>
+          <div className="hover:scale-120 transition-all duration-300 ease-in-out cursor-pointer">
             <p
-              className={`text-3xl md:text-4xl font-bold text-white ${!isArabic ? 'font-serif' : ''}`}
+              className={`text-xl md:text-3xl lg:text-4xl font-bold text-white ${!isArabic ? 'font-serif' : ''}`}
             >
               {t('homepage.herosection.stats.exp_val')}
             </p>
-            <span className="text-[10px] md:text-xs uppercase tracking-widest text-white/60 block mt-1 font-medium">
+            <span className="text-[8px] md:text-[10px] lg:text-xs uppercase tracking-widest text-white/60 block mt-1 font-medium">
               {t('homepage.herosection.stats.exp_lbl')}
             </span>
           </div>

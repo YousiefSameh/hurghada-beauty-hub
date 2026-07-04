@@ -67,6 +67,7 @@ export default async function LocaleLayout({
       lang={locale}
       dir={dir}
       className={`${inter.variable} ${playfair.variable} ${IBMPlexSansArabic.variable} scroll-smooth`}
+      suppressHydrationWarning
     >
       <body
         className={`${primaryBodyFontClass} antialiased min-h-screen flex flex-col`}

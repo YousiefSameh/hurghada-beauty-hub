@@ -2,6 +2,7 @@
 
 import { Sparkles } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
+import SpecialHeading from '../molecules/SpecialHeading';
 
 export default function ReviewsSection() {
   const t = useTranslations();
@@ -10,30 +11,14 @@ export default function ReviewsSection() {
 
   return (
     <section id="reviews" className="w-full bg-[#f7f1ea] py-24 sm:py-28">
-      <div className="container mx-auto px-4 md:px-0">
-        <div className="mb-14 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-2xl">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-px bg-[#CD6C3E]" />
-              <span className="uppercase tracking-[0.25em] text-sm font-semibold text-[#CD6C3E] flex items-center gap-2">
-                <Sparkles className="w-4 h-4" />
-                {t('homepage.reviews.sectionLabel')}              </span>
-            </div>
-
-            <h2
-              className={`text-4xl font-black leading-tight text-foreground sm:text-5xl lg:text-6xl ${
-                !isArabic ? 'font-serif italic' : ''
-              }`}
-            >
-              {t('homepage.reviews.titleStart')}{' '}
-              <span className="text-primary">{t('homepage.reviews.titleStrong')}</span>
-            </h2>
-          </div>
-
-          <p className="max-w-xl text-sm leading-7 text-foreground/70 sm:text-base">
-            {t('homepage.reviews.subtitle')}
-          </p>
-        </div>
+      <div className="container mx-auto px-4 xl:px-0">
+        <SpecialHeading
+          isArabic={isArabic}
+          title={t('homepage.reviews.titleStart')}
+          titleHighlight={t('homepage.reviews.titleStrong')}
+          subtitle={t('homepage.reviews.sectionLabel')}
+          description={t('homepage.reviews.subtitle')}
+        />
 
         <div>
           {/* Review cards */}
