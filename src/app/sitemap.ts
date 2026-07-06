@@ -1,19 +1,21 @@
 import { MetadataRoute } from 'next'
+import { treatmentsData } from '@/data/services' 
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://hurghadabeautyhub.com'
   const locales = ['en', 'ar', 'de', 'ru', 'pl', 'fr']
   
-  const routes = ['', 'doctor', 'services']
+  const staticRoutes = ['', 'doctor', 'services']
 
   const sitemapEntries: MetadataRoute.Sitemap = []
 
-  routes.forEach((route) => {
+  staticRoutes.forEach((route) => {
     locales.forEach((locale) => {
       const url = `${baseUrl}/${locale}${route ? `/${route}` : ''}`
+      
       const languages = locales.reduce((acc, loc) => {
         acc[loc] = `${baseUrl}/${loc}${route ? `/${route}` : ''}`
-        return acc;
+        return acc
       }, {} as Record<string, string>)
 
       sitemapEntries.push({
@@ -21,6 +23,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: route === '' ? 1.0 : 0.8,
+        alternates: {
+          languages: languages,
+        },
+      })
+    })
+  })
+
+  treatmentsData.forEach((treatment) => {
+    locales.forEach((locale) => {
+      const url = `${baseUrl}/${locale}/services/${treatment.slug}`
+      
+      const languages = locales.reduce((acc, loc) => {
+        acc[loc] = `${baseUrl}/${loc}/services/${treatment.slug}`
+        return acc
+      }, {} as Record<string, string>)
+
+      sitemapEntries.push({
+        url: url,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.7,
         alternates: {
           languages: languages,
         },
