@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://hurghadabeautyhub.com'
   const locales = ['en', 'ar', 'de', 'ru', 'pl', 'fr']
   
-  const routes = ['', 'treatments', 'doctor', 'services']
+  const routes = ['', 'doctor', 'services']
 
   const sitemapEntries: MetadataRoute.Sitemap = []
 
