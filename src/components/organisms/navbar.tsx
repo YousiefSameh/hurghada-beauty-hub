@@ -59,7 +59,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between px-4 xl:px-0 transition-all duration-300">
         <Link
-          href="/"
+          href={`${locale}`}
           className="relative z-50 flex items-center gap-2 transition-opacity hover:opacity-80"
         >
           <Image

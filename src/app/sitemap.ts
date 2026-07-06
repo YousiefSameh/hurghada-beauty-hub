@@ -1,14 +1,32 @@
-import { MetadataRoute } from 'next';
-import { siteConfig } from '@/config/site.config';
-import { routesConfig } from '@/config/routes.config';
+import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = Object.values(routesConfig.marketing).map((path) => ({
-    url: `${siteConfig.url}${path === '/' ? '' : path}`,
-    lastModified: new Date().toISOString(),
-    changeFrequency: 'weekly' as const,
-    priority: path === '/' ? 1.0 : 0.8,
-  }));
+  const baseUrl = 'https://hurghadabeautyhub.com'
+  const locales = ['en', 'ar', 'de', 'ru', 'pl', 'fr']
+  
+  const routes = ['', 'treatments', 'doctor', 'services']
 
-  return routes;
+  const sitemapEntries: MetadataRoute.Sitemap = []
+
+  routes.forEach((route) => {
+    locales.forEach((locale) => {
+      const url = `${baseUrl}/${locale}${route ? `/${route}` : ''}`
+      const languages = locales.reduce((acc, loc) => {
+        acc[loc] = `${baseUrl}/${loc}${route ? `/${route}` : ''}`
+        return acc;
+      }, {} as Record<string, string>)
+
+      sitemapEntries.push({
+        url: url,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: route === '' ? 1.0 : 0.8,
+        alternates: {
+          languages: languages,
+        },
+      })
+    })
+  })
+
+  return sitemapEntries
 }

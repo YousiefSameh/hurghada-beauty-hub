@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-12">
           {/* Brand */}
           <div className="lg:col-span-5">
-            <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-80">
+            <Link href={`${locale}`} className="flex items-center gap-2 transition-opacity hover:opacity-80">
               <Image
                 src="/assets/images/logo.webp"
                 alt={t('homepage.footer.logoAlt')}

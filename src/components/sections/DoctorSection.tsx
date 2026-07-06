@@ -124,7 +124,7 @@ export default function DoctorSection() {
                 size="lg"
                 className="group relative w-full sm:w-fit inline-flex items-center justify-center gap-3 px-8 py-5 rounded-xl text-sm font-semibold tracking-widest uppercase overflow-hidden transition-all cursor-pointer"
               >
-                <Link href="#contact" className="relative z-10 flex items-center gap-2">
+                <Link href={`/${locale}/#contact`} className="relative z-10 flex items-center gap-2">
                   {t('btns.book')}
                   <ArrowRight
                     className={`w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 ${isArabic ? 'rotate-180 group-hover:-translate-x-1' : ''}`}

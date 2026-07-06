@@ -1,13 +1,12 @@
-import { MetadataRoute } from 'next';
-import { seoConfig } from '@/config/seo.config';
+import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/_next/', '/private/'],
+      disallow: ['/api/', '/_next/'],
     },
-    sitemap: `${seoConfig.baseUrl}/sitemap.xml`,
-  };
+    sitemap: 'https://hurghadabeautyhub.com/sitemap.xml',
+  }
 }
