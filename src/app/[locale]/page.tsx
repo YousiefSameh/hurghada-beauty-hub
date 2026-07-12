@@ -27,12 +27,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 
   const descriptions = {
-    en: 'Experience premium aesthetic medical care at Beauty Hub Clinic in Hurghada. Leading experts in Botox, fillers, laser hair removal, and luxury skin rejuvenation treatments.',
-    ar: 'اكتشفي الرعاية الطبية الفاخرة في عيادة بيوتي هب الغردقة. خبراء في حقن البوتوكس، الفيلر، إزالة الشعر بالليزر، وأحدث جلسات العناية بالبشرة وتجديد حيويتها.',
-    de: 'Erleben Sie erstklassige ästhetische medizinische Versorgung in Hurghada. Experten für Botox, Filler, Haarentfernung mit Laser und Hautverjüngung.',
-    fr: 'Découvrez des soins médicaux esthétiques haut de gamme à Hurghada. Experts en Botox, fillers, épilation au laser et rajeunissement de la peau.',
-    pl: 'Poznaj najwyższej jakości medycynę estetyczną w Hurghadzie. Eksperci w dziedzinie botoksu, wypełniaczy, depilacji laserowej i odmładzania skóry.',
-    ru: 'Премиальная эстетическая медицина в Хургаде. Эксперты в области ботокса, филлеров, лазерной эпиляции и омоложения кожи.'
+    en: 'Experience premium aesthetic medical care at Beauty Hub Clinic in Hurghada. Leading experts in Botox, fillers, and luxury skin rejuvenation treatments.',
+    ar: 'اكتشفي الرعاية الطبية الفاخرة في عيادة بيوتي هب الغردقة. خبراء في حقن البوتوكس، الفيلر، وأحدث جلسات العناية بالبشرة وتجديد حيويتها.',
+    de: 'Erleben Sie erstklassige ästhetische medizinische Versorgung in Hurghada. Experten für Botox, Filler und Hautverjüngung.',
+    fr: 'Découvrez des soins médicaux esthétiques haut de gamme à Hurghada. Experts en Botox, fillers et rajeunissement de la peau.',
+    pl: 'Poznaj najwyższej jakości medycynę estetyczną w Hurghadzie. Eksperci w dziedzinie botoksu, wypełniaczy i odmładzania skóry.',
+    ru: 'Премиальная эстетическая медицина в Хургаде. Эксперты в области ботокса, филлеров и омоложения кожи.'
   };
 
   return generatePageMetadata({
@@ -41,12 +41,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://hurghadabeautyhub.com/${currentLocale}`,
       languages: {
-        'en': `https://hurghadabeautyhub.com/en`,
-        'ar': `https://hurghadabeautyhub.com/ar`,
-        'de': `https://hurghadabeautyhub.com/de`,
-        'fr': `https://hurghadabeautyhub.com/fr`,
-        'pl': `https://hurghadabeautyhub.com/pl`,
-        'ru': `https://hurghadabeautyhub.com/ru`,
+        en: `https://hurghadabeautyhub.com/en`,
+        ar: `https://hurghadabeautyhub.com/ar`,
+        de: `https://hurghadabeautyhub.com/de`,
+        fr: `https://hurghadabeautyhub.com/fr`,
+        pl: `https://hurghadabeautyhub.com/pl`,
+        ru: `https://hurghadabeautyhub.com/ru`,
       },
     },
     openGraph: {
