@@ -4,7 +4,7 @@ export const seoConfig = {
   defaultTitle: 'Beauty Hub Hurghada | Luxury Aesthetic Clinic',
   baseUrl: 'https://hurghadabeautyhub.com',
   titleTemplate: `%s | ${siteConfig.name}`,
-  defaultDescription: 'Premium multilingual aesthetic clinic in Hurghada, Egypt. Experience high-end skincare contouring, and anti-aging treatments.',
+  defaultDescription: 'Premium multilingual aesthetic clinic in Hurghada, Egypt. Experience high-end skincare, contouring, and anti-aging treatments.',
   keywords: [
     'aesthetic clinic Egypt',
     'hurghada beauty hub',
@@ -25,7 +25,7 @@ export const seoConfig = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: siteConfig.url,
+    url: 'https://hurghadabeautyhub.com',
     siteName: siteConfig.name,
     images: [
       {
@@ -50,7 +50,7 @@ export const seoConfig = {
   twitter: {
     handle: '@beautyhub_eg',
     site: '@beautyhub_eg',
-    cardType: '',
+    cardType: 'summary_large_image',
   },
 };
 

@@ -1,22 +1,32 @@
-import { MetadataRoute } from 'next'
-import { treatmentsData } from '@/data/services' 
+import { MetadataRoute } from 'next';
+import { treatmentsData } from '@/data/services';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://hurghadabeautyhub.com'
-  const locales = ['en', 'ar', 'de', 'ru', 'pl', 'fr']
-  
-  const staticRoutes = ['', 'doctor', 'services']
+  const baseDomain = 'hurghadabeautyhub.com';
+  const locales = ['en', 'ar', 'de', 'ru', 'pl', 'fr'];
+  const defaultLocale = 'en';
 
-  const sitemapEntries: MetadataRoute.Sitemap = []
+  const staticRoutes = ['', 'doctor', 'services'];
+  const sitemapEntries: MetadataRoute.Sitemap = [];
+
+  const getSubdomainUrl = (locale: string, path: string) => {
+    const cleanPath = path ? `/${path}` : '';
+    return locale === defaultLocale
+      ? `https://${baseDomain}${cleanPath}`
+      : `https://${locale}.${baseDomain}${cleanPath}`;
+  };
 
   staticRoutes.forEach((route) => {
     locales.forEach((locale) => {
-      const url = `${baseUrl}/${locale}${route ? `/${route}` : ''}`
-      
-      const languages = locales.reduce((acc, loc) => {
-        acc[loc] = `${baseUrl}/${loc}${route ? `/${route}` : ''}`
-        return acc
-      }, {} as Record<string, string>)
+      const url = getSubdomainUrl(locale, route);
+
+      const languages = locales.reduce(
+        (acc, loc) => {
+          acc[loc] = getSubdomainUrl(loc, route);
+          return acc;
+        },
+        {} as Record<string, string>
+      );
 
       sitemapEntries.push({
         url: url,
@@ -26,18 +36,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: {
           languages: languages,
         },
-      })
-    })
-  })
+      });
+    });
+  });
 
   treatmentsData.forEach((treatment) => {
     locales.forEach((locale) => {
-      const url = `${baseUrl}/${locale}/services/${treatment.slug}`
-      
-      const languages = locales.reduce((acc, loc) => {
-        acc[loc] = `${baseUrl}/${loc}/services/${treatment.slug}`
-        return acc
-      }, {} as Record<string, string>)
+      const path = `services/${treatment.slug}`;
+      const url = getSubdomainUrl(locale, path);
+
+      const languages = locales.reduce(
+        (acc, loc) => {
+          acc[loc] = getSubdomainUrl(loc, path);
+          return acc;
+        },
+        {} as Record<string, string>
+      );
 
       sitemapEntries.push({
         url: url,
@@ -47,9 +61,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: {
           languages: languages,
         },
-      })
-    })
-  })
+      });
+    });
+  });
 
-  return sitemapEntries
+  return sitemapEntries;
 }

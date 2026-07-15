@@ -2,14 +2,11 @@ import { Metadata } from 'next';
 import { generatePageMetadata } from '@/lib/seo/metadata';
 import TreatmentsClient from './_components/TreatmentsClient';
 import { Locale } from '@/config/locales.config';
+import { headers } from 'next/headers';
 
-interface Props {
-  params: Promise<{ locale: Locale }>;
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params;
-  const currentLocale = locale || 'en';
+export async function generateMetadata(): Promise<Metadata> {
+  const headerList = await headers();
+  const currentLocale = (headerList.get('x-next-intl-locale') as Locale) || 'en';
 
   const titles = {
     en: 'Premium Aesthetic & Skin Treatments in Hurghada | Beauty Hub',
@@ -33,20 +30,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: titles[currentLocale],
     description: descriptions[currentLocale],
     alternates: {
-      canonical: `https://hurghadabeautyhub.com/${currentLocale}/services`,
+      canonical: currentLocale === 'en' ? `https://hurghadabeautyhub.com/services` : `https://${currentLocale}.hurghadabeautyhub.com/services`,
       languages: {
-        'en': `https://hurghadabeautyhub.com/en/services`,
-        'ar': `https://hurghadabeautyhub.com/ar/services`,
-        'de': `https://hurghadabeautyhub.com/de/services`,
-        'fr': `https://hurghadabeautyhub.com/fr/services`,
-        'pl': `https://hurghadabeautyhub.com/pl/services`,
-        'ru': `https://hurghadabeautyhub.com/ru/services`,
+        'en': `https://hurghadabeautyhub.com/services`,
+        'ar': `https://ar.hurghadabeautyhub.com/services`,
+        'de': `https://de.hurghadabeautyhub.com/services`,
+        'fr': `https://fr.hurghadabeautyhub.com/services`,
+        'pl': `https://pl.hurghadabeautyhub.com/services`,
+        'ru': `https://ru.hurghadabeautyhub.com/services`,
       },
     },
     openGraph: {
       title: titles[currentLocale],
       description: descriptions[currentLocale],
-      url: `https://hurghadabeautyhub.com/${currentLocale}/services`,
+      url: currentLocale === 'en' ? `https://hurghadabeautyhub.com/services` : `https://${currentLocale}.hurghadabeautyhub.com/services`,
     }
   });
 }

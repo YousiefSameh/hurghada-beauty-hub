@@ -1,7 +1,7 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from '@/i18n/routing';
+import { usePathname } from 'next/navigation'; // هنستخدم الـ pathname الطبيعي
 import { locales, localeDetails, Locale } from '@/config/locales.config';
 import {
   Select,
@@ -15,12 +15,39 @@ import {
 
 export function LanguageSwitcher() {
   const currentLocale = useLocale() as Locale;
-  const router = useRouter();
   const pathname = usePathname();
 
   const handleLanguageChange = (value: string) => {
     const newLocale = value as Locale;
-    router.replace(pathname, { locale: newLocale });
+    if (newLocale === currentLocale) return;
+
+    const host = window.location.host;
+    const hostParts = host.split('.');
+
+    let baseDomain = host;
+
+    if (host.includes('localhost')) {
+      if (hostParts.length > 1 && locales.includes(hostParts[0] as Locale)) {
+        baseDomain = hostParts.slice(1).join('.');
+      }
+    } else {
+      if (hostParts.length > 2 && locales.includes(hostParts[0] as Locale)) {
+        baseDomain = hostParts.slice(1).join('.');
+      }
+    }
+
+    const protocol = window.location.protocol;
+    const searchParams = window.location.search;
+
+    let newUrl = '';
+
+    if (newLocale === 'en') {
+      newUrl = `${protocol}//${baseDomain}${pathname}${searchParams}`;
+    } else {
+      newUrl = `${protocol}//${newLocale}.${baseDomain}${pathname}${searchParams}`;
+    }
+
+    window.location.href = newUrl;
   };
 
   return (

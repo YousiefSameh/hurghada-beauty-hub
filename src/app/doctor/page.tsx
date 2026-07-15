@@ -2,14 +2,11 @@ import { Metadata } from 'next';
 import { generatePageMetadata } from '@/lib/seo/metadata';
 import DoctorClient from './_components/DoctorClient';
 import { Locale } from '@/config/locales.config';
+import { headers } from 'next/headers';
 
-interface Props {
-  params: Promise<{ locale: Locale }>;
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params;
-  const currentLocale = locale || 'en';
+export async function generateMetadata(): Promise<Metadata> {
+  const headerList = await headers();
+  const currentLocale = (headerList.get('x-next-intl-locale') as Locale) || 'en';
 
   const titles = {
     en: 'Expert Aesthetic Doctor in Hurghada | Dr. Alaa Zaki',
@@ -17,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     de: 'Erfahrene Ästhetik-Ärztin in Hurghada | Dr. Alaa Zaki',
     fr: 'Médecin Esthétique Experte à Hurghada | Dr. Alaa Zaki',
     pl: 'Ekspert Medycyny Estetycznej w Hurghadzie | Dr. Alaa Zaki',
-    ru: 'Эксперт Эстетической Медицины в Хургаде | Д-р Алаа Заки'
+    ru: 'Эксперت Эстетической Медицины в Хургаде | Д-р Алаа Заки'
   };
 
   const descriptions = {
@@ -33,20 +30,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: titles[currentLocale],
     description: descriptions[currentLocale],
     alternates: {
-      canonical: `https://hurghadabeautyhub.com/${currentLocale}/doctor`,
+      canonical: currentLocale === 'en' ? `https://hurghadabeautyhub.com/doctor` : `https://${currentLocale}.hurghadabeautyhub.com/doctor`,
       languages: {
-        'en': `https://hurghadabeautyhub.com/en/doctor`,
-        'ar': `https://hurghadabeautyhub.com/ar/doctor`,
-        'de': `https://hurghadabeautyhub.com/de/doctor`,
-        'fr': `https://hurghadabeautyhub.com/fr/doctor`,
-        'pl': `https://hurghadabeautyhub.com/pl/doctor`,
-        'ru': `https://hurghadabeautyhub.com/ru/doctor`,
+        'en': `https://hurghadabeautyhub.com/doctor`,
+        'ar': `https://ar.hurghadabeautyhub.com/doctor`,
+        'de': `https://de.hurghadabeautyhub.com/doctor`,
+        'fr': `https://fr.hurghadabeautyhub.com/doctor`,
+        'pl': `https://pl.hurghadabeautyhub.com/doctor`,
+        'ru': `https://ru.hurghadabeautyhub.com/doctor`,
       },
     },
     openGraph: {
       title: titles[currentLocale],
       description: descriptions[currentLocale],
-      url: `https://hurghadabeautyhub.com/${currentLocale}/doctor`,
+      url: currentLocale === 'en' ? `https://hurghadabeautyhub.com/doctor` : `https://${currentLocale}.hurghadabeautyhub.com/doctor`,
     }
   });
 }
