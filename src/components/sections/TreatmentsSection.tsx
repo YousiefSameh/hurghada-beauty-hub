@@ -155,7 +155,7 @@ export default function TreatmentsSection() {
                   asChild
                   className="h-auto px-6 py-3.5 mt-6 text-base rounded-xl shadow-xs w-full sm:w-fit"
                 >
-                  <Link href={`/${locale}/#contact`}>
+                  <Link href={`//#contact`}>
                     {t('book_btn')}
                     <ArrowRight className={`w-4 h-4 ${isArabic ? 'rotate-180' : ''}`} />
                   </Link>

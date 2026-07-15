@@ -38,7 +38,7 @@ export default function DoctorClient() {
       {/* Navigation Breadcrumb */}
       <div className="pt-32 pb-8 container mx-auto px-6 md:px-12">
         <Link
-          href={`/${locale}`}
+          href={`/`}
           className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-stone-500 hover:text-[#A05C3C] transition-colors"
         >
           {isArabic ? <ChevronRight className="w-4 h-4" /> : <ChevronLeft className="w-4 h-4" />}

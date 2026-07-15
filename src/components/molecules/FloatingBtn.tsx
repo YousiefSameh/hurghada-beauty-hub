@@ -8,7 +8,7 @@ import { Button } from '../atoms/button';
 import { useLocale } from 'next-intl';
 
 export default function FloatingBtns() {
-  const locale = useLocale()
+  const locale = useLocale();
   const [isSocialMenuOpen, setIsSocialMenuOpen] = useState(false);
 
   return (
@@ -76,10 +76,11 @@ export default function FloatingBtns() {
       </button>
 
       {/* --- Static Book Button --- */}
-      <Button asChild className="flex h-14 w-14 items-center justify-center rounded-full bg-[#CD6C3E] text-white shadow-lg hover:scale-105 transition-transform text-[10px] font-bold uppercase tracking-wider z-10 mt-2">
-        <Link href={`/${locale}#contact`}>
-          Book
-        </Link>
+      <Button
+        asChild
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#CD6C3E] text-white shadow-lg hover:scale-105 transition-transform text-[10px] font-bold uppercase tracking-wider z-10 mt-2"
+      >
+        <Link href={`/#contact`}>Book</Link>
       </Button>
     </div>
   );

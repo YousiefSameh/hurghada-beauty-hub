@@ -18,7 +18,10 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-12">
           {/* Brand */}
           <div className="lg:col-span-5">
-            <Link href={`${locale}`} className="flex items-center gap-2 transition-opacity hover:opacity-80">
+            <Link
+              href={`${locale}`}
+              className="flex items-center gap-2 transition-opacity hover:opacity-80"
+            >
               <Image
                 src="/assets/images/logo.webp"
                 alt={t('homepage.footer.logoAlt')}
@@ -88,13 +91,11 @@ export default function Footer() {
             </h4>
 
             <div className="mt-5 flex flex-col gap-3 text-sm text-foreground/70">
-              <Link href={`/${locale}`}>{t('homepage.footer.quickLinks.home')}</Link>
-              <Link href={`/${locale}#treatments`}>
-                {t('homepage.footer.quickLinks.treatments')}
-              </Link>
-              <Link href={`/${locale}/doctor`}>{t('homepage.footer.quickLinks.doctor')}</Link>
-              <Link href={`/${locale}/services`}>{t('homepage.footer.quickLinks.services')}</Link>
-              <Link href={`/${locale}/#contact`}>{t('homepage.footer.quickLinks.contact')}</Link>
+              <Link href={`/`}>{t('homepage.footer.quickLinks.home')}</Link>
+              <Link href={`/#treatments`}>{t('homepage.footer.quickLinks.treatments')}</Link>
+              <Link href={`//doctor`}>{t('homepage.footer.quickLinks.doctor')}</Link>
+              <Link href={`//services`}>{t('homepage.footer.quickLinks.services')}</Link>
+              <Link href={`//#contact`}>{t('homepage.footer.quickLinks.contact')}</Link>
             </div>
           </div>
 
@@ -105,16 +106,16 @@ export default function Footer() {
             </h4>
 
             <div className="mt-5 flex flex-col gap-3 text-sm text-foreground/70">
-              <Link href={`/${locale}/services/botox-injections`}>
+              <Link href={`//services/botox-injections`}>
                 {t('homepage.footer.treatments.botox')}
               </Link>
-              <Link href={`/${locale}/services/dermal-filler-injections`}>
+              <Link href={`//services/dermal-filler-injections`}>
                 {t('homepage.footer.treatments.fillers')}
               </Link>
-              <Link href={`/${locale}/services/mesotherapy-prp-plasma-injections-for-glowing-skin`}>
+              <Link href={`//services/mesotherapy-prp-plasma-injections-for-glowing-skin`}>
                 {t('homepage.footer.treatments.prp')}
               </Link>
-              <Link href={`/${locale}/services/facial-cleansing-sessions`}>
+              <Link href={`//services/facial-cleansing-sessions`}>
                 {t('homepage.footer.treatments.skinCare')}
               </Link>
             </div>

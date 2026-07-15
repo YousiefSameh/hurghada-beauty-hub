@@ -124,7 +124,7 @@ export default function DoctorSection() {
                 size="lg"
                 className="group relative w-full sm:w-fit inline-flex items-center justify-center gap-3 px-8 py-5 rounded-xl text-sm font-semibold tracking-widest uppercase overflow-hidden transition-all cursor-pointer"
               >
-                <Link href={`/${locale}/#contact`} className="relative z-10 flex items-center gap-2">
+                <Link href={`//#contact`} className="relative z-10 flex items-center gap-2">
                   {t('btns.book')}
                   <ArrowRight
                     className={`w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 ${isArabic ? 'rotate-180 group-hover:-translate-x-1' : ''}`}
@@ -138,7 +138,7 @@ export default function DoctorSection() {
                 size="lg"
                 className="w-full sm:w-fit inline-flex items-center justify-center px-8 py-6 rounded-xl text-sm font-semibold tracking-widest uppercase text-stone-800 hover:text-[#CD6C3E] transition-colors relative after:content-[''] after:absolute after:bottom-2 after:left-8 after:right-8 after:h-px after:bg-[#CD6C3E] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left hover:bg-transparent cursor-pointer"
               >
-                <Link href={`/${locale}/doctor`}>{t('btns.profile')}</Link>
+                <Link href={`//doctor`}>{t('btns.profile')}</Link>
               </Button>
             </div>
           </div>

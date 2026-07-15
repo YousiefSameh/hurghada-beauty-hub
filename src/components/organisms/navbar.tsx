@@ -17,11 +17,11 @@ export default function Navbar() {
   const isArabic = locale === 'ar';
 
   const NAV_LINKS = [
-    { href: `/${locale}`, labelKey: 'home' },
-    { href: `/${locale}/#treatments`, labelKey: 'treatments' },
-    { href: `/${locale}/doctor`, labelKey: 'doctor' },
-    { href: `/${locale}/services`, labelKey: 'services' },
-    { href: `/${locale}/#contact`, labelKey: 'contact' },
+    { href: `/`, labelKey: 'home' },
+    { href: `//#treatments`, labelKey: 'treatments' },
+    { href: `//doctor`, labelKey: 'doctor' },
+    { href: `//services`, labelKey: 'services' },
+    { href: `//#contact`, labelKey: 'contact' },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,9 +29,9 @@ export default function Navbar() {
 
   const isTransparentPage =
     pathname === '/' ||
-    pathname === `/${locale}` ||
+    pathname === `/` ||
     pathname === '/treatments' ||
-    pathname === `/${locale}/treatments`;
+    pathname === `//treatments`;
 
   const isSolid = isScrolled || !isTransparentPage;
 
