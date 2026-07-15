@@ -50,7 +50,7 @@ export default function TreatmentDetailClient({
       {/* Navigation Bar / Back Link */}
       <div className="pt-32 pb-8 container mx-auto px-6 md:px-12">
         <Link
-          href={`//services`}
+          href={`/services`}
           className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-stone-500 hover:text-[#A05C3C] transition-colors"
         >
           {isArabic ? <ArrowRight className="w-4 h-4" /> : <ArrowLeft className="w-4 h-4" />}

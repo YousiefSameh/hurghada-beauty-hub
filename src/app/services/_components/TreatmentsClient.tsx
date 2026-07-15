@@ -160,7 +160,7 @@ export default function TreatmentsClient() {
                 {/* Card Actions */}
                 <div className="flex items-center justify-between pt-4 border-t border-stone-200 mt-auto">
                   <Link
-                    href={`//services/${treatment.slug}`}
+                    href={`/services/${treatment.slug}`}
                     className="text-xs font-semibold uppercase tracking-widest text-stone-900 hover:text-[#A05C3C] transition-colors flex items-center gap-2 group/link"
                   >
                     {t('card.learnMore')}

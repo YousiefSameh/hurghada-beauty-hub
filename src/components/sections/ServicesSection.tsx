@@ -147,7 +147,7 @@ export default function ServicesSection() {
           <Link
             key={service.uniqueId}
             className="shrink-0 snap-start flex justify-start w-[344px] md:w-[460px]"
-            href={`//services/${service.slug}`}
+            href={`/services/${service.slug}`}
           >
             <div className="group cursor-pointer flex flex-col w-[320px] md:w-[420px]">
               {/* Image Card */}
