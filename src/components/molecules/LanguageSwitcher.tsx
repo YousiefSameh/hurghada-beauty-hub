@@ -21,9 +21,12 @@ export function LanguageSwitcher() {
     const newLocale = value as Locale;
     if (newLocale === currentLocale) return;
 
-    const host = window.location.host;
-    const hostParts = host.split('.');
+    let host = window.location.host;
+    if (host.startsWith('www.')) {
+      host = host.replace('www.', '');
+    }
 
+    const hostParts = host.split('.');
     let baseDomain = host;
 
     if (host.includes('localhost')) {
@@ -35,7 +38,6 @@ export function LanguageSwitcher() {
         baseDomain = hostParts.slice(1).join('.');
       }
     }
-
     const protocol = window.location.protocol;
     const searchParams = window.location.search;
 
